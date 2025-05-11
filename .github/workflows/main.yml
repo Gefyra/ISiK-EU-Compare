@@ -28,7 +28,7 @@ jobs:
                 pkg="${pkg_name}@${pkg_ver}"
                 echo "📦 Installing unpublished package: $pkg from $tgz"
                 echo "Command: fhir install \"$pkg\" --file \"$tgz\""
-                fhir install "$pkg" --file "$tgz" || echo "⚠️ Failed to install $pkg"
+                fhir install "$pkg" --file "$tgz"
               fi
             done
           else
