@@ -1,0 +1,11 @@
+{
+  "name": "ISiKEUCompare",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "dependencies": {
+    "hl7.fhir.eu.hdr.r4": "0.0.1-ci"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ]
+}

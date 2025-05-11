@@ -16,22 +16,43 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
-      - name: Install Firely Terminal
-        run: dotnet tool install --global firely.terminal
-      
-      - name: Install unpublished packages
+
+      - name: Copy manually unpacked packages into Firely cache
         run: |
+          CACHE_DIR="$HOME/.fhir/packages"
+      
           if [ -d "UnpublishedPackages" ]; then
-            for tgz in UnpublishedPackages/*.tgz; do
-              if [ -f "$tgz" ]; then
-                echo "📦 Installing unpublished package: $tgz"
-                fhir install "$tgz" --file
+            for pkgdir in UnpublishedPackages/*; do
+              if [ -d "$pkgdir/package" ]; then
+                basename=$(basename "$pkgdir")
+                pkg_name=$(echo "$basename" | sed 's/-[0-9].*//')
+                pkg_ver=$(echo "$basename" | sed "s/^$pkg_name-//")
+      
+                target_dir="$CACHE_DIR/$pkg_name/$pkg_ver"
+                echo "📂 Copying $pkgdir → $target_dir"
+      
+                mkdir -p "$target_dir"
+                cp -r "$pkgdir/package" "$target_dir/"
+              else
+                echo "⚠️ Skipping $pkgdir – no 'package/' subfolder found"
               fi
             done
           else
             echo "ℹ️ No UnpublishedPackages directory found – skipping"
           fi
+      
+#      - name: Install unpublished packages
+#        run: |
+#          if [ -d "UnpublishedPackages" ]; then
+#            for tgz in UnpublishedPackages/*.tgz; do
+#              if [ -f "$tgz" ]; then
+#                echo "📦 Installing unpublished package: $tgz"
+#                fhir install "$tgz" --file
+#              fi
+#            done
+#          else
+#            echo "ℹ️ No UnpublishedPackages directory found – skipping"
+#          fi
 
       - name: Set up Java
         uses: actions/setup-java@v3
@@ -48,7 +69,10 @@ jobs:
       - name: Download validator_cli.jar
         run: |
           curl -L -o validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/download/6.5.21/validator_cli.jar
-
+          
+      - name: Install Firely Terminal
+        run: dotnet tool install --global firely.terminal --version 3.2.0
+        
       - name: Parse and preload FHIR packages
         run: |
           yq '.profiles[] | .leftIg, .rightIg' "$CONFIG_PATH" | tr -d '"' | sort -u | while read pkg; do
