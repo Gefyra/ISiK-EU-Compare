@@ -24,13 +24,10 @@ jobs:
           if [ -d "UnpublishedPackages" ]; then
             for pkgdir in UnpublishedPackages/*; do
               if [ -d "$pkgdir/package" ]; then
-                basename=$(basename "$pkgdir")
-                pkg_name=$(echo "$basename" | sed 's/-[0-9].*//')
-                pkg_ver=$(echo "$basename" | sed "s/^$pkg_name-//")
-      
-                target_dir="$CACHE_DIR/$pkg_name/$pkg_ver"
+                pkg_id=$(basename "$pkgdir")
+                target_dir="$CACHE_DIR/$pkg_id"
                 echo "📂 Copying $pkgdir → $target_dir"
-      
+
                 mkdir -p "$target_dir"
                 cp -r "$pkgdir/package" "$target_dir/"
               else
