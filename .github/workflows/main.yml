@@ -29,7 +29,7 @@ jobs:
       - name: Download validator_cli.jar
         run: |
           curl -L -o validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/download/6.5.21/validator_cli.jar
-
+      
       - name: Run validations
         run: |
           profiles=$(yq '.profiles | length' .github/config/ComparisonConfig.yml)
@@ -69,3 +69,8 @@ jobs:
           git add .
           git diff --cached --quiet || git commit -m "chore: update validation results [automated]"
           git push
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./Comparison
