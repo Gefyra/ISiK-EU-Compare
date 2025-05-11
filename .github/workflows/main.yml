@@ -25,7 +25,7 @@ jobs:
           if [ -d "UnpublishedPackages" ]; then
             for tgz in UnpublishedPackages/*.tgz; do
               if [ -f "$tgz" ]; then
-                echo "📦 Installing unpublished package: $pkg from $tgz"
+                echo "📦 Installing unpublished package: $tgz"
                 fhir install "$tgz" --file
               fi
             done
