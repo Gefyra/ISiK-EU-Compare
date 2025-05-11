@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "569fc908-20ee-4c55-ac5e-5f6fcd8c9868-5",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/569fc908-20ee-4c55-ac5e-5f6fcd8c9868-5",
+  "id" : "6220992a-d73a-4d85-9d65-fde233410474-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6220992a-d73a-4d85-9d65-fde233410474-5",
   "name" : "UnionSNOMEDCTMedicationCodesAndMedicationsUvIps",
   "title" : "Union of SNOMED CT Medication Codes And Medications - IPS",
   "status" : "draft",
-  "date" : "2025-05-11T15:37:41+00:00",
+  "date" : "2025-05-11T15:45:32+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
