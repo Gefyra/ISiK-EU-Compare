@@ -1,0 +1,385 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "ValueSet-substance-codes.json",
+      "resourceType" : "ValueSet",
+      "id" : "substance-codes",
+      "url" : "http://hl7.org/fhir/ValueSet/substance-codes",
+      "version" : "5.0.0"
+    },
+    {
+      "filename" : "ValueSet-medication-ingredientstrength.json",
+      "resourceType" : "ValueSet",
+      "id" : "medication-ingredientstrength",
+      "url" : "http://hl7.org/fhir/ValueSet/medication-ingredientstrength",
+      "version" : "5.0.0"
+    },
+    {
+      "filename" : "CodeSystem-medication-ingredientstrength.json",
+      "resourceType" : "CodeSystem",
+      "id" : "medication-ingredientstrength",
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-ingredientstrength",
+      "version" : "5.0.0",
+      "valueSet" : "http://hl7.org/fhir/ValueSet/medication-ingredientstrength",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-medicationdispense-status.json",
+      "resourceType" : "CodeSystem",
+      "id" : "medicationdispense-status",
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationdispense-status",
+      "version" : "5.0.0",
+      "valueSet" : "http://hl7.org/fhir/ValueSet/medicationDispense-status",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-medicationdispense-status-reason.json",
+      "resourceType" : "CodeSystem",
+      "id" : "medicationdispense-status-reason",
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationdispense-status-reason",
+      "version" : "5.0.0",
+      "valueSet" : "http://hl7.org/fhir/ValueSet/medicationdispense-status-reason",
+      "content" : "complete"
+    },
+    {
+      "filename" : "ValueSet-medicationdispense-admin-location.json",
+      "resourceType" : "ValueSet",
+      "id" : "medicationdispense-admin-location",
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-admin-location",
+      "version" : "5.0.0"
+    },
+    {
+      "filename" : "CodeSystem-medicationdispense-admin-location.json",
+      "resourceType" : "CodeSystem",
+      "id" : "medicationdispense-admin-location",
+      "url" : "http://hl7.org/fhir/medicationdispense-admin-location",
+      "version" : "5.0.0",
+      "valueSet" : "http://hl7.org/fhir/ValueSet/medicationdispense-admin-location",
+      "content" : "complete"
+    },
+    {
+      "filename" : "ValueSet-medicationrequest-admin-location.json",
+      "resourceType" : "ValueSet",
+      "id" : "medicationrequest-admin-location",
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location",
+      "version" : "5.0.0"
+    },
+    {
+      "filename" : "ValueSet-medication-intended-performer-role.json",
+      "resourceType" : "ValueSet",
+      "id" : "medication-intended-performer-role",
+      "url" : "http://hl7.org/fhir/ValueSet/medication-intended-performer-role",
+      "version" : "5.0.0"
+    },
+    {
+      "filename" : "CodeSystem-medication-intended-performer-role.json",
+      "resourceType" : "CodeSystem",
+      "id" : "medication-intended-performer-role",
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-intended-performer-role",
+      "version" : "5.0.0",
+      "valueSet" : "http://hl7.org/fhir/ValueSet/medication-intended-performer-role",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-timing-abbreviation.json",
+      "resourceType" : "CodeSystem",
+      "id" : "timing-abbreviation",
+      "url" : "http://terminology.hl7.org/CodeSystem/timing-abbreviation",
+      "version" : "5.0.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "ValueSet-medication-dose-aid.json",
+      "resourceType" : "ValueSet",
+      "id" : "medication-dose-aid",
+      "url" : "http://hl7.org/fhir/ValueSet/medication-dose-aid",
+      "version" : "5.0.0"
+    },
+    {
+      "filename" : "CodeSystem-medication-dose-aid.json",
+      "resourceType" : "CodeSystem",
+      "id" : "medication-dose-aid",
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-dose-aid",
+      "version" : "5.0.0",
+      "valueSet" : "http://hl7.org/fhir/ValueSet/medication-dose-aid",
+      "content" : "complete"
+    },
+    {
+      "filename" : "ValueSet-medicinal-product-classification.json",
+      "resourceType" : "ValueSet",
+      "id" : "medicinal-product-classification",
+      "url" : "http://hl7.org/fhir/ValueSet/medicinal-product-classification",
+      "version" : "5.0.0"
+    },
+    {
+      "filename" : "ValueSet-ingredient-role.json",
+      "resourceType" : "ValueSet",
+      "id" : "ingredient-role",
+      "url" : "http://hl7.org/fhir/ValueSet/ingredient-role",
+      "version" : "5.0.0"
+    },
+    {
+      "filename" : "CodeSystem-ingredient-role.json",
+      "resourceType" : "CodeSystem",
+      "id" : "ingredient-role",
+      "url" : "http://hl7.org/fhir/ingredient-role",
+      "version" : "5.0.0",
+      "valueSet" : "http://hl7.org/fhir/ValueSet/ingredient-role",
+      "content" : "complete"
+    },
+    {
+      "filename" : "ValueSet-unit-of-presentation.json",
+      "resourceType" : "ValueSet",
+      "id" : "unit-of-presentation",
+      "url" : "http://hl7.org/fhir/ValueSet/unit-of-presentation",
+      "version" : "5.0.0"
+    },
+    {
+      "filename" : "CodeSystem-unit-of-presentation.json",
+      "resourceType" : "CodeSystem",
+      "id" : "unit-of-presentation",
+      "url" : "http://hl7.org/fhir/unit-of-presentation",
+      "version" : "5.0.0",
+      "valueSet" : "http://hl7.org/fhir/ValueSet/unit-of-presentation",
+      "content" : "complete"
+    },
+    {
+      "filename" : "ImplementationGuide-ihe.pharm.mpd.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "ihe.pharm.mpd",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/ImplementationGuide/ihe.pharm.mpd",
+      "version" : "1.0.0-comment"
+    },
+    {
+      "filename" : "ActorDefinition-IHE.MPD.DispenseConsumer.json",
+      "resourceType" : "Basic",
+      "id" : "IHE.MPD.DispenseConsumer"
+    },
+    {
+      "filename" : "ActorDefinition-IHE.MPD.DispenseReceiver.json",
+      "resourceType" : "Basic",
+      "id" : "IHE.MPD.DispenseReceiver"
+    },
+    {
+      "filename" : "ActorDefinition-IHE.MPD.DispenseReporter.json",
+      "resourceType" : "Basic",
+      "id" : "IHE.MPD.DispenseReporter"
+    },
+    {
+      "filename" : "ActorDefinition-IHE.MPD.DispenseResponder.json",
+      "resourceType" : "Basic",
+      "id" : "IHE.MPD.DispenseResponder"
+    },
+    {
+      "filename" : "ActorDefinition-IHE.MPD.OrderConsumer.json",
+      "resourceType" : "Basic",
+      "id" : "IHE.MPD.OrderConsumer"
+    },
+    {
+      "filename" : "ActorDefinition-IHE.MPD.OrderPlacer.json",
+      "resourceType" : "Basic",
+      "id" : "IHE.MPD.OrderPlacer"
+    },
+    {
+      "filename" : "ActorDefinition-IHE.MPD.OrderReceiver.json",
+      "resourceType" : "Basic",
+      "id" : "IHE.MPD.OrderReceiver"
+    },
+    {
+      "filename" : "ActorDefinition-IHE.MPD.OrderResponder.json",
+      "resourceType" : "Basic",
+      "id" : "IHE.MPD.OrderResponder"
+    },
+    {
+      "filename" : "CapabilityStatement-IHE.MPD.DispenseConsumerCS.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "IHE.MPD.DispenseConsumerCS",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseConsumerCS",
+      "version" : "1.0.0-comment",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "CapabilityStatement-IHE.MPD.DispenseReceiverCS.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "IHE.MPD.DispenseReceiverCS",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseReceiverCS",
+      "version" : "1.0.0-comment",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "CapabilityStatement-IHE.MPD.DispenseReporterCS.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "IHE.MPD.DispenseReporterCS",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseReporterCS",
+      "version" : "1.0.0-comment",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "CapabilityStatement-IHE.MPD.DispenseResponderCS.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "IHE.MPD.DispenseResponderCS",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.DispenseResponderCS",
+      "version" : "1.0.0-comment",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "CapabilityStatement-IHE.MPD.OrderConsumerCS.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "IHE.MPD.OrderConsumerCS",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderConsumerCS",
+      "version" : "1.0.0-comment",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "CapabilityStatement-IHE.MPD.OrderPlacerCS.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "IHE.MPD.OrderPlacerCS",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderPlacerCS",
+      "version" : "1.0.0-comment",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "CapabilityStatement-IHE.MPD.OrderReceiverCS.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "IHE.MPD.OrderReceiverCS",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderReceiverCS",
+      "version" : "1.0.0-comment",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "CapabilityStatement-IHE.MPD.OrderResponderCS.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "IHE.MPD.OrderResponderCS",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/CapabilityStatement/IHE.MPD.OrderResponderCS",
+      "version" : "1.0.0-comment",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "SearchParameter-activity-resource.json",
+      "resourceType" : "SearchParameter",
+      "id" : "activity-resource",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/SearchParameter/activity-resource",
+      "version" : "1.0.0-comment",
+      "type" : "reference"
+    },
+    {
+      "filename" : "SearchParameter-group-or-identifier.json",
+      "resourceType" : "SearchParameter",
+      "id" : "group-or-identifier",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/SearchParameter/group-or-identifier",
+      "version" : "1.0.0-comment",
+      "type" : "token"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medication-characteristic.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medication-characteristic",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-characteristic",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medication-classification.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medication-classification",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medication-device.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medication-device",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-device",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medication-ingredient-role.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medication-ingredient-role",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-ingredient-role",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medication-productname.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medication-productname",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medication-sizeofitem.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medication-sizeofitem",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-sizeofitem",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medication-strengthsubstance.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medication-strengthsubstance",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-strengthsubstance",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medication-strengthtype.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medication-strengthtype",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-strengthtype",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medication-unitofpresentation.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medication-unitofpresentation",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-unitofpresentation",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-medicationrequest-prescribedQuantity",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medicationrequest-prescribedQuantity",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ihe-ext-offLabel.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ihe-ext-offLabel",
+      "url" : "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel",
+      "version" : "1.0.0-comment",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    }
+  ]
+}
