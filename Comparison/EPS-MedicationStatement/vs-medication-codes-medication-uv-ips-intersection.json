@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "569fc908-20ee-4c55-ac5e-5f6fcd8c9868-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/569fc908-20ee-4c55-ac5e-5f6fcd8c9868-6",
+  "name" : "IntersectionSNOMEDCTMedicationCodesAndMedicationsUvIps",
+  "title" : "Intersection of SNOMED CT Medication Codes And Medications - IPS",
+  "status" : "draft",
+  "date" : "2025-05-11T15:37:41+00:00"
+}
