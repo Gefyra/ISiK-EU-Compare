@@ -46,6 +46,23 @@ jobs:
             fi
           done
       
+      - name: Install unpublished packages
+        run: |
+          if [ -d "UnpublishedPackages" ]; then
+            for tgz in UnpublishedPackages/*.tgz; do
+              if [ -f "$tgz" ]; then
+                filename=$(basename "$tgz" .tgz)
+                pkg_name=$(echo "$filename" | cut -d'-' -f1)
+                pkg_ver=$(echo "$filename" | cut -d'-' -f2-)
+                pkg="${pkg_name}@${pkg_ver}"
+                echo "📦 Installing unpublished package: $pkg from $tgz"
+                fhir install "$pkg" --file "$tgz" || echo "⚠️ Failed to install $pkg"
+              fi
+            done
+          else
+            echo "ℹ️ No UnpublishedPackages directory found – skipping"
+          fi
+      
       - name: Run validations
         run: |
           profiles=$(yq '.profiles | length' "$CONFIG_PATH")
