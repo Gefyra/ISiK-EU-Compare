@@ -100,7 +100,7 @@ jobs:
 
 #      - name: Generate central index.html
 #        run: |
-#          echo "<html><head><title>Vergleichsübersicht</title></head><body><h1>Vergleichsergebnisse</h1><ul>" > Comparison/#index.html
+#          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" > Comparison/#index.html
 #          
 #          for d in Comparison/*/ ; do
 #            name=$(basename "$d")
@@ -110,6 +110,11 @@ jobs:
 #          done
 #          
 #          echo "</ul></body></html>" >> Comparison/index.html
+
+      - name: Remove validator_cli.jar before commit
+        run: |
+          echo "🧹 Removing validator_cli.jar before committing..."
+          rm -f validator_cli.jar
 
       - name: Commit results
         run: |
