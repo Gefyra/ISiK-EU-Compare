@@ -1,8 +1,8 @@
 name: Validate Profiles
 
 on:
-  push:
-    branches: [ "main" ]
+#  push:
+#    branches: [ "main" ]
   
   workflow_dispatch:
 
@@ -127,7 +127,7 @@ jobs:
           git diff --cached --quiet || git commit -m "chore: update validation results [automated]"
           git push
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          publish_dir: ./Comparison
+          folder: 'Comparison'
