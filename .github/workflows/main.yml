@@ -80,38 +80,38 @@ jobs:
 #            fi
 #          done
       
-      - name: Run compare
-        run: |
-          profiles=$(yq '.profiles | length' "$CONFIG_PATH")
-          for i in $(seq 0 $((profiles - 1))); do
-            dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
-            leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-            rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-            leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
-            rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH" | tr -d '"')
-
-            echo "Preparing destination folder: $dest"
-            rm -rf "$dest"
-            mkdir -p "$dest"
-
-            echo "Running validation for entry $i"
-            echo "Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
-            JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile
-          done
-
-#      - name: Generate central index.html
+#      - name: Run compare
 #        run: |
-#          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" >> Comparison/index.html
-#          
-#          for d in Comparison/*/ ; do
-#            name=$(basename "$d")
-#            if [[ -f "$d/index.html" ]]; then
-#              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
-#            fi
+#          profiles=$(yq '.profiles | length' "$CONFIG_PATH")
+#          for i in $(seq 0 $((profiles - 1))); do
+#            dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
+#            leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
+#            rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
+#            leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
+#            rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH" | tr -d '"')
+#
+#            echo "Preparing destination folder: $dest"
+#            rm -rf "$dest"
+#            mkdir -p "$dest"
+#
+#            echo "Running validation for entry $i"
+#            echo "Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
+#            JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
+#            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right #$rightProfile
 #          done
-#          
-#          echo "</ul></body></html>" >> Comparison/index.html
+
+      - name: Generate central index.html
+        run: |
+          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" >> Comparison/index.html
+          
+          for d in Comparison/*/ ; do
+            name=$(basename "$d")
+            if [[ -f "$d/index.html" ]]; then
+              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
+            fi
+          done
+          
+          echo "</ul></body></html>" >> Comparison/index.html
 
       - name: Remove validator_cli.jar before commit
         run: |
@@ -128,6 +128,6 @@ jobs:
           git push
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: 'Comparison'
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            folder: 'Comparison'
