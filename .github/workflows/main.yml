@@ -32,13 +32,13 @@ jobs:
 
       - name: Run validations
         run: |
-          profiles=$(yq '.profiles | length' ComparisonConfig.yml)
+          profiles=$(yq '.profiles | length' .github/config/ComparisonConfig.yml)
           for i in $(seq 0 $((profiles - 1))); do
-            dest=$(yq ".profiles[$i].dest" ComparisonConfig.yml)
-            leftIg=$(yq ".profiles[$i].leftIg" ComparisonConfig.yml)
-            rightIg=$(yq ".profiles[$i].rightIg" ComparisonConfig.yml)
-            leftProfile=$(yq ".profiles[$i].leftProfile" ComparisonConfig.yml)
-            rightProfile=$(yq ".profiles[$i].rightProfile" ComparisonConfig.yml)
+            dest=$(yq ".profiles[$i].dest" .github/config/ComparisonConfig.yml)
+            leftIg=$(yq ".profiles[$i].leftIg" .github/config/ComparisonConfig.yml)
+            rightIg=$(yq ".profiles[$i].rightIg" .github/config/ComparisonConfig.yml)
+            leftProfile=$(yq ".profiles[$i].leftProfile" .github/config/ComparisonConfig.yml)
+            rightProfile=$(yq ".profiles[$i].rightProfile" .github/config/ComparisonConfig.yml)
 
             echo "Preparing destination folder: $dest"
             rm -rf "$dest"
@@ -47,6 +47,19 @@ jobs:
             echo "Running validation for entry $i"
             java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig "$leftIg" -ig "$rightIg" -left "$leftProfile" -right "$rightProfile"
           done
+
+        - name: Generate central index.html
+          run: |
+            echo "<html><head><title>Vergleichsübersicht</title></head><body><h1>Vergleichsergebnisse</h1><ul>" > Comparison/index.html
+            
+            for d in Comparison/*/ ; do
+              name=$(basename "$d")
+              if [[ -f "$d/index.html" ]]; then
+                echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
+              fi
+            done
+
+            echo "</ul></body></html>" >> Comparison/index.html
 
       - name: Commit results
         run: |
