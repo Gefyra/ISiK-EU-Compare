@@ -10,6 +10,9 @@ jobs:
   validate:
     runs-on: ubuntu-latest
 
+    env:
+      CONFIG_PATH: .github/config/ComparisonConfig.yml
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -30,15 +33,23 @@ jobs:
         run: |
           curl -L -o validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/download/6.5.21/validator_cli.jar
       
+      - name: Parse and preload FHIR packages
+        run: |
+          packages=$(yq '.profiles[] | .leftIg, .rightIg' "$CONFIG_PATH" | sort -u)
+          for pkg in $packages; do
+            echo "Preloading package: $pkg"
+            fhir add "$pkg"
+          done
+      
       - name: Run validations
         run: |
-          profiles=$(yq '.profiles | length' .github/config/ComparisonConfig.yml)
+          profiles=$(yq '.profiles | length' "$CONFIG_PATH")
           for i in $(seq 0 $((profiles - 1))); do
-            dest=$(yq ".profiles[$i].dest" .github/config/ComparisonConfig.yml)
-            leftIg=$(yq ".profiles[$i].leftIg" .github/config/ComparisonConfig.yml)
-            rightIg=$(yq ".profiles[$i].rightIg" .github/config/ComparisonConfig.yml)
-            leftProfile=$(yq ".profiles[$i].leftProfile" .github/config/ComparisonConfig.yml)
-            rightProfile=$(yq ".profiles[$i].rightProfile" .github/config/ComparisonConfig.yml)
+            dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH")
+            leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH")
+            rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH")
+            leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH")
+            rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH")
 
             echo "Preparing destination folder: $dest"
             rm -rf "$dest"
