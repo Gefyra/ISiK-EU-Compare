@@ -1,0 +1,1 @@
+java -jar "c:\Users\schoe\.vscode\extensions\yannick-lagger.vscode-fhir-tools-1.5.1\validator_cli.jar" -compare -dest ig_comparison -version 4.0 -ig hl7.fhir.eu.hdr#0.0.1-ci -ig de.gematik.isik#5.0.0-rc -left https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminKontaktMitGesundheitseinrichtung -right http://hl7.eu/fhir/hdr/StructureDefinition/encounter-eu-hdr
