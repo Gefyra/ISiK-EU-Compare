@@ -41,7 +41,7 @@ jobs:
           packages=$(yq '.profiles[] | .leftIg, .rightIg' "$CONFIG_PATH" | sort -u)
           for pkg in $packages; do
             echo "Preloading package: $pkg"
-            fhir install "$pkg"
+            fhir install $pkg
           done
       
       - name: Run validations
