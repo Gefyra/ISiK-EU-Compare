@@ -96,6 +96,7 @@ jobs:
 
             echo "Running validation for entry $i"
             echo "Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
+            JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
             java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile
           done
 
