@@ -95,7 +95,8 @@ jobs:
             mkdir -p "$dest"
 
             echo "Running validation for entry $i"
-            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig "$leftIg" -ig "$rightIg" -left "$leftProfile" -right "$rightProfile"
+            echo "Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
+            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile
           done
 
 #      - name: Generate central index.html
