@@ -1,0 +1,57 @@
+name: Validate Profiles
+
+on:
+  push:
+    branches:
+      '*'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          check-latest: true
+
+      - name: Install yq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yq
+
+      - name: Download validator_cli.jar
+        run: |
+          curl -L -o validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/download/6.5.21/validator_cli.jar
+
+      - name: Run validations
+        run: |
+          profiles=$(yq '.profiles | length' ComparisonConfig.yml)
+          for i in $(seq 0 $((profiles - 1))); do
+            dest=$(yq ".profiles[$i].dest" ComparisonConfig.yml)
+            leftIg=$(yq ".profiles[$i].leftIg" ComparisonConfig.yml)
+            rightIg=$(yq ".profiles[$i].rightIg" ComparisonConfig.yml)
+            leftProfile=$(yq ".profiles[$i].leftProfile" ComparisonConfig.yml)
+            rightProfile=$(yq ".profiles[$i].rightProfile" ComparisonConfig.yml)
+
+            echo "Preparing destination folder: $dest"
+            rm -rf "$dest"
+            mkdir -p "$dest"
+
+            echo "Running validation for entry $i"
+            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig "$leftIg" -ig "$rightIg" -left "$leftProfile" -right "$rightProfile"
+          done
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add .
+          git diff --cached --quiet || git commit -m "chore: update validation results [automated]"
+          git push
