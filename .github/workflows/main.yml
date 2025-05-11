@@ -40,7 +40,7 @@ jobs:
         run: |
           yq '.profiles[] | .leftIg, .rightIg' "$CONFIG_PATH" | tr -d '"' | sort -u | while read pkg; do
             echo "Preloading package: $pkg"
-            fhir install "$pkg"
+            fhir install "$pkg" --no-dependencies
           done
       
       - name: Run validations
@@ -48,8 +48,8 @@ jobs:
           profiles=$(yq '.profiles | length' "$CONFIG_PATH")
           for i in $(seq 0 $((profiles - 1))); do
             dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH")
-            leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH")
-            rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH")
+            leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
+            rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
             leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH")
             rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH")
 
