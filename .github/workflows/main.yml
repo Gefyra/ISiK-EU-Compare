@@ -1,8 +1,8 @@
 name: Validate Profiles
 
 on:
-#  push:
-#    branches: [ "main" ]
+  push:
+    branches: [ "main" ]
   
   workflow_dispatch:
 
@@ -128,6 +128,6 @@ jobs:
           git push
 
       - name: Deploy 🚀
-          uses: JamesIves/github-pages-deploy-action@v4
-          with:
-            folder: 'Comparison'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: 'Comparison'
