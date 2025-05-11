@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0a25cf07-65a6-48ab-bba7-edbe9e8c0562-15",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0a25cf07-65a6-48ab-bba7-edbe9e8c0562-15",
+  "name" : "IntersectionActPriorityAndAdmissionUrgencyHdrVS",
+  "title" : "Intersection of ActPriority And Admission Urgency Value Set",
+  "status" : "active",
+  "date" : "2025-05-11T14:31:35+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "EL",
+        "display" : "elective"
+      },
+      {
+        "code" : "EM",
+        "display" : "emergency"
+      },
+      {
+        "code" : "R",
+        "display" : "routine"
+      },
+      {
+        "code" : "UR",
+        "display" : "urgent"
+      }]
+    }]
+  }
+}

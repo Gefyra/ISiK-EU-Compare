@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0a25cf07-65a6-48ab-bba7-edbe9e8c0562-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0a25cf07-65a6-48ab-bba7-edbe9e8c0562-9",
+  "name" : "IntersectionEncounterClassDEAndEncounterClassHdrVS",
+  "title" : "Intersection of EncounterClassDE And Encounter Class Value Set",
+  "status" : "active",
+  "date" : "2025-05-11T14:31:35+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "IMP",
+        "display" : "inpatient encounter"
+      },
+      {
+        "code" : "SS",
+        "display" : "short stay"
+      }]
+    }]
+  }
+}

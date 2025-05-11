@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0a25cf07-65a6-48ab-bba7-edbe9e8c0562-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0a25cf07-65a6-48ab-bba7-edbe9e8c0562-5",
+  "name" : "UnionEncounterStatusDeAndEncounterStatusHdrVS",
+  "title" : "Union of Encounter Status ValueSet And In-patient Encounter Type Value Set",
+  "status" : "active",
+  "date" : "2025-05-11T14:31:35+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "planned",
+        "display" : "Planned"
+      },
+      {
+        "code" : "in-progress",
+        "display" : "In Progress"
+      },
+      {
+        "code" : "onleave",
+        "display" : "On Leave"
+      },
+      {
+        "code" : "finished",
+        "display" : "Finished"
+      },
+      {
+        "code" : "cancelled",
+        "display" : "Cancelled"
+      },
+      {
+        "code" : "entered-in-error",
+        "display" : "Entered in Error"
+      },
+      {
+        "code" : "unknown",
+        "display" : "Unknown"
+      },
+      {
+        "code" : "triaged",
+        "display" : "Triaged"
+      }]
+    }]
+  }
+}
