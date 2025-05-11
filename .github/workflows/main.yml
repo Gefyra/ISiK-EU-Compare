@@ -80,7 +80,7 @@ jobs:
 #            fi
 #          done
       
-      - name: Run validations
+      - name: Run compare
         run: |
           profiles=$(yq '.profiles | length' "$CONFIG_PATH")
           for i in $(seq 0 $((profiles - 1))); do
@@ -98,18 +98,18 @@ jobs:
             java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig "$leftIg" -ig "$rightIg" -left "$leftProfile" -right "$rightProfile"
           done
 
-      - name: Generate central index.html
-        run: |
-          echo "<html><head><title>Vergleichsübersicht</title></head><body><h1>Vergleichsergebnisse</h1><ul>" > Comparison/index.html
-          
-          for d in Comparison/*/ ; do
-            name=$(basename "$d")
-            if [[ -f "$d/index.html" ]]; then
-              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
-            fi
-          done
-          
-          echo "</ul></body></html>" >> Comparison/index.html
+#      - name: Generate central index.html
+#        run: |
+#          echo "<html><head><title>Vergleichsübersicht</title></head><body><h1>Vergleichsergebnisse</h1><ul>" > Comparison/#index.html
+#          
+#          for d in Comparison/*/ ; do
+#            name=$(basename "$d")
+#            if [[ -f "$d/index.html" ]]; then
+#              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
+#            fi
+#          done
+#          
+#          echo "</ul></body></html>" >> Comparison/index.html
 
       - name: Commit results
         run: |
