@@ -84,7 +84,7 @@ jobs:
         run: |
           profiles=$(yq '.profiles | length' "$CONFIG_PATH")
           for i in $(seq 0 $((profiles - 1))); do
-            dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH")
+            dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
             leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
             rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
             leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
