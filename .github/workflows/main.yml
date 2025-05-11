@@ -33,6 +33,9 @@ jobs:
         run: |
           curl -L -o validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/download/6.5.21/validator_cli.jar
       
+      - name: Install Firely Terminal
+        run: dotnet tool install --global firely.terminal
+
       - name: Parse and preload FHIR packages
         run: |
           packages=$(yq '.profiles[] | .leftIg, .rightIg' "$CONFIG_PATH" | sort -u)
