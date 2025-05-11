@@ -16,7 +16,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+      
+      - name: Install Firely Terminal
+        run: dotnet tool install --global firely.terminal
+      
       - name: Install unpublished packages
         run: |
           if [ -d "UnpublishedPackages" ]; then
@@ -45,9 +48,6 @@ jobs:
       - name: Download validator_cli.jar
         run: |
           curl -L -o validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/download/6.5.21/validator_cli.jar
-      
-      - name: Install Firely Terminal
-        run: dotnet tool install --global firely.terminal
 
       - name: Parse and preload FHIR packages
         run: |
