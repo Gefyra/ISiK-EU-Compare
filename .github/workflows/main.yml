@@ -38,10 +38,9 @@ jobs:
 
       - name: Parse and preload FHIR packages
         run: |
-          packages=$(yq '.profiles[] | .leftIg, .rightIg' "$CONFIG_PATH" | sort -u)
-          for pkg in $packages; do
+          yq '.profiles[] | .leftIg, .rightIg' "$CONFIG_PATH" | tr -d '"' | sort -u | while read pkg; do
             echo "Preloading package: $pkg"
-            fhir install $pkg
+            fhir install "$pkg"
           done
       
       - name: Run validations
