@@ -99,18 +99,18 @@ jobs:
             java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile
           done
 
-#      - name: Generate central index.html
-#        run: |
-#          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" > Comparison/#index.html
-#          
-#          for d in Comparison/*/ ; do
-#            name=$(basename "$d")
-#            if [[ -f "$d/index.html" ]]; then
-#              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
-#            fi
-#          done
-#          
-#          echo "</ul></body></html>" >> Comparison/index.html
+      - name: Generate central index.html
+        run: |
+          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" > Comparison/#index.html
+          
+          for d in Comparison/*/ ; do
+            name=$(basename "$d")
+            if [[ -f "$d/index.html" ]]; then
+              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
+            fi
+          done
+          
+          echo "</ul></body></html>" >> Comparison/index.html
 
       - name: Remove validator_cli.jar before commit
         run: |

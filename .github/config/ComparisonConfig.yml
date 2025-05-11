@@ -1,6 +1,6 @@
 profiles:
   - dest: Comparison/Encounter
     leftIg: de.gematik.isik@5.0.0-rc
-    rightIg: hl7.fhir.eu.hdr.r4@0.0.1-ci
+    rightIg: hl7.fhir.eu.hdr@0.0.1-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung
     rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/encounter-eu-hdr
