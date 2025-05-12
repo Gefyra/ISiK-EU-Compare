@@ -168,10 +168,9 @@ jobs:
 
           for d in Comparison/*/ ; do
             name=$(basename "$d")
-            if [[ "$name" == "ComparisonErrors" ]]; then continue; fi
             if [[ -f "$d/index.html" ]]; then
               echo "<li><a href=\"$name/index.html\">$name</a></li>" >> "$INDEX_PATH"
-            elif [[ -f "$ERROR_DIR/${name}.log" ]]; then
+            elif [[ -f "$d/compare.log" ]]; then
               echo "<li><strong>$name</strong>: ❌ Failed – <a href=\"ComparisonErrors/${name}.log\">View error log</a></li>" >> "$INDEX_PATH"
             else
               echo "<li><strong>$name</strong>: ⚠️ No result found</li>" >> "$INDEX_PATH"
