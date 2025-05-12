@@ -1,22 +1,101 @@
-name: 🔬 Compare & 🚀 Publish Profiles
+name: 🔬 Compare & 🚀 Publish Profiles (Parallel)
 
 on:
-#  push:
-#    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
-  validate:
+  prepare-matrix:
+    name: 📄 Prepare comparison matrix
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v3
 
-    env:
-      VALIDATOR_DOWNLOAD_URL: http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar #org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
-      CONFIG_PATH: .github/config/ComparisonConfig.yml
-      ERROR_PATH: Comparison/ComparisonErrors
+      - name: 🔧 Install yq and jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yq jq curl
+
+      - name: ☕ Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: 📅 Set current date for cache
+        run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: 🔄 Restore cache for validator_cli.jar
+        uses: actions/cache@v3
+        with:
+          path: tmp/validator_cli.jar
+          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+          restore-keys: |
+            ${{ runner.os }}-validator-cli-
+
+      - name: 😇 Download validator_cli.jar (if not cached)
+        run: |
+          mkdir -p tmp
+          if [ ! -f tmp/validator_cli.jar ]; then
+            echo "Cache miss – downloading"
+            curl -L -o tmp/validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
+          else
+            echo "✅ Using cached version"
+          fi
+
+      - name: 💾 Save cache for validator_cli.jar
+        uses: actions/cache@v3
+        with:
+          path: tmp/validator_cli.jar
+          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+
+      - name: ⚖️ Read ComparisonConfig.yml
+        id: set-matrix
+        run: |
+          CONFIG_PATH=.github/config/ComparisonConfig.yml
+          json=$(yq '.profiles' "$CONFIG_PATH" | jq -c .)
+          echo "matrix=$json" >> "$GITHUB_OUTPUT"
+
+  compare:
+    name: 🔬 Compare ${{ matrix.profile.dest }}
+    runs-on: ubuntu-latest
+    needs: prepare-matrix
+    strategy:
+      matrix:
+        profile: ${{ fromJson(needs.prepare-matrix.outputs.matrix) }}
+      max-parallel: 4
 
     steps:
-      - name: 🧾 Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+
+      #- name: 🔧 Set up tools
+      #  run: |
+      #    sudo apt-get update -y -o Acquire::Retries=3 -o Acquire::http::Timeout=30
+      #    sudo apt-get install -y --no-install-recommends yq curl
+
+      - name: 🔧 Set up tools (fast)
+        run: |
+          YQ_VERSION=v4.40.5
+          curl -L "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64" -o /usr/local/bin/yq
+          chmod +x /usr/local/bin/yq
+
+      - name: 🚫 Ensure paths exists
+        run: mkdir -p tmp
+
+      - name: ☕ Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: 🔄 Restore cache for validator_cli.jar
+        uses: actions/cache@v3
+        with:
+          path: tmp/validator_cli.jar
+          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+          restore-keys: |
+            ${{ runner.os }}-validator-cli-
 
       - name: 📦 Copy manually unpacked packages into Firely cache
         run: |
@@ -36,103 +115,68 @@ jobs:
           else
             echo "ℹ️ No PackagesForCache directory found – skipping"
           fi
+              
+      - name: 🔧 Set artifact name
+        id: vars
+        run: echo "artifact_name=$(basename ${{ matrix.profile.dest }})" >> $GITHUB_OUTPUT
 
-      - name: ☕ Set up Java
-        uses: actions/setup-java@v3
+      - name: 🔬 Run comparison
+        run: |
+          dest=${{ matrix.profile.dest }}
+          name=$(basename $dest)
+          leftIg=$(echo ${{ matrix.profile.leftIg }} | sed 's/@/#/')
+          rightIg=$(echo ${{ matrix.profile.rightIg }} | sed 's/@/#/')
+          leftProfile=${{ matrix.profile.leftProfile }}
+          rightProfile=${{ matrix.profile.rightProfile }}
+
+          mkdir -p $dest
+          echo "🔬 Comparing $name"
+
+          if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
+            java -jar tmp/validator_cli.jar -compare -dest $dest -version 4.0 \
+            -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > $dest/compare.log 2>&1; then
+            echo "✅ $name comparison succeeded"
+          else
+            echo "❌ $name comparison failed"
+          fi
+
+      - name: 📤 Upload comparison result
+        uses: actions/upload-artifact@v4
         with:
-          distribution: 'temurin'
-          java-version: '21'
-          check-latest: true
+          name: ${{ steps.vars.outputs.artifact_name }}
+          path: ${{ matrix.profile.dest }}
+          retention-days: 1
 
-      - name: 🧰 Install yq
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y yq
+  post-process:
+    name: 🪩 Generate Index & Deploy
+    runs-on: ubuntu-latest
+    needs: compare
 
-      - name: ⬇️ Download validator_cli.jar
-        run: |
-          curl -L -o validator_cli.jar $VALIDATOR_DOWNLOAD_URL
+    steps:
+      - uses: actions/checkout@v3
 
-      - name: 🔬 Run compare
-        run: |
-          profiles=$(yq '.profiles | length' "$CONFIG_PATH")
-          echo "| Profile | Status |" > compare_results.md
-          echo "|---------|--------|" >> compare_results.md
-          mkdir -p $ERROR_PATH
+      - name: 📥 Download all comparison results
+        uses: actions/download-artifact@v4
+        with:
+          path: Comparison
 
-          for i in $(seq 0 $((profiles - 1))); do
-            dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
-            name=$(basename "$dest")
-            leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-            rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-            leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
-            rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH" | tr -d '"')
-
-            echo "📁 Preparing destination folder: $dest"
-            rm -rf "$dest"
-            mkdir -p "$dest"
-
-            echo "🧪 Running validation for $name"
-            if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-              java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 \
-              -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > "$dest/compare.log" 2>&1; then
-              echo "| $name | ✅ Success |" >> compare_results.md
-            else
-              echo "| $name | ❌ Failed |" >> compare_results.md
-              cp "$dest/compare.log" "$ERROR_PATH/${name}.log"
-            fi
-          done
-
-          echo ""
-          echo "::group::🔬 Vergleichsergebnisse"
-          cat compare_results.md
-          echo "::endgroup::"
-
-
-      - name: 🔗 Add home link to all pages
-        run: |
-          find . -type f -name "*.html" | while read -r file; do
-            if ! grep -q 'https://gefyra.github.io/ISiK-EU-Compare' "$file"; then
-              sed -i '/<body[^>]*>/a\
-              <div style="padding: 1em; background: #f2f2f2; border-bottom: 1px solid #ccc;">\
-                <a href="https://gefyra.github.io/ISiK-EU-Compare">Home</a>\
-              </div>' "$file"
-            fi
-          done
-
-      - name: 🧭 Generate central index.html
+      - name: 👐 Generate central index.html
         run: |
           INDEX_PATH="Comparison/index.html"
-          ERROR_DIR="$ERROR_PATH"
-          mkdir -p "$ERROR_DIR"
           echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" > "$INDEX_PATH"
 
           for d in Comparison/*/ ; do
             name=$(basename "$d")
-            if [[ "$name" == "ComparisonErrors" ]]; then continue; fi
             if [[ -f "$d/index.html" ]]; then
               echo "<li><a href=\"$name/index.html\">$name</a></li>" >> "$INDEX_PATH"
-            elif [[ -f "$ERROR_DIR/${name}.log" ]]; then
-              echo "<li><strong>$name</strong>: ❌ Failed – <a href=\"ComparisonErrors/${name}.log\">View error log</a></li>" >> "$INDEX_PATH"
+            elif [[ -f "$d/compare.log" ]]; then
+              echo "<li><strong>$name</strong>: ❌ Failed – <a href=\"$name/compare.log\">View error log</a></li>" >> "$INDEX_PATH"
             else
               echo "<li><strong>$name</strong>: ⚠️ No result found</li>" >> "$INDEX_PATH"
             fi
           done
 
           echo "</ul></body></html>" >> "$INDEX_PATH"
-
-      - name: 🧹 Remove validator_cli.jar before commit
-        run: |
-          echo "🗑️ Removing validator_cli.jar before committing..."
-          rm -f validator_cli.jar
-
-      - name: 💾 Commit results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git diff --cached --quiet || git commit -m "chore: update validation results [automated]"
-          git push
 
       - name: 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
