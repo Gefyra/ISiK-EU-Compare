@@ -28,10 +28,10 @@ jobs:
 
       - name: 😇 Download validator_cli.jar (if not cached)
         run: |
-          mkdir -p downloads
-          if [ ! -f downloads/validator_cli.jar ]; then
+          mkdir -p tmp
+          if [ ! -f tmp/validator_cli.jar ]; then
             echo "Cache miss – downloading"
-            curl -L -o downloads/validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
+            curl -L -o tmp/validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
           else
             echo "✅ Using cached version"
           fi
@@ -39,7 +39,7 @@ jobs:
       - name: 💾 Save cache for validator_cli.jar
         uses: actions/cache@v3
         with:
-          path: downloads/validator_cli.jar
+          path: tmp/validator_cli.jar
           key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
 
       - name: ⚖️ Read ComparisonConfig.yml
@@ -69,8 +69,10 @@ jobs:
           sudo apt-get update -y -o Acquire::Retries=3 -o Acquire::http::Timeout=30
           sudo apt-get install -y --no-install-recommends yq curl
 
-      - name: 🚫 Ensure error path exists
-        run: mkdir -p $ERROR_PATH
+      - name: 🚫 Ensure paths exists
+        run: |
+          mkdir -p $ERROR_PATH
+          mkdir -p tmp
 
       - name: ☕ Set up Java
         uses: actions/setup-java@v3
