@@ -1,0 +1,72 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "ImplementationGuide-hl7.fhir.eu.extensions.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "hl7.fhir.eu.extensions",
+      "url" : "http://hl7.eu/fhir/extensions/ImplementationGuide/hl7.fhir.eu.extensions",
+      "version" : "0.1.1-ballot"
+    },
+    {
+      "filename" : "StructureDefinition-composition-basedOn-order-or-requisition.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "composition-basedOn-order-or-requisition",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition",
+      "version" : "0.1.1-ballot",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-consent-relatedCondition.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "consent-relatedCondition",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/consent-relatedCondition",
+      "version" : "0.1.1-ballot",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-encounter-legalStatus.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "encounter-legalStatus",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/encounter-legalStatus",
+      "version" : "0.1.1-ballot",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-information-recipient.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "information-recipient",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/information-recipient",
+      "version" : "0.1.1-ballot",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-medication-package-type.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "medication-package-type",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/medication-package-type",
+      "version" : "0.1.1-ballot",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-presentedForm.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "presentedForm",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/presentedForm",
+      "version" : "0.1.1-ballot",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    }
+  ]
+}
