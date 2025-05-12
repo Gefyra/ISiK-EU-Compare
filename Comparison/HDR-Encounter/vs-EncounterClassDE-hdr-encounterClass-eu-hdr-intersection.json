@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "57d566dd-8bfe-4aa3-89c4-91e8af004e35-9",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/57d566dd-8bfe-4aa3-89c4-91e8af004e35-9",
+  "id" : "1a686113-7a82-4492-836d-d4f9cf928080-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/1a686113-7a82-4492-836d-d4f9cf928080-9",
   "name" : "IntersectionEncounterClassDEAndEncounterClassHdrVS",
   "title" : "Intersection of EncounterClassDE And Encounter Class Value Set",
   "status" : "active",
-  "date" : "2025-05-12T10:29:26+00:00",
+  "date" : "2025-05-12T11:47:07+00:00",
   "compose" : {
     "include" : [{
       "concept" : [{
