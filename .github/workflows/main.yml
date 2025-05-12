@@ -73,6 +73,17 @@ jobs:
             JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
             java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile
           done
+      
+      - name: Add home link to all pages
+        run: |
+          find . -type f -name "*.html" | while read -r file; do
+            if ! grep -q 'https://gefyra.github.io/ISiK-EU-Compare' "$file"; then
+              sed -i '/<body[^>]*>/a\
+              <div style="padding: 1em; background: #f2f2f2; border-bottom: 1px solid #ccc;">\
+                <a href="https://gefyra.github.io/ISiK-EU-Compare">Home</a>\
+              </div>' "$file"
+            fi
+          done
 
       - name: Generate central index.html
         run: |
