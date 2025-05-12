@@ -1,109 +1,101 @@
-name: 🔬 Compare & 🚀 Publish Profiles
+name: 🔬 Compare & 🚀 Publish Profiles (Parallel)
 
 on:
-#  push:
-#    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
-  validate:
+  prepare-matrix:
+    name: 📄 Prepare comparison matrix
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: 🔧 Install yq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yq
+
+      - name: ⚖️ Read ComparisonConfig.yml
+        id: set-matrix
+        run: |
+          CONFIG_PATH=.github/config/ComparisonConfig.yml
+          json=$(yq -o=json '.profiles' "$CONFIG_PATH")
+          echo "matrix=$json" >> "$GITHUB_OUTPUT"
+
+  compare:
+    name: 🔬 Compare ${{ matrix.profile.dest }}
+    runs-on: ubuntu-latest
+    needs: prepare-matrix
+    strategy:
+      matrix:
+        profile: ${{ fromJson(needs.prepare-matrix.outputs.matrix) }}
+      max-parallel: 4
 
     env:
-      VALIDATOR_DOWNLOAD_URL: http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar #org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
-      CONFIG_PATH: .github/config/ComparisonConfig.yml
+      VALIDATOR_DOWNLOAD_URL: http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
       ERROR_PATH: Comparison/ComparisonErrors
 
     steps:
-      - name: 🧾 Checkout repository
-        uses: actions/checkout@v3
-
-      - name: 📦 Copy manually unpacked packages into Firely cache
-        run: |
-          CACHE_DIR="$HOME/.fhir/packages"
-          if [ -d "PackagesForCache" ]; then
-            for pkgdir in PackagesForCache/*; do
-              if [ -d "$pkgdir/package" ]; then
-                pkg_id=$(basename "$pkgdir")
-                target_dir="$CACHE_DIR/$pkg_id"
-                echo "📂 Copying $pkgdir → $target_dir"
-                mkdir -p "$target_dir"
-                cp -r "$pkgdir/package" "$target_dir/"
-              else
-                echo "⚠️ Skipping $pkgdir – no 'package/' subfolder found"
-              fi
-            done
-          else
-            echo "ℹ️ No PackagesForCache directory found – skipping"
-          fi
+      - uses: actions/checkout@v3
 
       - name: ☕ Set up Java
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '21'
-          check-latest: true
 
-      - name: 🧰 Install yq
+      - name: 🔧 Set up tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yq curl
+
+      - name: 🚫 Ensure error path exists
+        run: mkdir -p $ERROR_PATH
+
+      - name: 😇 Download validator_cli.jar
+        run: |
+          curl -L -o validator_cli.jar $VALIDATOR_DOWNLOAD_URL
+
+      - name: 🔬 Run comparison
+        run: |
+          dest="${{ matrix.profile.dest }}"
+          name=$(basename "$dest")
+          leftIg="${{ matrix.profile.leftIg }}" | sed 's/@/#/'
+          rightIg="${{ matrix.profile.rightIg }}" | sed 's/@/#/'
+          leftProfile="${{ matrix.profile.leftProfile }}"
+          rightProfile="${{ matrix.profile.rightProfile }}"
+
+          mkdir -p "$dest"
+          echo "🔬 Comparing $name"
+
+          if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
+            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 \
+            -ig "$leftIg" -ig "$rightIg" -left "$leftProfile" -right "$rightProfile" > "$dest/compare.log" 2>&1; then
+            echo "✅ $name comparison succeeded"
+          else
+            echo "❌ $name comparison failed"
+            cp "$dest/compare.log" "$ERROR_PATH/${name}.log"
+          fi
+
+  post-process:
+    name: 🪩 Generate Index & Deploy
+    runs-on: ubuntu-latest
+    needs: compare
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: 🔧 Install yq
         run: |
           sudo apt-get update
           sudo apt-get install -y yq
 
-      - name: ⬇️ Download validator_cli.jar
-        run: |
-          curl -L -o validator_cli.jar $VALIDATOR_DOWNLOAD_URL
-
-      - name: 🔬 Run compare
-        run: |
-          profiles=$(yq '.profiles | length' "$CONFIG_PATH")
-          echo "| Profile | Status |" > compare_results.md
-          echo "|---------|--------|" >> compare_results.md
-          mkdir -p $ERROR_PATH
-
-          for i in $(seq 0 $((profiles - 1))); do
-            dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
-            name=$(basename "$dest")
-            leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-            rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-            leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
-            rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH" | tr -d '"')
-
-            echo "📁 Preparing destination folder: $dest"
-            rm -rf "$dest"
-            mkdir -p "$dest"
-
-            echo "🧪 Running validation for $name"
-            if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-              java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 \
-              -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > "$dest/compare.log" 2>&1; then
-              echo "| $name | ✅ Success |" >> compare_results.md
-            else
-              echo "| $name | ❌ Failed |" >> compare_results.md
-              cp "$dest/compare.log" "$ERROR_PATH/${name}.log"
-            fi
-          done
-
-          echo ""
-          echo "::group::🔬 Vergleichsergebnisse"
-          cat compare_results.md
-          echo "::endgroup::"
-
-
-      - name: 🔗 Add home link to all pages
-        run: |
-          find . -type f -name "*.html" | while read -r file; do
-            if ! grep -q 'https://gefyra.github.io/ISiK-EU-Compare' "$file"; then
-              sed -i '/<body[^>]*>/a\
-              <div style="padding: 1em; background: #f2f2f2; border-bottom: 1px solid #ccc;">\
-                <a href="https://gefyra.github.io/ISiK-EU-Compare">Home</a>\
-              </div>' "$file"
-            fi
-          done
-
-      - name: 🧭 Generate central index.html
+      - name: 👐 Generate central index.html
         run: |
           INDEX_PATH="Comparison/index.html"
-          ERROR_DIR="$ERROR_PATH"
+          ERROR_DIR="Comparison/ComparisonErrors"
           mkdir -p "$ERROR_DIR"
           echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" > "$INDEX_PATH"
 
@@ -120,19 +112,6 @@ jobs:
           done
 
           echo "</ul></body></html>" >> "$INDEX_PATH"
-
-      - name: 🧹 Remove validator_cli.jar before commit
-        run: |
-          echo "🗑️ Removing validator_cli.jar before committing..."
-          rm -f validator_cli.jar
-
-      - name: 💾 Commit results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git diff --cached --quiet || git commit -m "chore: update validation results [automated]"
-          git push
 
       - name: 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
