@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "6220992a-d73a-4d85-9d65-fde233410474-8",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/6220992a-d73a-4d85-9d65-fde233410474-8",
+  "id" : "d2fde6c4-eddf-4105-9e94-0ad42b69941b-8",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/d2fde6c4-eddf-4105-9e94-0ad42b69941b-8",
   "name" : "UnionSNOMEDCTRouteCodesAndMedicineRouteOfAdministrationUvIps",
   "title" : "Union of SNOMED CT Route Codes And Medicine Route of Administration - IPS",
   "status" : "draft",
-  "date" : "2025-05-11T15:45:32+00:00",
+  "date" : "2025-05-12T07:16:55+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
