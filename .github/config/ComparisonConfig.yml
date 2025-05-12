@@ -9,36 +9,36 @@ profiles:
     rightIg: hl7.fhir.eu.hdr.r4@0.0.1-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung
     rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/encounter-eu-hdr
-  - dest: Comparison/EPS-Patient
-    leftIg: de.gematik.isik@5.0.0-rc
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
-    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient
-    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/patient-eu-eps
-  - dest: Comparison/EPS-Condition
-    leftIg: de.gematik.isik@5.0.0-rc
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
-    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose
-    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/condition-eu-eps
-  - dest: Comparison/EPS-Procedure
-    leftIg: de.gematik.isik@5.0.0-rc
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
-    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedur
-    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/procedure-eu-hdr
-  - dest: Comparison/EPS-Medication
-    leftIg: de.gematik.isik@5.0.0-rc
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
-    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikament
-    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/Medication-eu-eps
-  - dest: Comparison/EPS-MedicationStatement
-    leftIg: de.gematik.isik@5.0.0-rc
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
-    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsInformation
-    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/MedicationStatement-eu-eps
-#  - dest: Comparison/Base-Location
+#  - dest: Comparison/EPS-Patient
 #    leftIg: de.gematik.isik@5.0.0-rc
-#    rightIg: hl7.fhir.eu.base.r4@0.0.1-ci
-#    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKStandort
-#    rightProfile: http://hl7.eu/fhir/base/StructureDefinition/location-eu
+#    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+#    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient
+#    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/patient-eu-eps
+#  - dest: Comparison/EPS-Condition
+#    leftIg: de.gematik.isik@5.0.0-rc
+#    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+#    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose
+#    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/condition-eu-eps
+#  - dest: Comparison/EPS-Procedure
+#    leftIg: de.gematik.isik@5.0.0-rc
+#    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+#    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedur
+#    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/procedure-eu-hdr
+#  - dest: Comparison/EPS-Medication
+#    leftIg: de.gematik.isik@5.0.0-rc
+#    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+#    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikament
+#    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/Medication-eu-eps
+#  - dest: Comparison/EPS-MedicationStatement
+#    leftIg: de.gematik.isik@5.0.0-rc
+#    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+#    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsInformation
+#    rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/MedicationStatement-eu-eps
+  - dest: Comparison/Base-Location
+    leftIg: de.gematik.isik@5.0.0-rc
+    rightIg: hl7.fhir.eu.base.r4@0.0.1-ci
+    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKStandort
+    rightProfile: http://hl7.eu/fhir/base/StructureDefinition/location-eu
 #  - dest: Comparison/Base-Organization
 #    leftIg: de.gematik.isik@5.0.0-rc
 #    rightIg: hl7.fhir.eu.base.r4@0.0.1-ci

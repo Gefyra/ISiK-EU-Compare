@@ -12,6 +12,7 @@ jobs:
     env:
       VALIDATOR_DOWNLOAD_URL: http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar #org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
       CONFIG_PATH: .github/config/ComparisonConfig.yml
+      ERROR_PATH: Comparison/ComparisonErrors
 
     steps:
       - name: 🧾 Checkout repository
@@ -55,8 +56,13 @@ jobs:
       - name: 🔬 Run compare
         run: |
           profiles=$(yq '.profiles | length' "$CONFIG_PATH")
+          echo "| Profile | Status |" > compare_results.md
+          echo "|---------|--------|" >> compare_results.md
+          mkdir -p $ERROR_PATH
+
           for i in $(seq 0 $((profiles - 1))); do
             dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
+            name=$(basename "$dest")
             leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
             rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
             leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
@@ -66,11 +72,22 @@ jobs:
             rm -rf "$dest"
             mkdir -p "$dest"
 
-            echo "🧪 Running validation for entry $i"
-            echo "🔧 Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
-            JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile
+            echo "🧪 Running validation for $name"
+            if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
+              java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 \
+              -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > "$dest/compare.log" 2>&1; then
+              echo "| $name | ✅ Success |" >> compare_results.md
+            else
+              echo "| $name | ❌ Failed |" >> compare_results.md
+              cp "$dest/compare.log" "$ERROR_PATH/${name}.log"
+            fi
           done
+
+          echo ""
+          echo "::group::🔬 Vergleichsergebnisse"
+          cat compare_results.md
+          echo "::endgroup::"
+
 
       - name: 🔗 Add home link to all pages
         run: |
@@ -85,15 +102,24 @@ jobs:
 
       - name: 🧭 Generate central index.html
         run: |
-          rm -f Comparison/index.html
-          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" >> Comparison/index.html
+          INDEX_PATH="Comparison/index.html"
+          ERROR_DIR="$ERROR_PATH"
+          mkdir -p "$ERROR_DIR"
+          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" > "$INDEX_PATH"
+
           for d in Comparison/*/ ; do
             name=$(basename "$d")
+            if [[ "$name" == "ComparisonErrors" ]]; then continue; fi
             if [[ -f "$d/index.html" ]]; then
-              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
+              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> "$INDEX_PATH"
+            elif [[ -f "$ERROR_DIR/${name}.log" ]]; then
+              echo "<li><strong>$name</strong>: ❌ Failed – <a href=\"ComparisonErrors/${name}.log\">View error log</a></li>" >> "$INDEX_PATH"
+            else
+              echo "<li><strong>$name</strong>: ⚠️ No result found</li>" >> "$INDEX_PATH"
             fi
           done
-          echo "</ul></body></html>" >> Comparison/index.html
+
+          echo "</ul></body></html>" >> "$INDEX_PATH"
 
       - name: 🧹 Remove validator_cli.jar before commit
         run: |
