@@ -12,10 +12,20 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: 🔧 Install yq
+      - name: 🔧 Install yq and jq
         run: |
           sudo apt-get update
-          sudo apt-get install -y yq jq
+          sudo apt-get install -y yq jq curl
+
+      - name: ☕ Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: 😇 Download validator_cli.jar
+        run: |
+          curl -L -o validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
 
       - name: ⚖️ Read ComparisonConfig.yml
         id: set-matrix
@@ -23,6 +33,12 @@ jobs:
           CONFIG_PATH=.github/config/ComparisonConfig.yml
           json=$(yq '.profiles' "$CONFIG_PATH" | jq -c .)
           echo "matrix=$json" >> "$GITHUB_OUTPUT"
+
+      - name: 📤 Upload validator_cli.jar for reuse
+        uses: actions/upload-artifact@v4
+        with:
+          name: validator
+          path: validator_cli.jar
 
   compare:
     name: 🔬 Compare ${{ matrix.profile.dest }}
@@ -34,17 +50,10 @@ jobs:
       max-parallel: 4
 
     env:
-      VALIDATOR_DOWNLOAD_URL: http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
       ERROR_PATH: Comparison/ComparisonErrors
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: ☕ Set up Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '21'
 
       - name: 🔧 Set up tools
         run: |
@@ -54,9 +63,16 @@ jobs:
       - name: 🚫 Ensure error path exists
         run: mkdir -p $ERROR_PATH
 
-      - name: 😇 Download validator_cli.jar
-        run: |
-          curl -L -o validator_cli.jar $VALIDATOR_DOWNLOAD_URL
+      - name: ☕ Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: 📥 Download validator_cli.jar
+        uses: actions/download-artifact@v4
+        with:
+          name: validator
 
       - name: 🔬 Run comparison
         run: |
@@ -86,11 +102,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: 🔧 Install yq
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y yq
 
       - name: 👐 Generate central index.html
         run: |
