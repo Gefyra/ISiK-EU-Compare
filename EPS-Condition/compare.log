@@ -1,1 +1,146 @@
-Error: Unable to access jarfile tmp/validator_cli.jar
+Picked up JAVA_TOOL_OPTIONS: -Djava.awt.headless=true
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/tmp/validator_cli.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+FHIR Validation tool Version 6.4.0 (Git# 2f8ab91c55ac). Built 2025-05-12T11:32:12.116+02:00 (154 mins old)
+  Java:   21.0.7 from /usr/lib/jvm/temurin-21-jdk-amd64 on amd64 (64bit). 3998MB available
+  Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
+  Params: -compare -dest Comparison/EPS-Condition -version 4.0 -ig de.gematik.isik#5.0.0-rc -ig hl7.fhir.eu.eps.r4#0.0.1-ci -left https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose -right http://hl7.eu/fhir/eps/StructureDefinition/condition-eu-eps
+  Locale: /
+  Jurisdiction: None specified (locale = )
+  Note that exceptions and validation failures may happen in the absense of a locale
+Loading
+  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1Installing hl7.fhir.r4.core#4.0.1 to the package cache
+  Fetching:
+
+Installing hl7.fhir.r4.core#4.0.1
+ done.
+Installing hl7.fhir.xver-extensions#0.1.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.xver-extensions#0.1.0
+ done.
+ - 4576 resources (00:21.730)
+Installing hl7.terminology#6.3.0 to the package cache
+  Fetching:
+
+Installing hl7.terminology#6.3.0
+ done.
+Installing hl7.fhir.uv.extensions.r5#5.2.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.extensions.r5#5.2.0
+ done.
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:03.567)
+  Load hl7.terminology#6.3.0 - 4338 resources (00:01.310)
+Installing hl7.fhir.uv.extensions#5.2.0-ballot to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.extensions#5.2.0-ballot
+ done.
+Installing hl7.terminology.r5#6.0.2 to the package cache
+  Fetching:
+
+Installing hl7.terminology.r5#6.0.2
+ done.
+  Load hl7.terminology.r5#6.0.2 - 4243 resources (00:01.360)
+  Load hl7.fhir.uv.extensions#5.2.0-ballot - 702 resources (00:00.650)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.547)
+Installing de.gematik.isik#5.0.0-rc to the package cache
+  Fetching:
+
+Installing de.gematik.isik#5.0.0-rc
+ done.
+Installing hl7.fhir.uv.subscriptions-backport.r4#1.1.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.subscriptions-backport.r4#1.1.0
+ done.
+Installing hl7.terminology.r4#5.0.0 to the package cache
+  Fetching:
+
+Installing hl7.terminology.r4#5.0.0
+ done.
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:08.891)
+  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.036)
+Installing de.basisprofil.r4#1.5.3 to the package cache
+  Fetching:
+
+Installing de.basisprofil.r4#1.5.3
+ done.
+  Load de.basisprofil.r4#1.5.3 - 185 resources (00:00.850)
+Installing ihe.iti.mhd#4.2.2 to the package cache
+  Fetching:
+
+Installing ihe.iti.mhd#4.2.2
+ done.
+Installing hl7.terminology.r4#5.5.0 to the package cache
+  Fetching:
+
+Installing hl7.terminology.r4#5.5.0
+ done.
+  Load hl7.terminology.r4#5.5.0 - 4224 resources (00:02.787)
+Installing hl7.fhir.uv.extensions.r4#5.1.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.extensions.r4#5.1.0
+ done.
+  Load hl7.fhir.uv.extensions.r4#5.1.0 - 1396 resources (00:01.680)
+Installing ihe.iti.balp#1.1.x to the package cache
+  Fetching:
+
+Installing ihe.iti.balp#1.1.3
+ done.
+Installing hl7.terminology.r4#5.3.0 to the package cache
+  Fetching:
+
+Installing hl7.terminology.r4#5.3.0
+ done.
+  Load hl7.terminology.r4#5.3.0 - 4201 resources (00:02.500)
+Installing hl7.fhir.uv.extensions.r4#1.0.0 to the package cache
+  Fetching:
+
+Installing hl7.fhir.uv.extensions.r4#1.0.0
+ done.
+  Load hl7.fhir.uv.extensions.r4#1.0.0 - 1328 resources (00:01.057)
+  Load ihe.iti.balp#1.1.x - 37 resources (00:00.263)
+Installing ihe.formatcode.fhir#1.2.x to the package cache
+  Fetching:
+
+Installing ihe.formatcode.fhir#1.2.0
+ done.
+  Load ihe.formatcode.fhir#1.2.x - 2 resources (00:00.221)
+  Load ihe.iti.mhd#4.2.2 - 64 resources (00:00.240)
+Installing de.ihe-d.terminology#3.0.1 to the package cache
+  Fetching:
+
+Installing de.ihe-d.terminology#3.0.1
+ done.
+  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.166)
+Installing dvmd.kdl.r4#2025.0.0 to the package cache
+  Fetching:
+
+Installing dvmd.kdl.r4#2025.0.0
+ done.
+  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.128)
+  Load de.gematik.isik#5.0.0-rc - 238 resources (00:00.117)
+Installing hl7.fhir.eu.eps.r4#0.0.1-ci to the package cache
+  Fetching:
+Error fetching https://packages.fhir.org/hl7.fhir.eu.eps.r4: Not Found
+Exception in thread "main" org.hl7.fhir.exceptions.FHIRException: Unable to resolve package id hl7.fhir.eu.eps.r4#0.0.1-ci
+	at org.hl7.fhir.utilities.npm.FilesystemPackageCacheManager.fetchTheOldWay(FilesystemPackageCacheManager.java:917)
+	at org.hl7.fhir.utilities.npm.FilesystemPackageCacheManager.loadFromPackageServer(FilesystemPackageCacheManager.java:369)
+	at org.hl7.fhir.utilities.npm.FilesystemPackageCacheManager.loadPackage(FilesystemPackageCacheManager.java:718)
+	at org.hl7.fhir.validation.IgLoader.loadIg(IgLoader.java:120)
+	at org.hl7.fhir.validation.cli.services.ValidationService.loadIgsAndExtensions(ValidationService.java:643)
+	at org.hl7.fhir.validation.cli.services.ValidationService.buildValidationEngine(ValidationService.java:560)
+	at org.hl7.fhir.validation.cli.services.ValidationService.getValidationEngineFromCliContext(ValidationService.java:544)
+	at org.hl7.fhir.validation.cli.services.ValidationService.initializeValidator(ValidationService.java:526)
+	at org.hl7.fhir.validation.cli.services.ValidationService.initializeValidator(ValidationService.java:509)
+	at org.hl7.fhir.validation.ValidatorCli.getValidationEngine(ValidatorCli.java:411)
+	at org.hl7.fhir.validation.ValidatorCli.readParamsAndExecuteTask(ValidatorCli.java:373)
+	at org.hl7.fhir.validation.ValidatorCli.readParamsAndExecuteTask(ValidatorCli.java:172)
+	at org.hl7.fhir.validation.ValidatorCli.main(ValidatorCli.java:207)
