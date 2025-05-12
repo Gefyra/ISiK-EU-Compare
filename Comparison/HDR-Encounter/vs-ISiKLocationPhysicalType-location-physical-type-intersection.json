@@ -1,9 +1,9 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "58404957-9f3d-434b-b15b-84c37204c1f3-24",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/58404957-9f3d-434b-b15b-84c37204c1f3-24",
+  "id" : "99626e48-7d65-433f-98f9-ac7a7978977d-24",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/99626e48-7d65-433f-98f9-ac7a7978977d-24",
   "name" : "IntersectionISiKLocationPhysicalTypeAndLocationType",
   "title" : "Intersection of null And Location type",
   "status" : "active",
-  "date" : "2025-05-12T11:54:56+00:00"
+  "date" : "2025-05-12T11:59:51+00:00"
 }
