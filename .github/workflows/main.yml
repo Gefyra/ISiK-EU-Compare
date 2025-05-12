@@ -54,25 +54,25 @@ jobs:
         run: |
           curl -L -o validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
       
-      - name: Run compare
-        run: |
-          profiles=$(yq '.profiles | length' "$CONFIG_PATH")
-          for i in $(seq 0 $((profiles - 1))); do
-            dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
-            leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-            rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-            leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
-            rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH" | tr -d '"')
-
-            echo "Preparing destination folder: $dest"
-            rm -rf "$dest"
-            mkdir -p "$dest"
-
-            echo "Running validation for entry $i"
-            echo "Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
-            JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile
-          done
+      #- name: Run compare
+      #  run: |
+      #    profiles=$(yq '.profiles | length' "$CONFIG_PATH")
+      #    for i in $(seq 0 $((profiles - 1))); do
+      #      dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
+      #      leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
+      #      rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
+      #      leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
+      #      rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH" | tr -d '"')
+#
+      #      echo "Preparing destination folder: $dest"
+      #      rm -rf "$dest"
+      #      mkdir -p "$dest"
+#
+      #      echo "Running validation for entry $i"
+      #      echo "Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
+      #      JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
+      #      java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right #$rightProfile
+      #    done
       
       - name: Add home link to all pages
         run: |
