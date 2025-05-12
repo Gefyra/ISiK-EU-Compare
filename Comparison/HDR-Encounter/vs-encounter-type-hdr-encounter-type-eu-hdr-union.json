@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "1a686113-7a82-4492-836d-d4f9cf928080-11",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/1a686113-7a82-4492-836d-d4f9cf928080-11",
+  "id" : "58404957-9f3d-434b-b15b-84c37204c1f3-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/58404957-9f3d-434b-b15b-84c37204c1f3-11",
   "name" : "UnionEncounterTypeAndEncounterTypeHdrVS",
   "title" : "Union of Encounter type And In-patient Encounter Type Value Set",
   "status" : "draft",
-  "date" : "2025-05-12T11:47:07+00:00",
+  "date" : "2025-05-12T11:54:56+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
