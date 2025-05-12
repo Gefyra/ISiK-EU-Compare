@@ -23,9 +23,32 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: 😇 Download validator_cli.jar
+      - name: 📅 Set current date for cache
+        run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: 🔄 Restore cache for validator_cli.jar
+        uses: actions/cache@v3
+        with:
+          path: downloads/validator_cli.jar
+          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+          restore-keys: |
+            ${{ runner.os }}-validator-cli-
+
+      - name: 😇 Download validator_cli.jar (if not cached)
         run: |
-          curl -L -o /tmp/validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
+          mkdir -p downloads
+          if [ ! -f downloads/validator_cli.jar ]; then
+            echo "Cache miss – downloading"
+            curl -L -o downloads/validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
+          else
+            echo "✅ Using cached version"
+          fi
+
+      - name: 💾 Save cache for validator_cli.jar
+        uses: actions/cache@v3
+        with:
+          path: downloads/validator_cli.jar
+          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
 
       - name: ⚖️ Read ComparisonConfig.yml
         id: set-matrix
