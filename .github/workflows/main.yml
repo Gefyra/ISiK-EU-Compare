@@ -145,6 +145,7 @@ jobs:
         with:
           name: ${{ steps.vars.outputs.artifact_name }}
           path: ${{ matrix.profile.dest }}
+          retention-days: 1
 
   post-process:
     name: 🪩 Generate Index & Deploy
