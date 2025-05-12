@@ -17,7 +17,7 @@
     "hl7.fhir.uv.ips" : "1.1.0",
     "hl7.fhir.eu.extensions" : "0.1.1-ballot",
     "hl7.fhir.eu.laboratory" : "0.1.x",
-    "hl7.fhir.eu.hdr" : "0.0.1-ci",
+    "hl7.fhir.eu.hdr.r4" : "0.0.1-ci",
     "hl7.fhir.eu.base.r4" : "0.1.0-ballot"
   },
   "author" : "HL7 Europe",
