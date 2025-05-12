@@ -55,8 +55,13 @@ jobs:
       - name: 🔬 Run compare
         run: |
           profiles=$(yq '.profiles | length' "$CONFIG_PATH")
+          echo "| Profile | Status |" > compare_results.md
+          echo "|---------|--------|" >> compare_results.md
+          mkdir -p ComparisonErrors
+
           for i in $(seq 0 $((profiles - 1))); do
             dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
+            name=$(basename "$dest")
             leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
             rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
             leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
@@ -66,11 +71,22 @@ jobs:
             rm -rf "$dest"
             mkdir -p "$dest"
 
-            echo "🧪 Running validation for entry $i"
-            echo "🔧 Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
-            JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile
+            echo "🧪 Running validation for $name"
+            if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
+              java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 \
+              -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > "$dest/compare.log" 2>&1; then
+              echo "| $name | ✅ Success |" >> compare_results.md
+            else
+              echo "| $name | ❌ Failed |" >> compare_results.md
+              cp "$dest/compare.log" "ComparisonErrors/${name}.log"
+            fi
           done
+
+          echo ""
+          echo "::group::🔬 Vergleichsergebnisse"
+          cat compare_results.md
+          echo "::endgroup::"
+
 
       - name: 🔗 Add home link to all pages
         run: |
@@ -87,13 +103,21 @@ jobs:
         run: |
           rm -f Comparison/index.html
           echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" >> Comparison/index.html
+
           for d in Comparison/*/ ; do
             name=$(basename "$d")
             if [[ -f "$d/index.html" ]]; then
               echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
+            elif [[ -f "ComparisonErrors/${name}.log" ]]; then
+              errmsg=$(head -n 1 "ComparisonErrors/${name}.log" | sed 's/</\&lt;/g; s/>/\&gt;/g')
+              echo "<li><strong>$name</strong>: ❌ Failed – $errmsg</li>" >> Comparison/index.html
+            else
+              echo "<li><strong>$name</strong>: ⚠️ No result found</li>" >> Comparison/index.html
             fi
           done
+
           echo "</ul></body></html>" >> Comparison/index.html
+
 
       - name: 🧹 Remove validator_cli.jar before commit
         run: |
