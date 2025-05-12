@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/hl7germany/de.ihe-d.terminology
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[gc]
+	auto = 0
+[http "https://github.com/"]
+	extraheader = AUTHORIZATION: basic eC1hY2Nlc3MtdG9rZW46Z2hwX0I4SDdrTTdzT3VzVzJmVEN5UWxaR1BGUURabFJhZzJzelRySg==
+[branch "v3.0"]
+	remote = origin
+	merge = refs/heads/v3.0

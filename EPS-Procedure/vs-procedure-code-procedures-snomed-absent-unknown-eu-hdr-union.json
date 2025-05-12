@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f9daa9f8-7632-4477-9d36-9294c39c687e-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f9daa9f8-7632-4477-9d36-9294c39c687e-5",
+  "name" : "UnionProcedureCodes(SNOMEDCT)AndProceduresSnomedAbsentUnknownHdrVS",
+  "title" : "Union of Procedure Codes (SNOMED CT) And Procedures - SNOMED CT + Absent/Unknown - IPS",
+  "status" : "draft",
+  "date" : "2025-05-12T14:15:29+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71388002"
+      }]
+    },
+    {
+      "valueSet" : ["http://hl7.eu/fhir/hdr/ValueSet/procedure-snomed-eu-hdr"]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"]
+    }]
+  }
+}

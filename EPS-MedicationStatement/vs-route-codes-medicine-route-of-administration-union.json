@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8cdc6c25-8687-4d76-8345-42f824a87685-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8cdc6c25-8687-4d76-8345-42f824a87685-5",
+  "name" : "UnionSNOMEDCTRouteCodesAndMedicineRouteOfAdministrationUvIps",
+  "title" : "Union of SNOMED CT Route Codes And Medicine Route of Administration - IPS",
+  "status" : "draft",
+  "date" : "2025-05-12T14:14:11+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "284009009"
+      },
+      {
+        "property" : "status",
+        "op" : "=",
+        "value" : "Current"
+      },
+      {
+        "property" : "class",
+        "op" : "=",
+        "value" : "ROA"
+      },
+      {
+        "property" : "domain",
+        "op" : "=",
+        "value" : "Human and Veterinary"
+      }]
+    }]
+  }
+}
