@@ -12,6 +12,7 @@ jobs:
     env:
       VALIDATOR_DOWNLOAD_URL: http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar #org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
       CONFIG_PATH: .github/config/ComparisonConfig.yml
+      ERROR_PATH: Comparison/ComparisonErrors
 
     steps:
       - name: 🧾 Checkout repository
@@ -57,7 +58,7 @@ jobs:
           profiles=$(yq '.profiles | length' "$CONFIG_PATH")
           echo "| Profile | Status |" > compare_results.md
           echo "|---------|--------|" >> compare_results.md
-          mkdir -p ComparisonErrors
+          mkdir -p $ERROR_PATH
 
           for i in $(seq 0 $((profiles - 1))); do
             dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
@@ -78,7 +79,7 @@ jobs:
               echo "| $name | ✅ Success |" >> compare_results.md
             else
               echo "| $name | ❌ Failed |" >> compare_results.md
-              cp "$dest/compare.log" "ComparisonErrors/${name}.log"
+              cp "$dest/compare.log" "$ERROR_PATH/${name}.log"
             fi
           done
 
@@ -101,23 +102,24 @@ jobs:
 
       - name: 🧭 Generate central index.html
         run: |
-          rm -f Comparison/index.html
-          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" >> Comparison/index.html
+          INDEX_PATH="Comparison/index.html"
+          ERROR_DIR="$ERROR_PATH"
+          mkdir -p "$ERROR_DIR"
+          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" > "$INDEX_PATH"
 
           for d in Comparison/*/ ; do
             name=$(basename "$d")
+            if [[ "$name" == "ComparisonErrors" ]]; then continue; fi
             if [[ -f "$d/index.html" ]]; then
-              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
-            elif [[ -f "ComparisonErrors/${name}.log" ]]; then
-              errmsg=$(head -n 1 "ComparisonErrors/${name}.log" | sed 's/</\&lt;/g; s/>/\&gt;/g')
-              echo "<li><strong>$name</strong>: ❌ Failed – $errmsg</li>" >> Comparison/index.html
+              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> "$INDEX_PATH"
+            elif [[ -f "$ERROR_DIR/${name}.log" ]]; then
+              echo "<li><strong>$name</strong>: ❌ Failed – <a href=\"ComparisonErrors/${name}.log\">View error log</a></li>" >> "$INDEX_PATH"
             else
-              echo "<li><strong>$name</strong>: ⚠️ No result found</li>" >> Comparison/index.html
+              echo "<li><strong>$name</strong>: ⚠️ No result found</li>" >> "$INDEX_PATH"
             fi
           done
 
-          echo "</ul></body></html>" >> Comparison/index.html
-
+          echo "</ul></body></html>" >> "$INDEX_PATH"
 
       - name: 🧹 Remove validator_cli.jar before commit
         run: |
