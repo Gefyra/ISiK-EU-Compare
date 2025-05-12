@@ -50,7 +50,7 @@ jobs:
 
       - name: ⬇️ Download validator_cli.jar
         run: |
-          curl -L -o validator_cli.jar VALIDATOR_DOWNLOAD_URL
+          curl -L -o validator_cli.jar $VALIDATOR_DOWNLOAD_URL
 
       - name: 🔬 Run compare
         run: |
