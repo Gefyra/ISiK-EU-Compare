@@ -1,6 +1,8 @@
 igs:
   - name: hl7.fhir.eu.hdr.r4
     url: https://hl7.eu/fhir/build/hdr/package.r4.tgz
+  - name: hl7.fhir.eu.eps.r4
+    url: https://hl7.eu/fhir/build/eps/package.r4.tgz
 profiles:
   - dest: Comparison/HDR-Encounter
     leftIg: de.gematik.isik@5.0.0-rc
