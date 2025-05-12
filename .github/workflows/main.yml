@@ -15,13 +15,13 @@ jobs:
       - name: 🔧 Install yq
         run: |
           sudo apt-get update
-          sudo apt-get install -y yq
+          sudo apt-get install -y yq jq
 
       - name: ⚖️ Read ComparisonConfig.yml
         id: set-matrix
         run: |
           CONFIG_PATH=.github/config/ComparisonConfig.yml
-          json=$(yq -o=json '.profiles' "$CONFIG_PATH")
+          json=$(yq '.profiles' "$CONFIG_PATH" | jq -c .)
           echo "matrix=$json" >> "$GITHUB_OUTPUT"
 
   compare:
@@ -60,23 +60,23 @@ jobs:
 
       - name: 🔬 Run comparison
         run: |
-          dest="${{ matrix.profile.dest }}"
-          name=$(basename "$dest")
-          leftIg="${{ matrix.profile.leftIg }}" | sed 's/@/#/'
-          rightIg="${{ matrix.profile.rightIg }}" | sed 's/@/#/'
-          leftProfile="${{ matrix.profile.leftProfile }}"
-          rightProfile="${{ matrix.profile.rightProfile }}"
+          dest=${{ matrix.profile.dest }}
+          name=$(basename $dest)
+          leftIg=$(echo ${{ matrix.profile.leftIg }} | sed 's/@/#/')
+          rightIg=$(echo ${{ matrix.profile.rightIg }} | sed 's/@/#/')
+          leftProfile=${{ matrix.profile.leftProfile }}
+          rightProfile=${{ matrix.profile.rightProfile }}
 
-          mkdir -p "$dest"
+          mkdir -p $dest
           echo "🔬 Comparing $name"
 
           if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 \
-            -ig "$leftIg" -ig "$rightIg" -left "$leftProfile" -right "$rightProfile" > "$dest/compare.log" 2>&1; then
+            java -jar validator_cli.jar -compare -dest $dest -version 4.0 \
+            -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > $dest/compare.log 2>&1; then
             echo "✅ $name comparison succeeded"
           else
             echo "❌ $name comparison failed"
-            cp "$dest/compare.log" "$ERROR_PATH/${name}.log"
+            cp $dest/compare.log $ERROR_PATH/${name}.log
           fi
 
   post-process:
