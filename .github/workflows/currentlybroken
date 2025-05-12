@@ -1,0 +1,12 @@
+#      - name: Install Firely Terminal
+#        run: dotnet tool install --global firely.terminal --version 3.2.0
+#        
+#      - name: Parse and preload FHIR packages
+#        run: |
+#          yq '.profiles[] | .leftIg, .rightIg' "$CONFIG_PATH" | tr -d '"' | sort -u | while read pkg; do
+#            if fhir install "$pkg"; then
+#              echo "✅ $pkg installed"
+#            else
+#              echo "❌ Failed to install $pkg – skipping"
+#            fi
+#          done

@@ -1,8 +1,8 @@
-name: Validate Profiles
+name: Compare and publish profiles
 
 on:
-  push:
-    branches: [ "main" ]
+#  push:
+#    branches: [ "main" ]
   
   workflow_dispatch:
 
@@ -17,12 +17,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Copy manually unpacked packages into Firely cache
+      - name: 📄 Copy manually unpacked packages into Firely cache
         run: |
           CACHE_DIR="$HOME/.fhir/packages"
       
-          if [ -d "UnpublishedPackages" ]; then
-            for pkgdir in UnpublishedPackages/*; do
+          if [ -d "PackagesForCache" ]; then
+            for pkgdir in PackagesForCache/*; do
               if [ -d "$pkgdir/package" ]; then
                 pkg_id=$(basename "$pkgdir")
                 target_dir="$CACHE_DIR/$pkg_id"
@@ -35,21 +35,8 @@ jobs:
               fi
             done
           else
-            echo "ℹ️ No UnpublishedPackages directory found – skipping"
+            echo "ℹ️ No PackagesForCache directory found – skipping"
           fi
-      
-#      - name: Install unpublished packages
-#        run: |
-#          if [ -d "UnpublishedPackages" ]; then
-#            for tgz in UnpublishedPackages/*.tgz; do
-#              if [ -f "$tgz" ]; then
-#                echo "📦 Installing unpublished package: $tgz"
-#                fhir install "$tgz" --file
-#              fi
-#            done
-#          else
-#            echo "ℹ️ No UnpublishedPackages directory found – skipping"
-#          fi
 
       - name: Set up Java
         uses: actions/setup-java@v3
@@ -66,19 +53,6 @@ jobs:
       - name: Download validator_cli.jar
         run: |
           curl -L -o validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
-          
-#      - name: Install Firely Terminal
-#        run: dotnet tool install --global firely.terminal --version 3.2.0
-#        
-#      - name: Parse and preload FHIR packages
-#        run: |
-#          yq '.profiles[] | .leftIg, .rightIg' "$CONFIG_PATH" | tr -d '"' | sort -u | while read pkg; do
-#            if fhir install "$pkg"; then
-#              echo "✅ $pkg installed"
-#            else
-#              echo "❌ Failed to install $pkg – skipping"
-#            fi
-#          done
       
       - name: Run compare
         run: |
@@ -102,6 +76,8 @@ jobs:
 
       - name: Generate central index.html
         run: |
+          rm -f Comparison/index.html
+
           echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" >> Comparison/index.html
           
           for d in Comparison/*/ ; do
@@ -113,9 +89,9 @@ jobs:
           
           echo "</ul></body></html>" >> Comparison/index.html
 
-      - name: Remove validator_cli.jar before commit
+      - name: 🧹 Remove validator_cli.jar before commit
         run: |
-          echo "🧹 Removing validator_cli.jar before committing..."
+          echo "Removing validator_cli.jar before committing..."
           rm -f validator_cli.jar
 
       - name: Commit results
@@ -127,7 +103,7 @@ jobs:
           git diff --cached --quiet || git commit -m "chore: update validation results [automated]"
           git push
 
-      - name: Deploy 🚀
+      - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: 'Comparison'
