@@ -26,6 +26,14 @@ jobs:
       - name: 📅 Set current date for cache
         run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
+      - name: 🔄 Restore cache for validator_cli.jar
+        uses: actions/cache@v3
+        with:
+          path: tmp/validator_cli.jar
+          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+          restore-keys: |
+            ${{ runner.os }}-validator-cli-
+
       - name: 😇 Download validator_cli.jar (if not cached)
         run: |
           mkdir -p tmp
@@ -88,6 +96,25 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-validator-cli-
 
+      - name: 📦 Copy manually unpacked packages into Firely cache
+        run: |
+          CACHE_DIR="$HOME/.fhir/packages"
+          if [ -d "PackagesForCache" ]; then
+            for pkgdir in PackagesForCache/*; do
+              if [ -d "$pkgdir/package" ]; then
+                pkg_id=$(basename "$pkgdir")
+                target_dir="$CACHE_DIR/$pkg_id"
+                echo "📂 Copying $pkgdir → $target_dir"
+                mkdir -p "$target_dir"
+                cp -r "$pkgdir/package" "$target_dir/"
+              else
+                echo "⚠️ Skipping $pkgdir – no 'package/' subfolder found"
+              fi
+            done
+          else
+            echo "ℹ️ No PackagesForCache directory found – skipping"
+          fi
+              
       - name: 🔧 Set artifact name
         id: vars
         run: echo "artifact_name=$(basename ${{ matrix.profile.dest }})" >> $GITHUB_OUTPUT
