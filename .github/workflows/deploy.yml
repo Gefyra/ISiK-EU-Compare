@@ -1,4 +1,4 @@
-name: Deploy
+name: 🚀 Deploy to GitHub Pages
 
 on:  
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: 🚀 Deploy
+      - name: 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: 'Comparison'
