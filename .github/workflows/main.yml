@@ -1,9 +1,8 @@
-name: Compare and publish profiles
+name: 🔬 Compare & 🚀 Publish Profiles
 
 on:
 #  push:
 #    branches: [ "main" ]
-  
   workflow_dispatch:
 
 jobs:
@@ -11,23 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      VALIDATOR_DOWNLOAD_URL: http://horvac.de/org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
       CONFIG_PATH: .github/config/ComparisonConfig.yml
 
     steps:
-      - name: Checkout repository
+      - name: 🧾 Checkout repository
         uses: actions/checkout@v3
 
-      - name: 📄 Copy manually unpacked packages into Firely cache
+      - name: 📦 Copy manually unpacked packages into Firely cache
         run: |
           CACHE_DIR="$HOME/.fhir/packages"
-      
           if [ -d "PackagesForCache" ]; then
             for pkgdir in PackagesForCache/*; do
               if [ -d "$pkgdir/package" ]; then
                 pkg_id=$(basename "$pkgdir")
                 target_dir="$CACHE_DIR/$pkg_id"
                 echo "📂 Copying $pkgdir → $target_dir"
-
                 mkdir -p "$target_dir"
                 cp -r "$pkgdir/package" "$target_dir/"
               else
@@ -38,43 +36,43 @@ jobs:
             echo "ℹ️ No PackagesForCache directory found – skipping"
           fi
 
-      - name: Set up Java
+      - name: ☕ Set up Java
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '21'
           check-latest: true
 
-      - name: Install yq
+      - name: 🧰 Install yq
         run: |
           sudo apt-get update
           sudo apt-get install -y yq
 
-      - name: Download validator_cli.jar
+      - name: ⬇️ Download validator_cli.jar
         run: |
-          curl -L -o validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
-      
-      #- name: Run compare
-      #  run: |
-      #    profiles=$(yq '.profiles | length' "$CONFIG_PATH")
-      #    for i in $(seq 0 $((profiles - 1))); do
-      #      dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
-      #      leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-      #      rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
-      #      leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
-      #      rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH" | tr -d '"')
-#
-      #      echo "Preparing destination folder: $dest"
-      #      rm -rf "$dest"
-      #      mkdir -p "$dest"
-#
-      #      echo "Running validation for entry $i"
-      #      echo "Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
-      #      JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-      #      java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right #$rightProfile
-      #    done
-      
-      - name: Add home link to all pages
+          curl -L -o validator_cli.jar VALIDATOR_DOWNLOAD_URL
+
+      - name: 🔬 Run compare
+        run: |
+          profiles=$(yq '.profiles | length' "$CONFIG_PATH")
+          for i in $(seq 0 $((profiles - 1))); do
+            dest=$(yq ".profiles[$i].dest" "$CONFIG_PATH" | tr -d '"')
+            leftIg=$(yq ".profiles[$i].leftIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
+            rightIg=$(yq ".profiles[$i].rightIg" "$CONFIG_PATH" | tr -d '"' | sed 's/@/#/')
+            leftProfile=$(yq ".profiles[$i].leftProfile" "$CONFIG_PATH" | tr -d '"')
+            rightProfile=$(yq ".profiles[$i].rightProfile" "$CONFIG_PATH" | tr -d '"')
+
+            echo "📁 Preparing destination folder: $dest"
+            rm -rf "$dest"
+            mkdir -p "$dest"
+
+            echo "🧪 Running validation for entry $i"
+            echo "🔧 Var debugging: $leftIg ; $rightIg ; $leftProfile ; $rightProfile"
+            JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
+            java -jar validator_cli.jar -compare -dest "$dest" -version 4.0 -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile
+          done
+
+      - name: 🔗 Add home link to all pages
         run: |
           find . -type f -name "*.html" | while read -r file; do
             if ! grep -q 'https://gefyra.github.io/ISiK-EU-Compare' "$file"; then
@@ -85,36 +83,32 @@ jobs:
             fi
           done
 
-      - name: Generate central index.html
+      - name: 🧭 Generate central index.html
         run: |
           rm -f Comparison/index.html
-
           echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" >> Comparison/index.html
-          
           for d in Comparison/*/ ; do
             name=$(basename "$d")
             if [[ -f "$d/index.html" ]]; then
               echo "<li><a href=\"$name/index.html\">$name</a></li>" >> Comparison/index.html
             fi
           done
-          
           echo "</ul></body></html>" >> Comparison/index.html
 
       - name: 🧹 Remove validator_cli.jar before commit
         run: |
-          echo "Removing validator_cli.jar before committing..."
+          echo "🗑️ Removing validator_cli.jar before committing..."
           rm -f validator_cli.jar
 
-      - name: Commit results
+      - name: 💾 Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
           git add .
           git diff --cached --quiet || git commit -m "chore: update validation results [automated]"
           git push
 
-      - name: 🚀 Deploy
+      - name: 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: 'Comparison'
