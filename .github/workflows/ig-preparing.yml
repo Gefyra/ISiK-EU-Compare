@@ -45,7 +45,7 @@ jobs:
 
             # Read version from package.json
             version=$(jq -r '.version' tmp_extract/package/package.json)
-            target_dir="PackagesForCache/${name}@${version}"
+            target_dir="PackagesForCache/${name}#${version}"
 
             echo "Extracting to $target_dir..."
             mv tmp_extract/package "$target_dir"
