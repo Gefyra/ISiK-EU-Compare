@@ -74,28 +74,32 @@ jobs:
         with:
           name: validator
 
-      - name: 🔬 Upload comparison result
+      - name: 🔬 Run comparison
+        run: |
+          dest=${{ matrix.profile.dest }}
+          name=$(basename $dest)
+          leftIg=$(echo ${{ matrix.profile.leftIg }} | sed 's/@/#/')
+          rightIg=$(echo ${{ matrix.profile.rightIg }} | sed 's/@/#/')
+          leftProfile=${{ matrix.profile.leftProfile }}
+          rightProfile=${{ matrix.profile.rightProfile }}
+
+          mkdir -p $dest
+          echo "🔬 Comparing $name"
+
+          if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
+            java -jar validator_cli.jar -compare -dest $dest -version 4.0 \
+            -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > $dest/compare.log 2>&1; then
+            echo "✅ $name comparison succeeded"
+          else
+            echo "❌ $name comparison failed"
+            cp $dest/compare.log $ERROR_PATH/${name}.log
+          fi
+
+      - name: 📤 Upload comparison result
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.profile.dest }}
-          path: ${{ matrix.profile.dest }}le.dest }}
-            name=$(basename $dest)
-            leftIg=$(echo ${{ matrix.profile.leftIg }} | sed 's/@/#/')
-            rightIg=$(echo ${{ matrix.profile.rightIg }} | sed 's/@/#/')
-            leftProfile=${{ matrix.profile.leftProfile }}
-            rightProfile=${{ matrix.profile.rightProfile }}
-
-            mkdir -p $dest
-            echo "🔬 Comparing $name"
-
-            if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-              java -jar validator_cli.jar -compare -dest $dest -version 4.0 \
-              -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > $dest/compare.log 2>&1; then
-              echo "✅ $name comparison succeeded"
-            else
-              echo "❌ $name comparison failed"
-              cp $dest/compare.log $ERROR_PATH/${name}.log
-            fi
+          path: ${{ matrix.profile.dest }}
 
   post-process:
     name: 🪩 Generate Index & Deploy
