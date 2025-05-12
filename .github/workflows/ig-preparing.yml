@@ -1,0 +1,70 @@
+name: Download and Extract IG Packages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  download-and-extract:
+    runs-on: ubuntu-latest
+
+    env:
+      CONFIG_PATH: .github/config/ComparisonConfig.yml
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install yq for YAML parsing
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yq
+
+      - name: Read IGs from ComparisonConfig.yml and process
+        shell: bash
+        run: |
+          mkdir -p PackagesForCache
+
+          count=$(yq '.igs | length' ComparisonConfig.yml)
+          echo "Found $count IG entries"
+
+          for i in $(seq 0 $((count - 1))); do
+            name=$(yq ".igs[$i].name" "$CONFIG_PATH" | tr -d '"')
+            url=$(yq ".igs[$i].url" "$CONFIG_PATH" | tr -d '"')
+
+            echo "Processing $name from $url..."
+
+            # Download and extract the package
+            curl -L "$url" -o tmp.tgz
+            mkdir -p tmp_extract
+            tar -xzf tmp.tgz -C tmp_extract
+
+            # Read version from package.json
+            version=$(jq -r '.version' tmp_extract/package/package.json)
+            target_dir="PackagesForCache/${name}@${version}"
+
+            echo "Extracting to $target_dir..."
+            mv tmp_extract/package "$target_dir"
+
+            # Cleanup
+            rm tmp.tgz
+            rm -rf tmp_extract
+          done
+
+      - name: Create Pull Request for IG Updates
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: add/update IG packages [automated]'
+          branch: chore/update-igs
+          title: 'chore: update IG packages'
+          body: |
+            This PR was automatically generated to update the IG packages 
+            defined in `ComparisonConfig.yml`.
+
+            Please review the changes and merge if appropriate.
+          delete-branch: true
