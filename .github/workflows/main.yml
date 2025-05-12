@@ -26,14 +26,6 @@ jobs:
       - name: 📅 Set current date for cache
         run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
-      - name: 🔄 Restore cache for validator_cli.jar
-        uses: actions/cache@v3
-        with:
-          path: downloads/validator_cli.jar
-          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
-          restore-keys: |
-            ${{ runner.os }}-validator-cli-
-
       - name: 😇 Download validator_cli.jar (if not cached)
         run: |
           mkdir -p downloads
@@ -86,6 +78,14 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
+      - name: 🔄 Restore cache for validator_cli.jar
+        uses: actions/cache@v3
+        with:
+          path: tmp/validator_cli.jar
+          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+          restore-keys: |
+            ${{ runner.os }}-validator-cli-
+
       - name: 🔧 Set artifact name
         id: vars
         run: echo "artifact_name=$(basename ${{ matrix.profile.dest }})" >> $GITHUB_OUTPUT
@@ -103,7 +103,7 @@ jobs:
           echo "🔬 Comparing $name"
 
           if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-            java -jar /tmp/validator_cli.jar -compare -dest $dest -version 4.0 \
+            java -jar tmp/validator_cli.jar -compare -dest $dest -version 4.0 \
             -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > $dest/compare.log 2>&1; then
             echo "✅ $name comparison succeeded"
           else
