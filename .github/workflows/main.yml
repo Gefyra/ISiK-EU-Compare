@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      VALIDATOR_DOWNLOAD_URL: http://horvac.de/org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
+      VALIDATOR_DOWNLOAD_URL: http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar #org.hl7.fhir.validation.cli-6.5.22-SNAPSHOT.jar
       CONFIG_PATH: .github/config/ComparisonConfig.yml
 
     steps:
