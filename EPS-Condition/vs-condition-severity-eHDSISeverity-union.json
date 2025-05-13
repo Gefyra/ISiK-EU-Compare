@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "02e8743a-5e1c-4c3a-91cb-9358eeff7693-8",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/02e8743a-5e1c-4c3a-91cb-9358eeff7693-8",
+  "id" : "c0bddb0d-ca98-4bee-87f8-02095a5eb3b4-8",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c0bddb0d-ca98-4bee-87f8-02095a5eb3b4-8",
   "name" : "UnionCondition/DiagnosisSeverityAndEHDSISeverity",
   "title" : "Union of Condition/Diagnosis Severity And Severity",
   "status" : "draft",
-  "date" : "2025-05-13T08:30:02+00:00",
+  "date" : "2025-05-13T09:04:56+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
