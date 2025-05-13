@@ -68,7 +68,7 @@ profiles:
     rightIg: hl7.fhir.eu.mpd@0.1.0
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerordnung
     rightProfile: http://hl7.eu/fhir/mpd/StructureDefinition/MedicationRequest-eu-mpd
-  - dest: Comparison/Laboratory-MedicationRequest
+  - dest: Comparison/Laboratory-ObservationLabResult
     leftIg: de.gematik.isik@5.0.0-rc
     rightIg: hl7.fhir.eu.laboratory#0.2.0-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchung
