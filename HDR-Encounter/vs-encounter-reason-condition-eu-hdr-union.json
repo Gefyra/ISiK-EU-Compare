@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "e1b93ca8-78fc-4a52-9ecf-cc7acbcaa87e-17",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/e1b93ca8-78fc-4a52-9ecf-cc7acbcaa87e-17",
+  "id" : "65e2dcf4-b61f-4030-ae89-aa086b1368ac-17",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/65e2dcf4-b61f-4030-ae89-aa086b1368ac-17",
   "name" : "UnionEncounterReasonCodesAndConditionHdrVS",
   "title" : "Union of Encounter Reason Codes And Condition Value Set",
   "status" : "draft",
-  "date" : "2025-05-12T14:40:30+00:00",
+  "date" : "2025-05-13T07:40:55+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
