@@ -18,7 +18,7 @@
     "hl7.fhir.uv.ips" : "1.1.0",
     "hl7.fhir.eu.extensions" : "0.1.1-ballot",
     "hl7.fhir.eu.base" : "0.1.0-ballot",
-    "ihe.pharm.mpd" : "´0.1.0"
+    "ihe.pharm.mpd" : "0.1.0"
   },
   "author" : "HL7 Europe",
   "maintainers" : [
