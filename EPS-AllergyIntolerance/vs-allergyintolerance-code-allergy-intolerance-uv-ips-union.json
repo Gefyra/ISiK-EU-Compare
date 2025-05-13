@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "4f866415-6c87-454e-a026-b1c7ef0f45bc-5",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/4f866415-6c87-454e-a026-b1c7ef0f45bc-5",
+  "id" : "53f5c679-cdf5-4425-ab9c-4e2eb64684b7-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/53f5c679-cdf5-4425-ab9c-4e2eb64684b7-5",
   "name" : "UnionAllergyIntoleranceSubstance/Product,ConditionAndNegationCodesAndAllergyIntoleranceUvIps",
   "title" : "Union of AllergyIntolerance Substance/Product, Condition and Negation Codes And Allergy Intolerance - IPS",
   "status" : "draft",
-  "date" : "2025-05-13T07:42:44+00:00",
+  "date" : "2025-05-13T08:31:57+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

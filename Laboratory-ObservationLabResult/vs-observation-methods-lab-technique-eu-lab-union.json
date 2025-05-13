@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "465590a6-33e2-4a55-bda5-95fe1d4fc7f7-8",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/465590a6-33e2-4a55-bda5-95fe1d4fc7f7-8",
+  "id" : "b24fa4c2-1a09-4980-9af2-f00e844a4b5c-8",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b24fa4c2-1a09-4980-9af2-f00e844a4b5c-8",
   "name" : "UnionObservationMethodsAndLabTechniqueEuVs",
   "title" : "Union of Observation Methods And Laboratory Techniques",
   "status" : "draft",
-  "date" : "2025-05-13T07:45:14+00:00",
+  "date" : "2025-05-13T08:34:27+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

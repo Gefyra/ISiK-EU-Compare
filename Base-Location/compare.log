@@ -23,7 +23,7 @@ Installing hl7.fhir.xver-extensions#0.1.0 to the package cache
 
 Installing hl7.fhir.xver-extensions#0.1.0
  done.
- - 4576 resources (00:17.492)
+ - 4576 resources (00:17.613)
 Installing hl7.terminology#6.3.0 to the package cache
   Fetching:
 
@@ -34,8 +34,8 @@ Installing hl7.fhir.uv.extensions.r5#5.2.0 to the package cache
 
 Installing hl7.fhir.uv.extensions.r5#5.2.0
  done.
-  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:03.189)
-  Load hl7.terminology#6.3.0 - 4338 resources (00:00.971)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:03.540)
+  Load hl7.terminology#6.3.0 - 4338 resources (00:00.830)
 Installing hl7.fhir.uv.extensions#5.2.0-ballot to the package cache
   Fetching:
 
@@ -46,9 +46,9 @@ Installing hl7.terminology.r5#6.0.2 to the package cache
 
 Installing hl7.terminology.r5#6.0.2
  done.
-  Load hl7.terminology.r5#6.0.2 - 4243 resources (00:01.529)
-  Load hl7.fhir.uv.extensions#5.2.0-ballot - 702 resources (00:00.622)
-  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.498)
+  Load hl7.terminology.r5#6.0.2 - 4243 resources (00:01.807)
+  Load hl7.fhir.uv.extensions#5.2.0-ballot - 702 resources (00:00.613)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:03.601)
 Installing hl7.fhir.uv.subscriptions-backport.r4#1.1.0 to the package cache
   Fetching:
 
@@ -59,14 +59,14 @@ Installing hl7.terminology.r4#5.0.0 to the package cache
 
 Installing hl7.terminology.r4#5.0.0
  done.
-  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:11.101)
-  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.033)
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:10.417)
+  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.045)
 Installing de.basisprofil.r4#1.5.3 to the package cache
   Fetching:
 
 Installing de.basisprofil.r4#1.5.3
  done.
-  Load de.basisprofil.r4#1.5.3 - 185 resources (00:00.962)
+  Load de.basisprofil.r4#1.5.3 - 185 resources (00:01.209)
 Installing ihe.iti.mhd#4.2.2 to the package cache
   Fetching:
 
@@ -77,13 +77,13 @@ Installing hl7.terminology.r4#5.5.0 to the package cache
 
 Installing hl7.terminology.r4#5.5.0
  done.
-  Load hl7.terminology.r4#5.5.0 - 4224 resources (00:02.823)
+  Load hl7.terminology.r4#5.5.0 - 4224 resources (00:02.998)
 Installing hl7.fhir.uv.extensions.r4#5.1.0 to the package cache
   Fetching:
 
 Installing hl7.fhir.uv.extensions.r4#5.1.0
  done.
-  Load hl7.fhir.uv.extensions.r4#5.1.0 - 1396 resources (00:01.669)
+  Load hl7.fhir.uv.extensions.r4#5.1.0 - 1396 resources (00:01.853)
 Installing ihe.iti.balp#1.1.x to the package cache
   Fetching:
 
@@ -94,34 +94,34 @@ Installing hl7.terminology.r4#5.3.0 to the package cache
 
 Installing hl7.terminology.r4#5.3.0
  done.
-  Load hl7.terminology.r4#5.3.0 - 4201 resources (00:02.715)
+  Load hl7.terminology.r4#5.3.0 - 4201 resources (00:02.726)
 Installing hl7.fhir.uv.extensions.r4#1.0.0 to the package cache
   Fetching:
 
 Installing hl7.fhir.uv.extensions.r4#1.0.0
  done.
-  Load hl7.fhir.uv.extensions.r4#1.0.0 - 1328 resources (00:01.074)
-  Load ihe.iti.balp#1.1.x - 37 resources (00:00.234)
+  Load hl7.fhir.uv.extensions.r4#1.0.0 - 1328 resources (00:01.016)
+  Load ihe.iti.balp#1.1.x - 37 resources (00:00.213)
 Installing ihe.formatcode.fhir#1.2.x to the package cache
   Fetching:
 
 Installing ihe.formatcode.fhir#1.2.0
  done.
-  Load ihe.formatcode.fhir#1.2.x - 2 resources (00:00.223)
-  Load ihe.iti.mhd#4.2.2 - 64 resources (00:00.251)
+  Load ihe.formatcode.fhir#1.2.x - 2 resources (00:00.288)
+  Load ihe.iti.mhd#4.2.2 - 64 resources (00:00.241)
 Installing de.ihe-d.terminology#3.0.1 to the package cache
   Fetching:
 
 Installing de.ihe-d.terminology#3.0.1
  done.
-  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.185)
+  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.246)
 Installing dvmd.kdl.r4#2025.0.0 to the package cache
   Fetching:
 
 Installing dvmd.kdl.r4#2025.0.0
  done.
-  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.130)
-  Load de.gematik.isik#5.0.0-rc - 238 resources (00:01.221)
+  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.161)
+  Load de.gematik.isik#5.0.0-rc - 238 resources (00:01.138)
 Installing hl7.fhir.eu.base.r4#0.0.1-ci to the package cache
   Fetching:
 Error fetching https://packages.fhir.org/hl7.fhir.eu.base.r4: Not Found
