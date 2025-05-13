@@ -15,7 +15,7 @@
     "hl7.terminology.r4" : "6.3.0",
     "hl7.fhir.uv.extensions.r4" : "5.2.0",
     "hl7.fhir.uv.ips" : "1.1.0",
-    "hl7.fhir.eu.extensions.r4" : "current"
+    "hl7.fhir.eu.extensions.r4" : "0.1.1-ballot"
   },
   "author" : "HL7 Europe",
   "maintainers" : [

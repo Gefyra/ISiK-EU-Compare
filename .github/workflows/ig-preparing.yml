@@ -48,7 +48,7 @@ jobs:
             target_dir="PackagesForCache/${name}#${version}"
 
             echo "Extracting to $target_dir..."
-            mv tmp_extract/package "$target_dir"
+            mv tmp_extract "$target_dir"
 
             # Cleanup
             rm tmp.tgz
