@@ -16,6 +16,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: 🔄 Restore cache for validator_cli.jar
+        uses: actions/cache@v3
+        with:
+          path: tmp/validator_cli.jar
+          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+          restore-keys: |
+            ${{ runner.os }}-validator-cli-
+
       - name: 📂 Validate ISiK Examples against EU Profiles
         run: |
           CONFIG_PATH=.github/config/InstanceValidationConfig.yml
