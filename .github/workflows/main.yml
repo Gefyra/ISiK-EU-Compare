@@ -14,6 +14,8 @@ jobs:
 
       - name: 🔧 Setup tools
         uses: ./.github/workflows/setup-tools
+        with:
+          os: ${{ runner.os }}
 
       - name: ⚖️ Read ComparisonConfig.yml
         id: set-matrix
