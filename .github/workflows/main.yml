@@ -12,43 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: 🔧 Install yq and jq
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y yq jq curl
-
-      - name: ☕ Set up Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '21'
-
-      - name: 📅 Set current date for cache
-        run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-
-      - name: 🔄 Restore cache for validator_cli.jar
-        uses: actions/cache@v3
-        with:
-          path: tmp/validator_cli.jar
-          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
-          restore-keys: |
-            ${{ runner.os }}-validator-cli-
-
-      - name: 😇 Download validator_cli.jar (if not cached)
-        run: |
-          mkdir -p tmp
-          if [ ! -f tmp/validator_cli.jar ]; then
-            echo "Cache miss – downloading"
-            curl -L -o tmp/validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
-          else
-            echo "✅ Using cached version"
-          fi
-
-      - name: 💾 Save cache for validator_cli.jar
-        uses: actions/cache@v3
-        with:
-          path: tmp/validator_cli.jar
-          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+      - name: 🔧 Setup tools
+        uses: ./.github/actions/setup-tools
 
       - name: ⚖️ Read ComparisonConfig.yml
         id: set-matrix
@@ -68,11 +33,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
-      #- name: 🔧 Set up tools
-      #  run: |
-      #    sudo apt-get update -y -o Acquire::Retries=3 -o Acquire::http::Timeout=30
-      #    sudo apt-get install -y --no-install-recommends yq curl
 
       - name: 🔧 Set up tools (fast)
         run: |
