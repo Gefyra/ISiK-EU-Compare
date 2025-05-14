@@ -8,7 +8,7 @@ on:
 
 jobs:
   setup-tools:
-    uses: self/.github/workflows/setup-tools.yml
+    uses: gefyra/ISiK-EU-Compare/.github/workflows/setup-tools.yml@main
     with:
       os: ${{ runner.os }}
 
