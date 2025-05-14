@@ -7,12 +7,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  setup-tools:
-    uses: gefyra/ISiK-EU-Compare/.github/workflows/setup-tools.yml@feature/validation-isik-examples #todo main
+  setup-cache:
+    uses: gefyra/ISiK-EU-Compare/.github/workflows/setup-cache.yml@feature/validation-isik-examples #todo main
 
   validate-instances:
     runs-on: ubuntu-latest
-    needs: setup-tools
+    needs: setup-cache
     steps:
       - uses: actions/checkout@v3
 
