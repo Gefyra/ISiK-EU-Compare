@@ -16,6 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: 🔧 Install yq and jq (manuell)
+        run: bash .github/scripts/setup-yq-jq.sh
+
       - name: 🔄 Restore cache for validator_cli.jar
         uses: actions/cache@v3
         with:
