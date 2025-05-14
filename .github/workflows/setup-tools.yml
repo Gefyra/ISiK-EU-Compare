@@ -27,12 +27,6 @@ jobs:
           chmod +x "$HOME/.local/bin/yq"
           echo "$HOME/.local/bin" >> $GITHUB_PATH
 
-      - name: ☕ Set up Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '21'
-
       - name: 📅 Set current date for cache
         run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
