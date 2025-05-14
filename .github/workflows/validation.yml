@@ -8,7 +8,7 @@ on:
 
 jobs:
   setup-tools:
-    uses: .github/workflows/setup-tools/action.yml
+    uses: self/.github/workflows/setup-tools.yml
     with:
       os: ${{ runner.os }}
 
