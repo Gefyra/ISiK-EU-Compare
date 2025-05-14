@@ -2,6 +2,9 @@ name: ✅ Validate ISiK Instances
 
 on:
   workflow_dispatch:
+    
+  push:
+    branches: [ "*" ]
 
 jobs:
   validate-instances:
