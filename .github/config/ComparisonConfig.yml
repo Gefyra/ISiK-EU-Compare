@@ -73,3 +73,8 @@ profiles:
     rightIg: hl7.fhir.eu.laboratory#0.2.0-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchung
     rightProfile: http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab
+  - dest: Comparison/ISiK-MII-DocRef
+    leftIg: de.gematik.isik@5.0.0-rc
+    rightIg: de.medizininformatikinitiative.kerndatensatz.dokument#2026.0.0-ballot
+    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten
+    rightProfile: https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-pr-dokument-dokument
