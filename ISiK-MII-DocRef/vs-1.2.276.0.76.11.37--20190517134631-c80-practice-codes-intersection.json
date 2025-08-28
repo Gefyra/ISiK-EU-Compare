@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8f2cc9b5-47bd-4985-8e37-d685059c359e-18",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8f2cc9b5-47bd-4985-8e37-d685059c359e-18",
+  "name" : "IntersectionIHEXDSpracticeSettingCodeAndPracticeSettingCodeValueSet",
+  "title" : "Intersection of IHE XDS practiceSettingCode And Practice Setting Code Value Set",
+  "status" : "active",
+  "date" : "2025-08-28T11:26:16+00:00"
+}

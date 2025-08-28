@@ -1,9 +1,9 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "5607122e-3409-4b88-940c-395c8afcbaa6-6",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/5607122e-3409-4b88-940c-395c8afcbaa6-6",
+  "id" : "acb04f14-0f53-47a9-af6b-9efc37e91804-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/acb04f14-0f53-47a9-af6b-9efc37e91804-6",
   "name" : "IntersectionSNOMEDCTRouteCodesAndMedicineRouteOfAdministrationUvIps",
   "title" : "Intersection of SNOMED CT Route Codes And Medicine Route of Administration - IPS",
   "status" : "draft",
-  "date" : "2025-05-13T09:06:47+00:00"
+  "date" : "2025-08-28T11:23:26+00:00"
 }

@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "caf1586c-2a8c-4929-b15d-b731beec9b35-5",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/caf1586c-2a8c-4929-b15d-b731beec9b35-5",
+  "id" : "937200a2-e704-4681-bca0-6d2ef4ae3ccb-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/937200a2-e704-4681-bca0-6d2ef4ae3ccb-5",
   "name" : "UnionLOINCCodesAndLaboratoryResultStandardEuVs",
   "title" : "Union of LOINC Codes And Laboratory Code",
   "status" : "draft",
-  "date" : "2025-05-13T09:09:21+00:00",
+  "date" : "2025-08-28T11:24:56+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
