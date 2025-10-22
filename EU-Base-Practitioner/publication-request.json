@@ -1,13 +1,9 @@
 {
-  "package-id" : "hl7.fhir.eu.base",
-  "version" : "0.1.0-ballot",
-  "path" : "http://hl7.eu/fhir/base/0.1.0-ballot",
-  "ci-build": "https://build.fhir.org/ig/hl7-eu/base",
-  "first": true,
-  "desc" : "This is the first STU version released", 
-  "category" : "Regional Base",
-  "introduction" : "This guide lists the base and core profiles specified for the European REALM.",
-  "title" : "HL7 Europe Base and Core",
+  "package-id" : "hl7.fhir.eu.extensions",
+  "version" : "0.1.1-ballot",
+  "path" : "http://hl7.eu/fhir/extensions/0.1.1-ballot",
+  "ci-build": "https://build.fhir.org/ig/hl7-eu/extensions",
+  "desc" : "Version used for the HL7 EU MPD ballot. First version for HL7 FHIR R4 and R5.",
   "status" : "ballot",
   "sequence" : "Release",
   "mode": "milestone"

@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "4928b4d1-115d-42c4-b6eb-d4532bf6b0e7-9",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/4928b4d1-115d-42c4-b6eb-d4532bf6b0e7-9",
-  "name" : "IntersectionObservationMethodsAndLabTechniqueEuVs",
-  "title" : "Intersection of Observation Methods And Laboratory Techniques",
-  "status" : "draft",
-  "date" : "2025-10-22T10:49:07+00:00"
-}

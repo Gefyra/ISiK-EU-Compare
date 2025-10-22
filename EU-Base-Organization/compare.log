@@ -23,7 +23,7 @@ Installing hl7.fhir.xver-extensions#0.1.0 to the package cache
 
 Installing hl7.fhir.xver-extensions#0.1.0
  done.
- - 4576 resources (00:15.494)
+ - 4576 resources (00:19.894)
 Installing hl7.terminology#6.5.0 to the package cache
   Fetching:
 
@@ -34,8 +34,8 @@ Installing hl7.fhir.uv.extensions.r5#5.2.0 to the package cache
 
 Installing hl7.fhir.uv.extensions.r5#5.2.0
  done.
-  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:04.142)
-  Load hl7.terminology#6.5.0 - 4356 resources (00:01.360)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:03.494)
+  Load hl7.terminology#6.5.0 - 4356 resources (00:01.072)
 Installing hl7.fhir.uv.extensions#5.3.0-ballot-tc1 to the package cache
   Fetching:
 
@@ -46,14 +46,9 @@ Installing hl7.terminology.r5#6.5.0 to the package cache
 
 Installing hl7.terminology.r5#6.5.0
  done.
-  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:01.642)
-  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.842)
-  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:01.092)
-Installing de.gematik.isik#5.0.0 to the package cache
-  Fetching:
-
-Installing de.gematik.isik#5.0.0
- done.
+  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:01.649)
+  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.839)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.521)
 Installing hl7.fhir.uv.subscriptions-backport.r4#1.1.0 to the package cache
   Fetching:
 
@@ -64,26 +59,26 @@ Installing hl7.terminology.r4#5.0.0 to the package cache
 
 Installing hl7.terminology.r4#5.0.0
  done.
-  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:06.934)
-  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.035)
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:06.876)
+  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.029)
 Installing de.basisprofil.r4#1.5.4 to the package cache
   Fetching:
 
 Installing de.basisprofil.r4#1.5.4
  done.
-  Load de.basisprofil.r4#1.5.4 - 186 resources (00:01.616)
+  Load de.basisprofil.r4#1.5.4 - 186 resources (00:01.462)
 Installing de.ihe-d.terminology#3.0.1 to the package cache
   Fetching:
 
 Installing de.ihe-d.terminology#3.0.1
  done.
-  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.219)
+  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.177)
 Installing dvmd.kdl.r4#2025.0.1 to the package cache
   Fetching:
 
 Installing dvmd.kdl.r4#2025.0.1
  done.
-  Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.161)
+  Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.131)
 Installing hl7.fhir.uv.sdc#3.0.0 to the package cache
   Fetching:
 
@@ -94,8 +89,8 @@ Installing hl7.fhir.r4.examples#4.0.1 to the package cache
 
 Installing hl7.fhir.r4.examples#4.0.1
  done.
-  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:11.606)
-  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.254)
+  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:11.844)
+  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.289)
 Installing de.gematik.terminology#1.0.6 to the package cache
   Fetching:
 
@@ -111,16 +106,16 @@ Installing hl7.fhir.uv.extensions.r4#5.2.0 to the package cache
 
 Installing hl7.fhir.uv.extensions.r4#5.2.0
  done.
-  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:04.512)
-  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.093)
+  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:03.632)
+  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.175)
 Installing dvmd.kdl.r4#2025.0.0 to the package cache
   Fetching:
 
 Installing dvmd.kdl.r4#2025.0.0
  done.
-  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.180)
-  Load de.gematik.terminology#1.0.6 - 50 resources (00:00.007)
-  Load de.gematik.isik#5.0.0 - 238 resources (00:00.110)
+  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.135)
+  Load de.gematik.terminology#1.0.6 - 50 resources (00:00.008)
+  Load de.gematik.isik#5.0.0 - 238 resources (00:01.092)
 Installing hl7.fhir.uv.ips#1.1.0 to the package cache
   Fetching:
 
@@ -131,56 +126,56 @@ Installing fhir.dicom#2022.4.20221006 to the package cache
 
 Installing fhir.dicom#2022.4.20221006
  done.
-  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:02.205)
-  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.210)
+  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:02.574)
+  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.202)
 Installing hl7.terminology.r4#6.2.0 to the package cache
   Fetching:
 
 Installing hl7.terminology.r4#6.2.0
  done.
-  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:02.748)
-  Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.003)
-  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.035)
-  Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, hl7.terminology.r4#5.0.0, hl7.fhir.uv.subscriptions-backport.r4#1.1.0, de.basisprofil.r4#1.5.4, de.ihe-d.terminology#3.0.1, dvmd.kdl.r4#2025.0.1, hl7.fhir.r4.examples#4.0.1, hl7.fhir.uv.sdc#3.0.0, hl7.fhir.uv.extensions.r4#5.2.0, hl7.terminology.r4#6.3.0, dvmd.kdl.r4#2025.0.0, de.gematik.terminology#1.0.6, de.gematik.isik#5.0.0, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.terminology.r4#6.2.0, hl7.fhir.eu.extensions.r4#0.1.1-ballot, hl7.fhir.eu.base#0.1.0-ballot]
-  Terminology Cache at /tmp/default-tx-cache
-  Get set...  go (00:06.868)
-Cached new session. Cache size = 1
-  Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
-  Params: -compare -dest Comparison/EU-Base-Organization -version 4.0 -ig de.gematik.isik#5.0.0 -ig hl7.fhir.eu.base#0.1.0-ballot -left https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation -right http://hl7.eu/fhir/base/StructureDefinition/organization-eu
-Valid destination directory provided: "Comparison/EU-Base-Organization")
-  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:01.367)
-  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:01.179)
-  Load hl7.terminology#6.5.0 - 4356 resources (00:00.516)
-  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:00.440)
-  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.794)
-  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.233)
-  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:00.782)
-  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.024)
-  Load de.basisprofil.r4#1.5.4 - 186 resources (00:00.132)
-  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.008)
-  Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.000)
-  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:01.765)
-  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.165)
-  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:00.925)
-  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.086)
-  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.001)
-  Load de.gematik.terminology#1.0.6 - 50 resources (00:00.007)
-  Load de.gematik.isik#5.0.0 - 238 resources (00:00.045)
-  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:00.027)
-  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.215)
-  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:01.930)
+  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:02.684)
   Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.002)
   Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.034)
   Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, hl7.terminology.r4#5.0.0, hl7.fhir.uv.subscriptions-backport.r4#1.1.0, de.basisprofil.r4#1.5.4, de.ihe-d.terminology#3.0.1, dvmd.kdl.r4#2025.0.1, hl7.fhir.r4.examples#4.0.1, hl7.fhir.uv.sdc#3.0.0, hl7.fhir.uv.extensions.r4#5.2.0, hl7.terminology.r4#6.3.0, dvmd.kdl.r4#2025.0.0, de.gematik.terminology#1.0.6, de.gematik.isik#5.0.0, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.terminology.r4#6.2.0, hl7.fhir.eu.extensions.r4#0.1.1-ballot, hl7.fhir.eu.base#0.1.0-ballot]
   Terminology Cache at /tmp/default-tx-cache
-  Get set...  go (00:04.370)
+  Get set...  go (00:00.272)
+Cached new session. Cache size = 1
+  Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
+  Params: -compare -dest Comparison/EU-Base-Organization -version 4.0 -ig de.gematik.isik#5.0.0 -ig hl7.fhir.eu.base#0.1.0-ballot -left https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation -right http://hl7.eu/fhir/base/StructureDefinition/organization-eu
+Valid destination directory provided: "Comparison/EU-Base-Organization")
+  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:01.105)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:00.912)
+  Load hl7.terminology#6.5.0 - 4356 resources (00:00.558)
+  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:00.455)
+  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.745)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.108)
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:00.841)
+  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.032)
+  Load de.basisprofil.r4#1.5.4 - 186 resources (00:00.135)
+  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.008)
+  Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.000)
+  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:01.983)
+  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.259)
+  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:00.829)
+  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.154)
+  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.002)
+  Load de.gematik.terminology#1.0.6 - 50 resources (00:00.008)
+  Load de.gematik.isik#5.0.0 - 238 resources (00:01.190)
+  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:00.029)
+  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.255)
+  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:02.130)
+  Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.002)
+  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.036)
+  Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, hl7.terminology.r4#5.0.0, hl7.fhir.uv.subscriptions-backport.r4#1.1.0, de.basisprofil.r4#1.5.4, de.ihe-d.terminology#3.0.1, dvmd.kdl.r4#2025.0.1, hl7.fhir.r4.examples#4.0.1, hl7.fhir.uv.sdc#3.0.0, hl7.fhir.uv.extensions.r4#5.2.0, hl7.terminology.r4#6.3.0, dvmd.kdl.r4#2025.0.0, de.gematik.terminology#1.0.6, de.gematik.isik#5.0.0, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.terminology.r4#6.2.0, hl7.fhir.eu.extensions.r4#0.1.1-ballot, hl7.fhir.eu.base#0.1.0-ballot]
+  Terminology Cache at /tmp/default-tx-cache
+  Get set...  go (00:00.154)
 Cached new session. Cache size = 2
 Installing hl7.fhir.pubpack#0.2.3 to the package cache
   Fetching:
 
 Installing hl7.fhir.pubpack#0.2.3
  done.
-  Load hl7.fhir.pubpack#0.2.3 - 0 resources (00:02.291)
+  Load hl7.fhir.pubpack#0.2.3 - 0 resources (00:01.517)
 Comparing StructureDefinitions https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation to http://hl7.eu/fhir/base/StructureDefinition/organization-eu
 Generating output to Comparison/EU-Base-Organization...
 Exception rendering https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.0.0||http://hl7.eu/fhir/base/StructureDefinition/organization-eu|0.1.0-ballot: Cannot invoke "String.length()" because "this.source" is null
@@ -201,4 +196,4 @@ java.lang.NullPointerException: Cannot invoke "String.length()" because "this.so
 	at org.hl7.fhir.validation.ValidatorCli.main(ValidatorCli.java:207)
 Headless environment detected; skipping browser launch.
 Done: file:/home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/Comparison/EU-Base-Organization/index.html
-Done. Times: Loading: 01:03.701. Max Memory = 3Gb
+Done. Times: Loading: 01:00.773. Max Memory = 3Gb

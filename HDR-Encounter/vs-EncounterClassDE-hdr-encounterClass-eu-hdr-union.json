@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "cfd7e4ca-5f2c-47f7-8530-41c1af6b8575-8",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/cfd7e4ca-5f2c-47f7-8530-41c1af6b8575-8",
+  "id" : "bbea258a-d497-46ab-bcc8-a59138d29d19-8",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/bbea258a-d497-46ab-bcc8-a59138d29d19-8",
   "name" : "UnionEncounterClassDEAndEncounterClassHdrVS",
   "title" : "Union of EncounterClassDE And Encounter Class Value Set",
   "status" : "active",
-  "date" : "2025-10-22T10:42:27+00:00",
+  "date" : "2025-10-22T10:58:09+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
