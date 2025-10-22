@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "6a09cc45-34f4-4a22-ba48-29c3ebe50e42-11",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/6a09cc45-34f4-4a22-ba48-29c3ebe50e42-11",
+  "id" : "5697fe86-12d9-4b39-bac8-c3c4e0aa81f0-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/5697fe86-12d9-4b39-bac8-c3c4e0aa81f0-11",
   "name" : "UnionLOINCCodesAndResultsLaboratoryObservationUvIps",
   "title" : "Union of LOINC Codes And Results Laboratory Observation - IPS",
   "status" : "draft",
-  "date" : "2025-10-22T11:25:00+00:00",
+  "date" : "2025-10-22T12:29:35+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

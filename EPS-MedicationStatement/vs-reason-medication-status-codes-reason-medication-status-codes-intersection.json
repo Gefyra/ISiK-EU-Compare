@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "e5025a4e-c14c-426e-b9a7-668f3dad2db6-9",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/e5025a4e-c14c-426e-b9a7-668f3dad2db6-9",
+  "id" : "21ca46c9-808f-47dd-baee-6ca0f43f6756-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/21ca46c9-808f-47dd-baee-6ca0f43f6756-9",
   "name" : "IntersectionSNOMEDCTDrugTherapyStatusCodesAndSNOMEDCTDrugTherapyStatusCodes",
   "title" : "Intersection of SNOMED CT Drug Therapy Status codes  And SNOMED CT Drug Therapy Status codes ",
   "status" : "draft",
-  "date" : "2025-10-22T11:24:56+00:00",
+  "date" : "2025-10-22T12:27:13+00:00",
   "compose" : {
     "include" : [{
       "filter" : [{

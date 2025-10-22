@@ -1,9 +1,9 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "6a09cc45-34f4-4a22-ba48-29c3ebe50e42-6",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/6a09cc45-34f4-4a22-ba48-29c3ebe50e42-6",
+  "id" : "5697fe86-12d9-4b39-bac8-c3c4e0aa81f0-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/5697fe86-12d9-4b39-bac8-c3c4e0aa81f0-6",
   "name" : "IntersectionLOINCCodesAndLaboratoryResultStandardEuVs",
   "title" : "Intersection of LOINC Codes And Laboratory Code",
   "status" : "draft",
-  "date" : "2025-10-22T11:25:00+00:00"
+  "date" : "2025-10-22T12:29:35+00:00"
 }
