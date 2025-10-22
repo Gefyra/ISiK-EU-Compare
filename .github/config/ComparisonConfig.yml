@@ -49,6 +49,11 @@ profiles:
     rightIg: hl7.fhir.eu.hdr#0.1.0-ballot
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedur
     rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/procedure-eu-hdr
+  - dest: Comparison/HDR-Condition
+    leftIg: de.gematik.isik@5.0.0
+    rightIg: hl7.fhir.eu.hdr@0.1.0-ballot
+    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose
+    rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/condition-eu-hdr
   - dest: Comparison/EPS-Patient
     leftIg: de.gematik.isik@5.0.0
     rightIg: hl7.fhir.eu.eps@0.0.1-ci
