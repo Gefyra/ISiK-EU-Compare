@@ -23,7 +23,7 @@ Installing hl7.fhir.xver-extensions#0.1.0 to the package cache
 
 Installing hl7.fhir.xver-extensions#0.1.0
  done.
- - 4576 resources (00:17.582)
+ - 4576 resources (00:17.131)
 Installing hl7.terminology#6.5.0 to the package cache
   Fetching:
 
@@ -34,8 +34,8 @@ Installing hl7.fhir.uv.extensions.r5#5.2.0 to the package cache
 
 Installing hl7.fhir.uv.extensions.r5#5.2.0
  done.
-  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:02.991)
-  Load hl7.terminology#6.5.0 - 4356 resources (00:00.605)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:03.604)
+  Load hl7.terminology#6.5.0 - 4356 resources (00:01.062)
 Installing hl7.fhir.uv.extensions#5.3.0-ballot-tc1 to the package cache
   Fetching:
 
@@ -46,9 +46,9 @@ Installing hl7.terminology.r5#6.5.0 to the package cache
 
 Installing hl7.terminology.r5#6.5.0
  done.
-  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:01.794)
-  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.915)
-  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.548)
+  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:01.725)
+  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.809)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.727)
 Installing hl7.fhir.uv.subscriptions-backport.r4#1.1.0 to the package cache
   Fetching:
 
@@ -59,26 +59,26 @@ Installing hl7.terminology.r4#5.0.0 to the package cache
 
 Installing hl7.terminology.r4#5.0.0
  done.
-  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:07.107)
-  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.032)
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:08.105)
+  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.052)
 Installing de.basisprofil.r4#1.5.4 to the package cache
   Fetching:
 
 Installing de.basisprofil.r4#1.5.4
  done.
-  Load de.basisprofil.r4#1.5.4 - 186 resources (00:01.416)
+  Load de.basisprofil.r4#1.5.4 - 186 resources (00:01.922)
 Installing de.ihe-d.terminology#3.0.1 to the package cache
   Fetching:
 
 Installing de.ihe-d.terminology#3.0.1
  done.
-  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.181)
+  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.239)
 Installing dvmd.kdl.r4#2025.0.1 to the package cache
   Fetching:
 
 Installing dvmd.kdl.r4#2025.0.1
  done.
-  Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.125)
+  Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.164)
 Installing hl7.fhir.uv.sdc#3.0.0 to the package cache
   Fetching:
 
@@ -89,8 +89,8 @@ Installing hl7.fhir.r4.examples#4.0.1 to the package cache
 
 Installing hl7.fhir.r4.examples#4.0.1
  done.
-  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:12.802)
-  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.251)
+  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:13.433)
+  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.264)
 Installing de.gematik.terminology#1.0.6 to the package cache
   Fetching:
 
@@ -106,22 +106,22 @@ Installing hl7.fhir.uv.extensions.r4#5.2.0 to the package cache
 
 Installing hl7.fhir.uv.extensions.r4#5.2.0
  done.
-  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:03.390)
-  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:00.966)
+  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:04.315)
+  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:07.628)
 Installing dvmd.kdl.r4#2025.0.0 to the package cache
   Fetching:
 
 Installing dvmd.kdl.r4#2025.0.0
  done.
-  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.140)
-  Load de.gematik.terminology#1.0.6 - 50 resources (00:00.005)
-  Load de.gematik.isik#5.0.0 - 238 resources (00:01.306)
+  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.668)
+  Load de.gematik.terminology#1.0.6 - 50 resources (00:00.050)
+  Load de.gematik.isik#5.0.0 - 238 resources (00:01.195)
 Installing hl7.terminology.r4#6.5.0 to the package cache
   Fetching:
 
 Installing hl7.terminology.r4#6.5.0
  done.
-  Load hl7.terminology.r4#6.5.0 - 4356 resources (00:02.519)
+  Load hl7.terminology.r4#6.5.0 - 4356 resources (00:14.630)
 Installing hl7.fhir.uv.ips#2.0.0 to the package cache
   Fetching:
 
@@ -137,16 +137,16 @@ Installing hl7.terminology.r4#6.2.0 to the package cache
 
 Installing hl7.terminology.r4#6.2.0
  done.
-  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:03.491)
+  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:22.701)
 Installing hl7.fhir.uv.smart-app-launch#2.0.0 to the package cache
   Fetching:
 
 Installing hl7.fhir.uv.smart-app-launch#2.0.0
  done.
-  Load hl7.fhir.uv.smart-app-launch#2.0.0 - 0 resources (00:00.111)
+  Load hl7.fhir.uv.smart-app-launch#2.0.0 - 0 resources (00:00.414)
   Load hl7.fhir.uv.ipa#1.1.0 - 15 resources (00:00.041)
-  Load hl7.fhir.uv.ips#2.0.0 - 70 resources (00:00.205)
-  Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.023)
+  Load hl7.fhir.uv.ips#2.0.0 - 70 resources (00:00.214)
+  Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.019)
 Installing hl7.fhir.eu.laboratory#0.1.1 to the package cache
   Fetching:
 
@@ -162,8 +162,8 @@ Installing fhir.dicom#2022.4.20221006 to the package cache
 
 Installing fhir.dicom#2022.4.20221006
  done.
-  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:02.486)
-  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.186)
+  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:03.290)
+  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.195)
 Installing hl7.fhir.eu.extensions#0.1.x to the package cache
   Fetching:
 
@@ -174,9 +174,9 @@ Installing hl7.terminology.r5#6.2.0 to the package cache
 
 Installing hl7.terminology.r5#6.2.0
  done.
-  Load hl7.terminology.r5#6.2.0 - 4287 resources (00:01.726)
-  Load hl7.fhir.eu.extensions#0.1.x - 6 resources (00:00.008)
-  Load hl7.fhir.eu.laboratory#0.1.1 - 62 resources (00:00.175)
+  Load hl7.terminology.r5#6.2.0 - 4287 resources (00:02.063)
+  Load hl7.fhir.eu.extensions#0.1.x - 6 resources (00:00.010)
+  Load hl7.fhir.eu.laboratory#0.1.1 - 62 resources (00:00.128)
 Installing hl7.fhir.eu.hdr#0.1.0-ballot to the package cache
   Fetching:
 
@@ -187,34 +187,85 @@ Installing hl7.terminology.r4#6.4.0 to the package cache
 
 Installing hl7.terminology.r4#6.4.0
  done.
-  Load hl7.terminology.r4#6.4.0 - 4345 resources (00:04.562)
-  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.071)
+  Load hl7.terminology.r4#6.4.0 - 4345 resources (00:26.750)
+  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.054)
 Installing ihe.pharm.mpd.r4#1.0.0-comment-2 to the package cache
   Fetching:
 
 Installing ihe.pharm.mpd.r4#1.0.0-comment-2
  done.
-  Load ihe.pharm.mpd.r4#1.0.0-comment-2 - 39 resources (00:00.188)
-  Load hl7.fhir.eu.hdr#0.1.0-ballot - 94 resources (00:00.403)
-Installing hl7.fhir.eu.base#current to the package cache
+  Load ihe.pharm.mpd.r4#1.0.0-comment-2 - 39 resources (00:00.774)
+  Load hl7.fhir.eu.hdr#0.1.0-ballot - 94 resources (00:00.435)
+  Load hl7.fhir.eu.eps#0.0.1-ci - 37 resources (00:00.222)
+  Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, hl7.terminology.r4#5.0.0, hl7.fhir.uv.subscriptions-backport.r4#1.1.0, de.basisprofil.r4#1.5.4, de.ihe-d.terminology#3.0.1, dvmd.kdl.r4#2025.0.1, hl7.fhir.r4.examples#4.0.1, hl7.fhir.uv.sdc#3.0.0, hl7.fhir.uv.extensions.r4#5.2.0, hl7.terminology.r4#6.3.0, dvmd.kdl.r4#2025.0.0, de.gematik.terminology#1.0.6, de.gematik.isik#5.0.0, hl7.terminology.r4#6.5.0, hl7.terminology.r4#6.2.0, hl7.fhir.uv.smart-app-launch#2.0.0, hl7.fhir.uv.ipa#1.1.0, hl7.fhir.uv.ips#2.0.0, hl7.fhir.eu.extensions.r4#0.1.1-ballot, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.terminology.r5#6.2.0, hl7.fhir.eu.extensions#0.1.1-ballot, hl7.fhir.eu.laboratory#0.1.1, hl7.terminology.r4#6.4.0, hl7.fhir.eu.base#0.1.0-ballot, ihe.pharm.mpd.r4#1.0.0-comment-2, hl7.fhir.eu.hdr#0.1.0-ballot, hl7.fhir.eu.eps#0.0.1-ci]
+  Terminology Cache at /tmp/default-tx-cache
+  Get set...  go (00:00.345)
+Cached new session. Cache size = 1
+  Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
+  Params: -compare -dest Comparison/EPS-AllergyIntolerance -version 4.0 -ig de.gematik.isik#5.0.0 -ig hl7.fhir.eu.eps#0.0.1-ci -left https://gematik.de/fhir/isik/StructureDefinition/ISiKAllergieUnvertraeglichkeit -right http://hl7.eu/fhir/eps/StructureDefinition/allergyIntolerance-eu-eps
+Valid destination directory provided: "Comparison/EPS-AllergyIntolerance")
+  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:01.250)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:00.917)
+  Load hl7.terminology#6.5.0 - 4356 resources (00:00.569)
+  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:00.465)
+  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.695)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.516)
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:02.420)
+  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.029)
+  Load de.basisprofil.r4#1.5.4 - 186 resources (00:00.202)
+  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.010)
+  Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.000)
+  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:01.791)
+  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.193)
+  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:00.859)
+  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:05.204)
+  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.001)
+  Load de.gematik.terminology#1.0.6 - 50 resources (00:00.050)
+  Load de.gematik.isik#5.0.0 - 238 resources (00:00.946)
+  Load hl7.terminology.r4#6.5.0 - 4356 resources (00:10.666)
+  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:16.358)
+  Load hl7.fhir.uv.smart-app-launch#2.0.0 - 0 resources (00:00.000)
+  Load hl7.fhir.uv.ipa#1.1.0 - 15 resources (00:00.038)
+  Load hl7.fhir.uv.ips#2.0.0 - 70 resources (00:00.198)
+  Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.006)
+  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:00.023)
+  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.210)
+  Load hl7.terminology.r5#6.2.0 - 4287 resources (00:00.777)
+  Load hl7.fhir.eu.extensions#0.1.x - 6 resources (00:00.005)
+  Load hl7.fhir.eu.laboratory#0.1.1 - 62 resources (00:00.110)
+  Load hl7.terminology.r4#6.4.0 - 4345 resources (00:27.135)
+  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.040)
+  Load ihe.pharm.mpd.r4#1.0.0-comment-2 - 39 resources (00:00.013)
+  Load hl7.fhir.eu.hdr#0.1.0-ballot - 94 resources (00:00.464)
+  Load hl7.fhir.eu.eps#0.0.1-ci - 37 resources (00:00.205)
+  Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, hl7.terminology.r4#5.0.0, hl7.fhir.uv.subscriptions-backport.r4#1.1.0, de.basisprofil.r4#1.5.4, de.ihe-d.terminology#3.0.1, dvmd.kdl.r4#2025.0.1, hl7.fhir.r4.examples#4.0.1, hl7.fhir.uv.sdc#3.0.0, hl7.fhir.uv.extensions.r4#5.2.0, hl7.terminology.r4#6.3.0, dvmd.kdl.r4#2025.0.0, de.gematik.terminology#1.0.6, de.gematik.isik#5.0.0, hl7.terminology.r4#6.5.0, hl7.terminology.r4#6.2.0, hl7.fhir.uv.smart-app-launch#2.0.0, hl7.fhir.uv.ipa#1.1.0, hl7.fhir.uv.ips#2.0.0, hl7.fhir.eu.extensions.r4#0.1.1-ballot, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.terminology.r5#6.2.0, hl7.fhir.eu.extensions#0.1.1-ballot, hl7.fhir.eu.laboratory#0.1.1, hl7.terminology.r4#6.4.0, hl7.fhir.eu.base#0.1.0-ballot, ihe.pharm.mpd.r4#1.0.0-comment-2, hl7.fhir.eu.hdr#0.1.0-ballot, hl7.fhir.eu.eps#0.0.1-ci]
+  Terminology Cache at /tmp/default-tx-cache
+  Get set...  go (00:00.197)
+Cached new session. Cache size = 2
+Installing hl7.fhir.pubpack#0.2.3 to the package cache
   Fetching:
 
-Installing hl7.fhir.eu.base#current
+Installing hl7.fhir.pubpack#0.2.3
  done.
-Installing hl7.fhir.eu.extensions.r4#current to the package cache
-  Fetching:
-Exception in thread "main" org.hl7.fhir.exceptions.FHIRException: The package 'hl7.fhir.eu.extensions.r4' has no entry on the current build server ({ihe.pcc.odh=https://build.fhir.org/ig/IHE/PCC.ODH, hl7.fhir.uv.epi-asean=https://build.fhir.org/ig/cander2/aseanepi, hl7.fhir.efss=https://build.fhir.org/ig/HL7/efss, va.fhir.vco=https://build.fhir.org/ig/mtnlotus/vco-ig, hl7.fhir.us.bser=https://build.fhir.org/ig/HL7/bser, hl7.cda.examples=https://build.fhir.org/ig/HL7/CDA-Examples, hl7.fhir.us.carin-rtpbc=https://build.fhir.org/ig/HL7/carin-rtpbc, hl7.fhir.us.davinci-hrex=https://build.fhir.org/ig/HL7/davinci-ehrx, medcom.fhir.dk.conditionlisttestscripts=https://build.fhir.org/ig/medcomdk/dk-medcom-ConditionList-test-scripts, hl7.fhir.us.icsr-ae-reporting=https://build.fhir.org/ig/HL7/fhir-icsr-ae-reporting, de.medizininformatikinitiative.kerndatensatz.dokument=https://build.fhir.org/ig/medizininformatik-initiative/kerndatensatz-dokument, fhir.org.nz.ig.northernregion=https://build.fhir.org/ig/HL7NZ/northernRegion, hl7.fhir.uv.patient-corrections=https://build.fhir.org/ig/HL7/fhir-patient-correction, medigree.fhir.translations.langpack.pt=https://build.fhir.org/ig/medigree/translations.langpack, hl7.fhir.uv.xver=https://build.fhir.org/ig/HL7/fhir-cross-version, tw.gov.mohw.nhi.base=https://build.fhir.org/ig/TWNHIFHIR/base, ihe.rad.idr=https://build.fhir.org/ig/IHE/RAD.IDR, hl7.fhir.r4.ig.medicalalertinformation=https://build.fhir.org/ig/HL7Sweden/hl7.fhir.r4.ig.medicalalertinformation, xtehr.eu.ehds.models=https://build.fhir.org/ig/Xt-EHR/xt-ehr-common, no.ntnu.folk.adamzk.it6103.wada-list=https://build.fhir.org/ig/adamzkover/wada-list-fhir, adha.template.cda=https://build.fhir.org/ig/AuDigitalHealth/adha-template-cda, ans.fhir.fr.annuaire=https://build.fhir.org/ig/ansforge/IG-fhir-annuaire, hl7.fhir.au.ereq=https://build.fhir.org/ig/hl7au/au-fhir-erequesting, medigree.fhir.translations.content=https://build.fhir.org/ig/medigree/translations.content, hl7.fhir.us.pco=https://build.fhir.org/ig/HL7/pco-ig, hl7.fhir.uv.lab-report=https://build.fhir.org/ig/HL7/uv-lab-rep-ig, hl7.fhir.us.pacio-cs=https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status, smart.who.int.hiv=https://build.fhir.org/ig/DIGI-UW/smart-hiv, hl7.extensions.template=https://build.fhir.org/ig/HL7/ig-template-extensions, ihe.qrph.qore=https://build.fhir.org/ig/IHE/QRPH.QORE, hl7.cda.us.eyecare=https://build.fhir.org/ig/HL7/cda-eyecare, hl7.fast.template=https://build.fhir.org/ig/HL7/ig-template-fast, hl7.fhirpath=https://build.fhir.org/ig/HL7/FHIRPath, hl7.fhir.be.core-clinical=https://build.fhir.org/ig/hl7-be/core-clinical, hl7.fhir.template=https://build.fhir.org/ig/HL7/ig-template-fhir, hl7.fhir.uv.omop=https://build.fhir.org/ig/HL7/fhir-omop-ig, up-manila-silab.immunizationfhirig=https://build.fhir.org/ig/UP-Manila-SILab/immunizationfhirig, hl7.fhir.uv.testing=https://build.fhir.org/ig/HL7/fhir-testing-ig, hl7.fhir.uv.vulcan-soa=https://build.fhir.org/ig/HL7/Vulcan-schedule-ig, medcom.fhir.dk.homecareobservation=https://build.fhir.org/ig/medcomdk/dk_HomeCareObservations, ihe.iti.sips=https://build.fhir.org/ig/IHE/ITI.sIPS, hl7.fhir.ca.baseline=https://build.fhir.org/ig/HL7-Canada/ca-baseline, au.digitalhealth.cda.schema=https://build.fhir.org/ig/AuDigitalHealth/cda-au-schema, ihe.iti.pixm=https://build.fhir.org/ig/IHE/ITI.PIXm, fhir.virtually.healthcare=https://build.fhir.org/ig/Virtually-Healthcare/virtually-healthcare.github.com, fhir.kisumuhie=https://build.fhir.org/ig/IntelliSOFT-Consulting/Kisumu-County-HIE-FHIR-IG, hl7.fhir.au.pd=https://build.fhir.org/ig/hl7au/au-fhir-pd, hl7.fhir.cl.minsal.nid=https://build.fhir.org/ig/Minsal-CL/NID, hl7.fhir.us.hai-ltcf=https://build.fhir.org/ig/HL7/HAI-LTCF, hl7.fhir.uv.ae-research-backport-ig=https://build.fhir.org/ig/HL7/fhir-ae-research-backport-ig, hl7.fhir.it.cda2fhir=https://build.fhir.org/ig/hl7-it/cda2fhir, ihe.pcc.fiio=https://build.fhir.org/ig/IHE/PCC.FIIO, hl7.fhir.be.medication=https://build.fhir.org/ig/hl7-be/medication, ch.fhir.ig.ch-core=https://build.fhir.org/ig/hl7ch/ch-core, hl7.fhir.au.ps=https://build.fhir.org/ig/hl7au/au-fhir-ps, smart.who.int.dak-pnc=https://build.fhir.org/ig/WorldHealthOrganization/smart-dak-pnc, hl7.eu.fhir.xshare-yb=https://build.fhir.org/ig/hl7-eu/xShare, hl7.fhir.uv.shc-vaccination=https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig, ihe.iti.svcm=https://build.fhir.org/ig/IHE/ITI.SVCM, ihe.iti.npfs=https://build.fhir.org/ig/IHE/ITI.NPFS, ihe.iti.scheduling=https://build.fhir.org/ig/IHE/ITI.Scheduling, ihe.iti.balp=https://build.fhir.org/ig/IHE/ITI.BasicAudit, smart.who.int.ips-pilgrimage=https://build.fhir.org/ig/litlfred/smart-ips-pilgrimage, ihe.pcc.qedm=https://build.fhir.org/ig/IHE/PCC.QEDm, hl7.fhir.us.vrdr=https://build.fhir.org/ig/HL7/vrdr, ihe.pcc.pscc=https://build.fhir.org/ig/IHE/PCC.PCSc, fhir.base.template=https://build.fhir.org/ig/HL7/ig-template-base, ru.core=https://build.fhir.org/ig/fhir-ru/RuCoreIG, hl7.fhir.cl.clcore=https://build.fhir.org/ig/HL7Chile/clcore_ig, hl7.fhir.cz.lab=https://build.fhir.org/ig/HL7-cz/cz-lab, ihe.pharm.supply=https://build.fhir.org/ig/IHE/pharm-supply, hl7.fhir.eu.imaging-manifest-r5=https://build.fhir.org/ig/hl7-eu/imaging-manifest, hl7.fhir.uv.cdisc-mapping=https://build.fhir.org/ig/HL7/fhir-cdisc-mapping, hl7.fhir.cl.clips=https://build.fhir.org/ig/HL7Chile/IPS-CL, ch.fhir.ig.ch-orf=https://build.fhir.org/ig/hl7ch/ch-orf, hl7.eu.fhir.xt-ehr.metadata=https://build.fhir.org/ig/Xt-EHR/xt-ehr-metadata, min-health.eth.fhir.example=https://build.fhir.org/ig/costateixeira/ExampleIG, tw.gov.mohw.nhi.cql=https://build.fhir.org/ig/TWNHIFHIR/cql, medcom.fhir.dk.carecommunication=https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication, hl7.fhir.uv.tools=https://build.fhir.org/ig/FHIR/fhir-tools-ig, fhir.nigeriaImmunization=https://build.fhir.org/ig/IntelliSOFT-Consulting/Nigeria-Immunization-FHIR-IG, hl7.fhir.uv.cds-hooks=https://build.fhir.org/ig/HL7/cds-hooks, hl7.fhir.uv.adverseeventclinicalcare=https://build.fhir.org/ig/HL7/fhir-ae-care-ig, example.fhir.uv.mycontentig=https://build.fhir.org/ig/cqframework/sample-content-ig, johnmoehrke.testbinary.example=https://build.fhir.org/ig/JohnMoehrke/testBinary, lt.hl7.fhir.base=https://build.fhir.org/ig/HL7LT/ig-lt-base, tewhatuora.rheumaticfever.ig=https://build.fhir.org/ig/tewhatuora/fhir-rheumatic-fever, hl7.utg.template=https://build.fhir.org/ig/HL7/ig-template-utg, hl7.cda.adi=https://build.fhir.org/ig/HL7/cda-adi, hl7.fhir.uv.cql=https://build.fhir.org/ig/HL7/cql-ig, ihe.iti.vhl=https://build.fhir.org/ig/IHE/ITI.VHL, ch.fhir.ig.ch-term=https://build.fhir.org/ig/hl7ch/ch-term, hl7.fhir.uv.cqm=https://build.fhir.org/ig/HL7/fhir-cqm, hl7.fhir.eu.base-r5=https://build.fhir.org/ig/hl7-eu/base-r5, ch.fhir.ig.template=https://build.fhir.org/ig/hl7ch/ig-template, hl7.fhir.uv.epi-jp-ig=https://build.fhir.org/ig/cander2/epi-jp, dk.kip.rkkp.fhir.ig.core=https://build.fhir.org/ig/KIP-infrastructure/implementation-guide, ans.fhir.fr.mesures=https://build.fhir.org/ig/ansforge/IG-fhir-mesures-de-sante, hl7.fhir.us.home-lab-report=https://build.fhir.org/ig/HL7/home-lab-report, ch.fhir.ig.ch-lab-order=https://build.fhir.org/ig/hl7ch/ch-lab-order, hl7.fhir.cz.amb=https://build.fhir.org/ig/HL7-cz/amb, hl7.fhir.us.cancer-reporting=https://build.fhir.org/ig/HL7/cancer-reporting, medcom.fhir.dk.document=https://build.fhir.org/ig/medcomdk/dk-medcom-document, hl7.fhir.uv.pharmaceutical-research-protocol=https://build.fhir.org/ig/HL7/vulcan-udp-ig, ch.fhir.ig.ch-vacd=https://build.fhir.org/ig/hl7ch/ch-vacd, hl7.cda.uv.core=https://build.fhir.org/ig/HL7/CDA-core-sd, smart.who.int.base=https://build.fhir.org/ig/WorldHealthOrganization/smart-base, smart.who.int.pcmt=https://build.fhir.org/ig/WorldHealthOrganization/smart-pcmt, adha.template.base=https://build.fhir.org/ig/AuDigitalHealth/adha-template-base, hl7.fhir.cz.terminology=https://build.fhir.org/ig/HL7-cz/terminology, hl7.cda.us.ccda=https://build.fhir.org/ig/HL7/CDA-ccda, hl7.org.nz.fhir.ig.formulary=https://build.fhir.org/ig/HL7NZ/nzf, ihe.palm.rpc=https://build.fhir.org/ig/IHE/PaLM.RPC, ihe.iti.mcsd=https://build.fhir.org/ig/IHE/ITI.mCSD, hl7.fhir.us.vr-common-library=https://build.fhir.org/ig/HL7/vr-common-library, hl7.fhir.us.pacio-fs=https://build.fhir.org/ig/HL7/fhir-pacio-functional-status, hl7.fhir.uv.livd=https://build.fhir.org/ig/HL7/livd, hl7.fhir.us.medication-rems=https://build.fhir.org/ig/HL7/fhir-medication-rems-ig, ihe.pcc.ems-overall=https://build.fhir.org/ig/IHE/EMS-Overall, hl7.other.template=https://build.fhir.org/ig/HL7/ig-template-other, hl7.at.fhir.elga.aps.r4=https://build.fhir.org/ig/HL7Austria/ELGA-AustrianPatientSummary-R4, hl7.fhir.us.consent-management=https://build.fhir.org/ig/HL7/fhir-consent-management, hl7.fhir.test.multi-lang=https://build.fhir.org/ig/FHIR/multi-lang-test-ig, cms.madie=https://build.fhir.org/ig/cqframework/dqm-content-qicore-2025, hl7.fhir.uv.ae-research-ig=https://build.fhir.org/ig/HL7/fhir-ae-research-ig, hl7.fhir.uv.smart-web-messaging=https://build.fhir.org/ig/HL7/smart-web-messaging, hl7.fhir.us.medmorph-research-dex=https://build.fhir.org/ig/HL7/fhir-medmorph-research-dex-ig, fhir.tei-aps-secundario=https://build.fhir.org/ig/cens-chile/tei-aps-secundario, hl7.ehrs.uv.phrsfmr2=https://build.fhir.org/ig/HL7/phrsfm-ig, tewhatuora.rheumaticfever=https://build.fhir.org/ig/tewhatuora/fhir-rheumatic-fever, hl7.fhir.us.mcode=https://build.fhir.org/ig/HL7/fhir-mCODE-ig, hl7.fhir.cz.ps=https://build.fhir.org/ig/HL7-cz/ps, hl7.fhir.eu.extensions=https://build.fhir.org/ig/hl7-eu/extensions, hl7.fhir.be.patient-monitoring=https://build.fhir.org/ig/hl7-be/patient-monitoring, ihe.rad.imr=https://build.fhir.org/ig/IHE/RAD.IMR, hl7.fhir.be.terminology=https://build.fhir.org/ig/hl7-be/terminology, medcom.fhir.dk.xdsmetadata=https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata, hl7.fhir.uv.eyecare=https://build.fhir.org/ig/HL7/fhir-eyecare-ig, hl7.fhir.us.cdmh=https://build.fhir.org/ig/HL7/cdmh, hl7.fhir.eu.cancer-common=https://build.fhir.org/ig/hl7-eu/cancer-common, hl7.eu.fhir.xpandh.hdr=https://build.fhir.org/ig/hl7-eu/xpandh-hdr, iknl.fhir.r4.pzp=https://build.fhir.org/ig/IKNL/PZP-FHIR-R4, adha.template.fhir=https://build.fhir.org/ig/AuDigitalHealth/adha-template-fhir, hl7.fhir.uv.pharm-quality=https://build.fhir.org/ig/HL7/uv-dx-pq, medcom.fhir.dk.carecommunicationtestscripts=https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication-testscripts, hl7.fhir.uv.order-catalog=https://build.fhir.org/ig/HL7/fhir-order-catalog, ihe.pcc.rsq=https://build.fhir.org/ig/IHE/PCC.SDOH.RSQ, hl7.fhir.pt.patient-admin-ig=https://build.fhir.org/ig/hl7-pt/patient-admin-ig, hl7.fhir.uv.ihe-sdc-ecc=https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir, hl7.fhir.uv.vulcan-rwd=https://build.fhir.org/ig/HL7/vulcan-rwd, hl7.fhir.uv.tx-ecosystem=https://build.fhir.org/ig/HL7/fhir-tx-ecosystem-ig, hl7.fhir.us.davinci-pas=https://build.fhir.org/ig/HL7/davinci-pas, hl7.fhir.uv.cmi=https://build.fhir.org/ig/HL7/Content-Management-Infrastructure-IG, hl7.fhir.r4.pt=https://build.fhir.org/ig/FHIR/hl7.fhir.r4.pt, hl7.fhir.cz.core=https://build.fhir.org/ig/HL7-cz/cz-core, hl7.fhir.uv.dicom-sr=https://build.fhir.org/ig/HL7/dicom-sr, hl7.fhir.eu.eps=https://build.fhir.org/ig/hl7-eu/eps, ihe.iti.mhd=https://build.fhir.org/ig/IHE/ITI.MHD, fhir.nwgenomics.nhs.uk=https://build.fhir.org/ig/nw-gmsa/nw-gmsa.github.com, hl7.fhir.us.pacio-toc=https://build.fhir.org/ig/HL7/fhir-transitions-of-care-ig, hl7.fhir.uv.howto=https://build.fhir.org/ig/FHIR/ig-guidance, ch.raly.publisherbugtest=https://build.fhir.org/ig/ralych/ig-publisher-bug-tests, hl7.fhir.uv.cow=https://build.fhir.org/ig/HL7/fhir-cow-ig, smart.who.int.ra=https://build.fhir.org/ig/WorldHealthOrganization/smart-ra, jct.fhir.spenser=https://build.fhir.org/ig/costateixeira/spenser, openehr.fhir.template=https://build.fhir.org/ig/FHIR/openehr.fhir.template, fhir.astp.bhp=https://build.fhir.org/ig/HL7/us-behavioral-health-profiles, hl7.fhir.uv.cpg=https://build.fhir.org/ig/HL7/cqf-recommendations, hl7.fhir.us.vitals=https://build.fhir.org/ig/HL7/cimi-vital-signs, ch.fhir.ig.ch-elm=https://build.fhir.org/ig/ahdis/ch-elm, smart.who.int.icvp=https://build.fhir.org/ig/WorldHealthOrganization/smart-icvp, ihe.domain.profile=https://build.fhir.org/ig/IHE/supplement-template, kl.dk.fhir.ltt=https://build.fhir.org/ig/hl7dk/kl-ltt, csiro.fhir.au.smartforms=https://build.fhir.org/ig/aehrc/smart-forms-ig, org.helex.ccm=https://build.fhir.org/ig/helexlab/ig-ccm, ru.fhir.semd=https://build.fhir.org/ig/fhir-ru/Ru-SEMD, hl7.fhir.uv.phd=https://build.fhir.org/ig/HL7/phd, hl7.fhir.uv.cmhaffr2=https://build.fhir.org/ig/HL7/cmhaff-ig, hl7.fhir.uv.pddi=https://build.fhir.org/ig/HL7/PDDI-CDS, hl7.fhir.uv.molecular-definition-data-types=https://build.fhir.org/ig/HL7/molecular-definition-data-types, example.fhir.ph.roadsafety=https://build.fhir.org/ig/UPM-NTHC/PH-RoadSafetyIG, ihe.pharm.meow=https://build.fhir.org/ig/IHE/pharm-meow, hl7.eu.fhir.xpandh.mpd=https://build.fhir.org/ig/hl7-eu/xpandh-mpd, hl7.au.fhir.template=https://build.fhir.org/ig/hl7au/hl7.au.fhir.template, ihe.pcc.aps=https://build.fhir.org/ig/IHE/PCC.APS, hl7.v2plus=https://build.fhir.org/ig/HL7/v2ig, hl7.fhir.us.davinci-pct=https://build.fhir.org/ig/HL7/davinci-pct, hl7.fhir.uv.phr=https://build.fhir.org/ig/HL7/personal-health-record-format-ig, hl7.fhir.us.physical-activity=https://build.fhir.org/ig/HL7/physical-activity, hl7.fhir.au.base=https://build.fhir.org/ig/hl7au/au-fhir-base, hl7.fhir.us.davinci-pr=https://build.fhir.org/ig/HL7/davinci-pr, smart.who.int.pcmt-vaxprequal=https://build.fhir.org/ig/WorldHealthOrganization/smart-pcmt-vaxprequal, ihe-de.iti.xds-vs=https://build.fhir.org/ig/IHE-Germany/ITI.XDS.VS, hl7.fhir.fi.base=https://build.fhir.org/ig/fhir-fi/finnish-base-profiles, tw.gov.mohw.nhi.pas=https://build.fhir.org/ig/TWNHIFHIR/pas, ihe.qrph.qmod=https://build.fhir.org/ig/IHE/QRPH.QMOD, hl7.ca.fhir.template=https://build.fhir.org/ig/HL7/ig-template-ca, fhir.paciosampledata=https://build.fhir.org/ig/paciowg/sample-data-fsh, hl7.fhir.uv.security-label-ds4p=https://build.fhir.org/ig/HL7/fhir-security-label-ds4p, gov.healthit.ecqi.ecqms=https://build.fhir.org/ig/cqframework/ecqm-content-qicore-2025, kl.dk.fhir.term=https://build.fhir.org/ig/hl7dk/kl-term, hl7.eu.fhir.gh=https://build.fhir.org/ig/hl7-eu/gravitate-health, hl7.fhir.au.core=https://build.fhir.org/ig/hl7au/au-fhir-core, hl7.eu.fhir.idea4rc=https://build.fhir.org/ig/hl7-eu/idea4rc, hl7.fhir.us.military-service=https://build.fhir.org/ig/HL7/fhir-military-service, dk.sundhedsdatastyrelsen.gm=https://build.fhir.org/ig/trifork/gm-fhir-ig, uz.dhp.integrations=https://build.fhir.org/ig/vadi2/DHP-integrations-temp, vcds-ig.euvabeco.net=https://build.fhir.org/ig/EUVABECO/VCDS, hl7.ehrs.uv.base=https://build.fhir.org/ig/HL7/ehrs-base-ig, hl7.fhir.us.medmorph=https://build.fhir.org/ig/HL7/fhir-medmorph, hl7.fhir.us.vdor=https://build.fhir.org/ig/HL7/fhir-vdor, dk.ehealth.sundhed.fhir.ig.core=https://build.fhir.org/ig/fut-infrastructure/implementation-guide, eu.ehds.models=https://build.fhir.org/ig/Xt-EHR/xt-ehr-common, hl7.xprod.uv.gender-harmony=https://build.fhir.org/ig/HL7/fhir-gender-harmony, medcom.fhir.dk.core=https://build.fhir.org/ig/medcomdk/dk-medcom-core, hl7.fhir.be.drp=https://build.fhir.org/ig/hl7-be/referral, hl7.fhir.uv.imaging-service-request-ig=https://build.fhir.org/ig/HL7/imaging-service-request-ig, ch.fhir.ig.ch-emed-epr=https://build.fhir.org/ig/CARA-ch/ch-emed-epr, hl7.fhir.eu.base=https://build.fhir.org/ig/hl7-eu/base, ch.fhir.ig.ch-ips=https://build.fhir.org/ig/hl7ch/ch-ips, hl7.fhir.cz.ems=https://build.fhir.org/ig/HL7-cz/cz-ems, hl7.terminology=https://build.fhir.org/ig/HL7/UTG, hl7.fhir.eu.imaging=https://build.fhir.org/ig/hl7-eu/imaging, hl7.fhir.us.davinci-ra=https://build.fhir.org/ig/HL7/davinci-ra, tewhatuora.fhir.nz-shared-digital-health-record=https://build.fhir.org/ig/tewhatuora/fhir-sdhr, dk.ehmi.eds=https://build.fhir.org/ig/medcomdk/dk-ehmi-eds, ihe.qrph.ccg=https://build.fhir.org/ig/IHE/QRPH.CCG, hl7.fhir.uv.ichom-breast-cancer=https://build.fhir.org/ig/HL7/fhir-ichom-breast-cancer-ig, ihe.qrph.madx=https://build.fhir.org/ig/IHE/QRPH.mADX, medcom.fhir.dk.conditionlist=https://build.fhir.org/ig/medcomdk/dk-medcom-conditionlist, ihe.iti.deid=https://build.fhir.org/ig/IHE/ITI.DeIdHandbook, your.package.id=https://build.fhir.org/ig/PeterBIKO/FHIR-RWANDA2, hl7.fhir.us.eltss=https://build.fhir.org/ig/HL7/eLTSS, hl7.fhir.us.dental-data-exchange=https://build.fhir.org/ig/HL7/dental-data-exchange, hl7.fhir.us.ecr=https://build.fhir.org/ig/HL7/case-reporting, hl7.fhir.us.davinci-cdex=https://build.fhir.org/ig/HL7/davinci-ecdx, hl7.fhir.uv.subscriptions-backport=https://build.fhir.org/ig/HL7/fhir-subscription-backport-ig, hl7.cql=https://build.fhir.org/ig/HL7/cql, hl7.fhir.us.ccda=https://build.fhir.org/ig/HL7/ccda-on-fhir, hl7.fhir.uv.openehr-test=https://build.fhir.org/ig/FHIR/openehr-test, dk.ehmi.eer=https://build.fhir.org/ig/medcomdk/dk-ehmi-eer, fhir.example=https://build.fhir.org/ig/trifork/fhir-ig-sample, hl7.fhir.us.nhsn-dqm=https://build.fhir.org/ig/HL7/nhsn-dqm, hl7.fhir.cz.hdr=https://build.fhir.org/ig/HL7-cz/hdr, medcom.fhir.dk.terminology=https://build.fhir.org/ig/medcomdk/dk-medcom-terminology, hl7.fhir.be.glucose-monitoring=https://build.fhir.org/ig/hl7-be/glucose-monitoring, hl7.fhir.uv.emedicinal-product-info=https://build.fhir.org/ig/HL7/emedicinal-product-info, ihe.fhir.template=https://build.fhir.org/ig/IHE/ihe-ig-template, ihe.pcc.mpsc=https://build.fhir.org/ig/IHE/PCC.PCS, hl7.fhir.us.sdoh-clinicalcare=https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare, smart.who.int.l2-hhas=https://build.fhir.org/ig/WorldHealthOrganization/smart-l2-hhas, hl7.fhir.us.carin-bb=https://build.fhir.org/ig/HL7/carin-bb, hl7.fhir.uv.sdc=https://build.fhir.org/ig/HL7/sdc, hl7.fhir.uv.fhircast=https://build.fhir.org/ig/HL7/fhircast-docs, hl7.fhir.uv.ips=https://build.fhir.org/ig/HL7/fhir-ips, hl7.fhir.us.pacio-adi=https://build.fhir.org/ig/HL7/fhir-pacio-adi, ch.fhir.ig.ch-epreg=https://build.fhir.org/ig/hl7ch/ch-epreg, hl7.fhir.us.resp-net=https://build.fhir.org/ig/HL7/fhir-resp-net-ig, uz.dhp.core=https://build.fhir.org/ig/uzinfocom-org/digital-health-ig, hl7.fhir.uv.phenomics-exchange=https://build.fhir.org/ig/HL7/phenomics-exchange-ig, hl7.fhir.uv.bulkdata=https://build.fhir.org/ig/HL7/bulk-data, hl7.fhir.eu.imaging-r5=https://build.fhir.org/ig/hl7-eu/imaging-r5, example.fhir.ph.core=https://build.fhir.org/ig/UP-Manila-SILab/ph-core, hl7.eu.fhir.oah=https://build.fhir.org/ig/hl7-eu/oah, hl7.fhir.eu.imaging-r4=https://build.fhir.org/ig/hl7-eu/imaging-r4, hl7.fhir.cl.minsal.urgencia=https://build.fhir.org/ig/Minsal-CL/IG_Urgencia, hl7.ehrs.uv.ehrsfmr2=https://build.fhir.org/ig/HL7/ehrsfm-ig, fhir.rwanda.ig=https://build.fhir.org/ig/christianmurwanashyaka/FHIRTest, hl7.fhir.uv.ehrs-rle=https://build.fhir.org/ig/HL7/ehrs-rle-ig, smart.who.int.ig-starter-kit=https://build.fhir.org/ig/WorldHealthOrganization/smart-ig-starter-kit, de.medizininformatikinitiative.kerndatensatz.meta=https://build.fhir.org/ig/medizininformatik-initiative/kerndatensatz-meta, fhir.giis=https://build.fhir.org/ig/cens-chile/giis_fhir_IG, who.ddcc=https://build.fhir.org/ig/WorldHealthOrganization/ddcc, uz.medcore.dhp=https://build.fhir.org/ig/vadi2/DHP-temp, hl7.fhir.uv.v2mappings=https://build.fhir.org/ig/HL7/v2-to-fhir, gala.hie.fhir=https://build.fhir.org/ig/galaletsangdintwe/CreateTest-Project, hl7.fhir.uv.cgm=https://build.fhir.org/ig/HL7/cgm, hl7.fhir.us.pdmp=https://build.fhir.org/ig/HL7/fhir-pdmp, hl7.fhir.eu.laboratory=https://build.fhir.org/ig/hl7-eu/laboratory, ihe.pharm.mpd=https://build.fhir.org/ig/IHE/pharm-mpd, hl7.fhir.us.central-cancer-registry-reporting=https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig, hl7.fhir.uv.crmi=https://build.fhir.org/ig/HL7/crmi-ig, hl7.fhir.fr.template=https://build.fhir.org/ig/Interop-Sante/ig-style, hl7.fhir.pl.ssidl=https://build.fhir.org/ig/SSIDL/ssidl-ig, hl7.fhir.us.davinci-crd=https://build.fhir.org/ig/HL7/davinci-crd, hl7.xprod.uv.tinkar=https://build.fhir.org/ig/HL7/tinkar-ig, hl7.fhir.uv.shorthand=https://build.fhir.org/ig/HL7/fhir-shorthand, openehr.base=https://build.fhir.org/ig/openehr-fhir/base-spec, hl7.fhir.us.pacio-rt=https://build.fhir.org/ig/HL7/fhir-pacio-rt, fhir.cdc.opioid-cds-r4=https://build.fhir.org/ig/cqframework/opioid-cds-r4, ihe.iti.dsubm=https://build.fhir.org/ig/IHE/ITI.DSUBm, ng.gov.nphcda.immunization=https://build.fhir.org/ig/Nigeria-FHIR-Community/NPHCDA-ImmunizationIG, idmp.who-umc.org.fhir=https://build.fhir.org/ig/Uppsala-Monitoring-Centre/WHO-UMC-IDMP-Service, hl7.fhir.us.dme-orders=https://build.fhir.org/ig/HL7/dme-orders, hl7.fhir.uv.deval=https://build.fhir.org/ig/HL7/DeviceAlerting, hl7.fhir.us.davinci-dtr=https://build.fhir.org/ig/HL7/davinci-dtr, dk.ehmi.terminology=https://build.fhir.org/ig/medcomdk/dk-ehmi-terminology, ee.fhir.spd=https://build.fhir.org/ig/TEHIK-EE/ig-ee-spd, ehi.api=https://build.fhir.org/ig/argonautproject/ehi-api, hl7.eu.fhir.xpandh.ps=https://build.fhir.org/ig/hl7-eu/xpandh-ps, medcom.ehmi.dk.edstestscripts=https://build.fhir.org/ig/medcomdk/dk-ehmi-eds-testscripts, hl7.fhir.us.davinci-drug-formulary=https://build.fhir.org/ig/HL7/davinci-pdex-formulary, dk.ehmi.eas=https://build.fhir.org/ig/medcomdk/dk-ehmi-eas, hl7.fhir.cl.minsal.tei=https://build.fhir.org/ig/Minsal-CL/SIGTEv2-IG, fhir.org.nz.ig.base=https://build.fhir.org/ig/HL7NZ/nzbase, neo.connect=https://build.fhir.org/ig/dolly9991/fhir-solvathon, xxxexample.fhir.uv.myig=https://build.fhir.org/ig/costateixeira/lmtest, jembi.starter.ig=https://build.fhir.org/ig/jembi/Starter-FHIR-IG, medcom.fhir.dk.messagedefinitions=https://build.fhir.org/ig/medcomdk/dk-medcom-messagedefinitions, hl7.cda.template=https://build.fhir.org/ig/HL7/ig-template-cda, ihe.rad.ira=https://build.fhir.org/ig/IHE/RAD.IRA, hl7.fhir.us.directory-query=https://build.fhir.org/ig/HL7/fhir-directory-query, hl7.at.fhir.template=https://build.fhir.org/ig/HL7Austria/at-fhir-ig-template, nw-gmsa.github.io=https://build.fhir.org/ig/nw-gmsa/R4, hl7.fhir.fi.scheduling=https://build.fhir.org/ig/fhir-fi/finnish-scheduling, hl7.fhir.us.davinci-alerts=https://build.fhir.org/ig/HL7/davinci-alerts, hl7.fhir.uv.application-feature=https://build.fhir.org/ig/HL7/capstmt, hl7.fhir.uv.cardx-cied=https://build.fhir.org/ig/HL7/CardX-CIED, org.sql-on-fhir.ig=https://build.fhir.org/ig/FHIR/sql-on-fhir-v2, hl7.fhir.us.codex-radiation-therapy=https://build.fhir.org/ig/HL7/codex-radiation-therapy, hl7.fhir.cz.hie=https://build.fhir.org/ig/HL7-cz/HIE, hl7.fhir.pl.laboratory=https://build.fhir.org/ig/HL7-Poland/pl-fhir-lab, hl7.fhir.us.davinci-pcde=https://build.fhir.org/ig/HL7/davinci-pcde, hl7.fhir.be.pss=https://build.fhir.org/ig/hl7-be/pss, hl7.fhir.us.davinci-vbpr=https://build.fhir.org/ig/HL7/davinci-vbpr, hl7.fhir.be.childrecord=https://build.fhir.org/ig/hl7-be/childrecord, hl7.fhir.us.breast-radiology=https://build.fhir.org/ig/HL7/fhir-breast-radiology-ig, hl7.fhir.us.davinci-pdex=https://build.fhir.org/ig/HL7/davinci-epdx, hl7.fhir.us.directory-exchange=https://build.fhir.org/ig/HL7/fhir-directory-exchange, hl7.fhir.uv.pocd=https://build.fhir.org/ig/HL7/uv-pocd, ch.fhir.ig.ch-ems=https://build.fhir.org/ig/hl7ch/ch-ems, hl7.fhir.us.pacio-pfe=https://build.fhir.org/ig/HL7/fhir-pacio-pfe, hl7.fhir.cz.lab-order=https://build.fhir.org/ig/HL7-cz/lab-order, hl7.xprod.uv.piqiimplementation=https://build.fhir.org/ig/HL7/piqiimplementation, hl7.fhir.us.birthdefectreporting=https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig, hl7.fhir.affiliate.template=https://build.fhir.org/ig/HL7/ig-template-affiliate, medcom.fhir.dk.coredocument=https://build.fhir.org/ig/medcomdk/dk-medcom-core-document, hl7.cda.uv.ips=https://build.fhir.org/ig/HL7/CDA-IPS, hl7.fhir.uv.recon-ig=https://build.fhir.org/ig/HL7/APIX---API-Exchange-for-Medicinal-Products, ihe-de.iti.xds-vs-mappings=https://build.fhir.org/ig/IHE-Germany/ITI.XDS.VS.mappings, hl7.fhir.us.measureset=https://build.fhir.org/ig/FHIR/MADFSH, ch.fhir.ig.ch-epl=https://build.fhir.org/ig/bag-epl/bag-epl-fhir, smart.who.int.trust-phw=https://build.fhir.org/ig/WorldHealthOrganization/smart-trust-phw, hl7.ehrs.template=https://build.fhir.org/ig/HL7/ig-template-ehrs, fhir.cqf.vsp=https://build.fhir.org/ig/cqframework/vsp-ig, hl7.fhir.cz.img=https://build.fhir.org/ig/HL7-cz/img, hl7.fhir.uv.ipa=https://build.fhir.org/ig/HL7/fhir-ipa, intraproc.anesthesia=https://build.fhir.org/ig/HL7/intraproc-anesthesia, ch.fhir.ig.ch-lab-report=https://build.fhir.org/ig/hl7ch/ch-lab-report, ihe.iti.aips=https://build.fhir.org/ig/IHE/ITI.aIPS, hl7.fhir.us.registry-protocols=https://build.fhir.org/ig/HL7/fhir-registry-protocols-ig, national.hie.fhir=https://build.fhir.org/ig/tteddyblOak/FHIR-Teddy, hl7.fhir.us.hai=https://build.fhir.org/ig/HL7/HAI, hl7.fhir.us.cardx-htn=https://build.fhir.org/ig/HL7/cardx-ig, cms.fhir.qmd=https://build.fhir.org/ig/cqframework/cms-qmd, cqf.aphl.chronic-ds=https://build.fhir.org/ig/cqframework/aphl-chronic-ig, fhir.gdx=https://build.fhir.org/ig/CodeX-HL7-FHIR-Accelerator/GenomeX-DataExchange, hl7.fhir.be.patientwill=https://build.fhir.org/ig/hl7-be/patientwill, hl7.fhir.us.ph-library=https://build.fhir.org/ig/HL7/fhir-us-ph-library, medcom.fhir.dk.xdsdocuments=https://build.fhir.org/ig/medcomdk/dk-medcom-xds-documents, hl7.gravity.template=https://build.fhir.org/ig/HL7/ig-template-gravity, hl7.fhir.uv.cds-hooks-library=https://build.fhir.org/ig/HL7/cds-hooks-library, smart.who.int.anc=https://build.fhir.org/ig/costateixeira/smart-anc, hl7.au.base.template=https://build.fhir.org/ig/hl7au/hl7.au.base.template, hl7.at.fhir.gkl.ig-tooling=https://build.fhir.org/ig/gabriel0316/ig-tooling, hl7.sdc.template=https://build.fhir.org/ig/HL7/ig-template-sdc, hl7.fhir.uv.radiation-dose-summary=https://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig, hl7.fhir.us.spl=https://build.fhir.org/ig/HL7/fhir-spl, hl7.vulcan.template=https://build.fhir.org/ig/HL7/ig-template-vulcan, fhir.efss=https://build.fhir.org/ig/HL7/efss, hl7.fhir.us.mdi=https://build.fhir.org/ig/HL7/fhir-mdi-ig, hl7.fhir.uv.termfundamentals=https://build.fhir.org/ig/HL7/terminology-fundamentals-ig, hl7.fhir.us.bfdr=https://build.fhir.org/ig/HL7/fhir-bfdr, hl7.fhir.uv.aitransparency=https://build.fhir.org/ig/HL7/aitransparency-ig, ee.fhir.ts=https://build.fhir.org/ig/TEHIK-EE/TerminologyServices, tw.gov.mohw.hpa.pad=https://build.fhir.org/ig/hpapa2025/pad, hl7.fhir.uv.ichom.breastcancer=https://build.fhir.org/ig/HL7/fhir-ichom-breast-cancer-ig, de.fhir.medication=https://build.fhir.org/ig/hl7germany/medication-ig-de-r4, ihe.formatcode.fhir=https://build.fhir.org/ig/IHE/FormatCode, ch.fhir.ig.ch-epr-fhir=https://build.fhir.org/ig/ehealthsuisse/ch-epr-fhir, hl7.fhir.us.cql=https://build.fhir.org/ig/HL7/us-cql-ig, hl7.fhir.us.qicore=https://build.fhir.org/ig/HL7/fhir-qi-core, hl7.fhir.us.insurance-card=https://build.fhir.org/ig/HL7/carin-digital-insurance-card, ihe.iti.mhds=https://build.fhir.org/ig/IHE/ITI.MHDS, hl7.fhir.us.pq-cmc-fda=https://build.fhir.org/ig/HL7/FHIR-us-pq-cmc-fda, hl7.be.fhir.template=https://build.fhir.org/ig/hl7-be/hl7.be.fhir.template2, ihe.iti.mxde=https://build.fhir.org/ig/IHE/ITI.mXDE, hl7.fhir.us.davinci-atr=https://build.fhir.org/ig/HL7/davinci-atr, hl7.fhir.uv.fhir-for-fair=https://build.fhir.org/ig/HL7/fhir-for-fair, hl7.fhir.us.core=https://build.fhir.org/ig/HL7/US-Core, hl7.fhir.be.patient-care=https://build.fhir.org/ig/hl7-be/patient-care, hl7.fhir.us.safr=https://build.fhir.org/ig/HL7/us-safr, hl7.xprod.uv.piqi=https://build.fhir.org/ig/HL7/piqi, hl7.fhir.us.mihr=https://build.fhir.org/ig/HL7/fhir-mmm-ig, medcom.fhir.dk.homecareobservationtestscripts=https://build.fhir.org/ig/medcomdk/dk-medcom-HomeCareObservation-testscripts, hl7.fhir.uv.fhir-clinical-document=https://build.fhir.org/ig/HL7/fhir-clinical-document, hl7.fhir.cz.img-order=https://build.fhir.org/ig/HL7-cz/img-order, fhir2.base.template=https://build.fhir.org/ig/HL7/ig-template-base2, hl7.fhir.uv.dap=https://build.fhir.org/ig/HL7/data-access-policies, tw.gov.mohw.nhi.ngs=https://build.fhir.org/ig/TWNHIFHIR/ngs, ihe.qrph.bfdr=https://build.fhir.org/ig/IHE/fhir-bfdr, ee.fhir.base=https://build.fhir.org/ig/HL7EE/ig-ee-base, hl7.fhir.us.covid19library=https://build.fhir.org/ig/HL7/fhir-COVID19Library-ig, de.medizininformatikinitiative.kerndatensatz.pro=https://build.fhir.org/ig/medizininformatik-initiative/kerndatensatzmodul-proms, hl7.fhir.uv.rtls=https://build.fhir.org/ig/HL7/rtls-ig, hl7.fhir.eu.mpd=https://build.fhir.org/ig/hl7-eu/mpd, hl7.fhir.uv.ibcm=https://build.fhir.org/ig/HL7/fetal_records, ihe.iti.pmir=https://build.fhir.org/ig/IHE/ITI.PMIR, hl7.eu.fhir.xpandh=https://build.fhir.org/ig/hl7-eu/xpandh, who.template.root=https://build.fhir.org/ig/WorldHealthOrganization/smart-ig-template, fhir.ops-esavi=https://build.fhir.org/ig/cens-chile/OPS-Esavi-IG, hl7.fhir.uv.ebm=https://build.fhir.org/ig/HL7/ebm, ihe.pcc.maps.us=https://build.fhir.org/ig/IHE/PCC.mAPS.us, hl7.fhir.uv.clinical-study-protocol=https://build.fhir.org/ig/HL7/vulcan-udp-ig, hl7.fhir.cl.agenda=https://build.fhir.org/ig/cens-chile/agenda, hl7.xprod.uv.termfundamentals=https://build.fhir.org/ig/HL7/terminology-fundamentals-ig, hl7.fhir.us.health-care-surveys-reporting=https://build.fhir.org/ig/HL7/fhir-health-care-surveys-reporting-ig, hl7.fhir.uv.epi-test=https://build.fhir.org/ig/cander2/epi-test, hl7.at.fhir.template.ballot=https://build.fhir.org/ig/HL7Austria/at-fhir-ig-template-ballot, hl7.au.sparked.template=https://build.fhir.org/ig/hl7au/hl7.au.sparked.template, hl7.fhir.us.cimilabs=https://build.fhir.org/ig/HL7/cimi-labs, hl7.fhir.uv.smart-app-launch=https://build.fhir.org/ig/HL7/smart-app-launch, hl7.fhir.us.davinci-deqm=https://build.fhir.org/ig/HL7/davinci-deqm, fhir.nl.gf=https://build.fhir.org/ig/nuts-foundation/nl-generic-functions-ig, hl7.fhir.be.referral=https://build.fhir.org/ig/hl7-be/referral, hl7.fhir.dk.core=https://build.fhir.org/ig/hl7dk/dk-core, hl7.at.fhir.core.r4=https://build.fhir.org/ig/HL7Austria/HL7-AT-FHIR-Core-R4, hl7.at.fhir.core.r5=https://build.fhir.org/ig/HL7Austria/HL7-AT-FHIR-Core-R5, hl7.fhir.us.davinci-pdex-plan-net=https://build.fhir.org/ig/HL7/davinci-pdex-plan-net, hl7.fhir.uv.smart-health-cards-and-links=https://build.fhir.org/ig/HL7/smart-health-cards-and-links, lawrence.starter.ig=https://build.fhir.org/ig/lokungu/Lawrence-FHIR-IG-Template, hl7.fhir.us.odh=https://build.fhir.org/ig/HL7/us-odh, ihe.iti.pdqm=https://build.fhir.org/ig/IHE/ITI.PDQm, jit.medical.org=https://build.fhir.org/ig/Adam-Muyobo/Musakabantu-FHIR, hl7se.fhir.base=https://build.fhir.org/ig/HL7Sweden/basprofiler-r4, hl7.eu.fhir.pcsp=https://build.fhir.org/ig/hl7-eu/pcsp, ihe.domain.logical-datatypes=https://build.fhir.org/ig/IHE/datatypes, hl7.cda.us.ccdar2dot2=https://build.fhir.org/ig/HL7/CDA-ccda-2.2, hl7.fhir.cr.core=https://build.fhir.org/ig/HIE-cr/core-ig, hl7.fhir.uv.termchangeset=https://build.fhir.org/ig/HL7/termchangeset-ig, hl7.davinci.template=https://build.fhir.org/ig/HL7/ig-template-davinci, hl7.fhir.uv.extensions=https://build.fhir.org/ig/HL7/fhir-extensions, ch.fhir.ig.ch-ig=https://build.fhir.org/ig/ahdis/ch-ig, ihe.ro.smrt=https://build.fhir.org/ig/IHE/RO.SMRT, ihe.iti.fais=https://build.fhir.org/ig/IHE/ITI.Finance, medcom.fhir.dk.messaging=https://build.fhir.org/ig/medcomdk/dk-medcom-messaging, hl7.fhir.us.cqfmeasures=https://build.fhir.org/ig/HL7/cqf-measures, portal.wof.purified.link=https://build.fhir.org/ig/espen-servicewell/wof-portal-fhir-ig, hl7.fhir.us.exchange-routing=https://build.fhir.org/ig/HL7/fhir-exchange-routing-ig, hl7.be.fhir.template.ehealth=https://build.fhir.org/ig/hl7-be/hl7.be.fhir.template.ehealth, hl7.fhir.us.smp=https://build.fhir.org/ig/HL7/smp-ig, botswana.hie.fhir=https://build.fhir.org/ig/samKenpachi011/CreateTest-Project, hl7.eu.fhir.xshare-ips-plus=https://build.fhir.org/ig/hl7-eu/xshare-ips-plus, example.fhir.uv.myig=https://build.fhir.org/ig/costateixeira/sample-ig, smart.who.int.immunizations=https://build.fhir.org/ig/WorldHealthOrganization/smart-immunizations, hl7.fhir.uv.genomics-reporting=https://build.fhir.org/ig/HL7/genomics-reporting, hl7.eu.fhir.gh-ips=https://build.fhir.org/ig/hl7-eu/gravitate-health-ips, hl7.fhir.us.udap-security=https://build.fhir.org/ig/HL7/fhir-udap-security-ig, hl7.base.template=https://build.fhir.org/ig/HL7/ig-template-hl7, hl7.fhir.us.lower-extremity-skin-wound-assessment=https://build.fhir.org/ig/HL7/fhir-skin-wound-ig, hl7.fhir.nl.zorgviewer=https://build.fhir.org/ig/RIVO-Noord/zorgviewer-ig, hl7.fhir.us.ndh=https://build.fhir.org/ig/HL7/fhir-us-ndh, hl7.fhir.uv.cardx-htn-mng=https://build.fhir.org/ig/HL7/CardX-HTN-MNG, hl7.fhir.us.illTraveler=https://build.fhir.org/ig/HL7/ReportIIITraveler-ig, hl7.fhir.uv.vulcan-schedule=https://build.fhir.org/ig/HL7/Vulcan-schedule-ig, SHIFT-Task-Force.privacy.examples=https://build.fhir.org/ig/SHIFT-Task-Force/demo-fhir-data, hl7.fhir.cl.minsal.r2bo=https://build.fhir.org/ig/Minsal-CL/R2BO, fhir.scp=https://build.fhir.org/ig/santeonnl/shared-care-planning, hl7.fhir.pl.imaging=https://build.fhir.org/ig/HL7-Poland/pl-fhir-imaging, de.fhir.terminologie=https://build.fhir.org/ig/hl7germany/de.basisprofil.terminology, hl7.fhir.us.sirb=https://build.fhir.org/ig/HL7/fhir-sirb, hl7.fhir.us.directory-attestation=https://build.fhir.org/ig/HL7/fhir-directory-attestation, hl7.fhir.uv.vhdir=https://build.fhir.org/ig/HL7/VhDir, hl7.fhir.us.cdc-opioid-cpg=https://build.fhir.org/ig/HL7/cdc-opioid-cpg, ch.fhir.ig.ch-emed=https://build.fhir.org/ig/hl7ch/ch-emed, hl7.fhir.us.identity-matching=https://build.fhir.org/ig/HL7/fhir-identity-matching-ig, hl7.eu.fhir.xpandh.lab=https://build.fhir.org/ig/hl7-eu/xpandh-lab, hl7.fhir.fi.smart=https://build.fhir.org/ig/fhir-fi/finnish-smart, ihe.pcc.ript=https://build.fhir.org/ig/IHE/PCC.RIPT, hl7.fhir.us.mcc=https://build.fhir.org/ig/HL7/fhir-us-mcc, hl7.fhir.us.nhsn-ade=https://build.fhir.org/ig/HL7/fhir-nhsn-ade-ig, hl7.fhir.uv.saner=https://build.fhir.org/ig/HL7/fhir-saner, ihe.iti.pcf=https://build.fhir.org/ig/IHE/ITI.PCF, hl7.fhir.uv.symptoms=https://build.fhir.org/ig/HL7/fhir-symptoms-ig, tw.gov.mohw.nhi.ci=https://build.fhir.org/ig/TWNHIFHIR/ci, smart.who.int.trust=https://build.fhir.org/ig/WorldHealthOrganization/smart-trust, fhir.nl.generic-functions-ig=https://build.fhir.org/ig/nuts-foundation/nl-generic-functions-ig, hl7.fhir.us.hsds=https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory, hl7.fhir.us.specialty-rx=https://build.fhir.org/ig/HL7/fhir-specialty-rx, ihe.pcc.maps=https://build.fhir.org/ig/IHE/PCC.mAPS})
-	at org.hl7.fhir.utilities.npm.FilesystemPackageCacheManager.loadFromCIBuild(FilesystemPackageCacheManager.java:762)
-	at org.hl7.fhir.utilities.npm.FilesystemPackageCacheManager.loadPackage(FilesystemPackageCacheManager.java:716)
-	at org.hl7.fhir.validation.IgLoader.loadIg(IgLoader.java:120)
-	at org.hl7.fhir.validation.IgLoader.loadIg(IgLoader.java:133)
-	at org.hl7.fhir.validation.IgLoader.loadIg(IgLoader.java:133)
-	at org.hl7.fhir.validation.cli.services.ValidationService.loadIgsAndExtensions(ValidationService.java:643)
-	at org.hl7.fhir.validation.cli.services.ValidationService.buildValidationEngine(ValidationService.java:560)
-	at org.hl7.fhir.validation.cli.services.ValidationService.getValidationEngineFromCliContext(ValidationService.java:544)
-	at org.hl7.fhir.validation.cli.services.ValidationService.initializeValidator(ValidationService.java:526)
-	at org.hl7.fhir.validation.cli.services.ValidationService.initializeValidator(ValidationService.java:509)
-	at org.hl7.fhir.validation.ValidatorCli.getValidationEngine(ValidatorCli.java:411)
-	at org.hl7.fhir.validation.ValidatorCli.readParamsAndExecuteTask(ValidatorCli.java:373)
+  Load hl7.fhir.pubpack#0.2.3 - 0 resources (00:02.546)
+Comparing StructureDefinitions https://gematik.de/fhir/isik/StructureDefinition/ISiKAllergieUnvertraeglichkeit to http://hl7.eu/fhir/eps/StructureDefinition/allergyIntolerance-eu-eps
+Generating output to Comparison/EPS-AllergyIntolerance...
+Exception rendering https://gematik.de/fhir/isik/StructureDefinition/ISiKAllergieUnvertraeglichkeit|5.0.0||http://hl7.eu/fhir/eps/StructureDefinition/allergyIntolerance-eu-eps|0.0.1-ci: Cannot invoke "String.length()" because "this.source" is null
+java.lang.NullPointerException: Cannot invoke "String.length()" because "this.source" is null
+	at org.hl7.fhir.r5.utils.LiquidEngine$LiquidParser.parseList(LiquidEngine.java:548)
+	at org.hl7.fhir.r5.utils.LiquidEngine$LiquidParser.parse(LiquidEngine.java:517)
+	at org.hl7.fhir.r5.utils.LiquidEngine.parse(LiquidEngine.java:123)
+	at org.hl7.fhir.r5.comparison.ComparisonRenderer.processTemplate(ComparisonRenderer.java:272)
+	at org.hl7.fhir.r5.comparison.ComparisonRenderer.renderProfile(ComparisonRenderer.java:240)
+	at org.hl7.fhir.r5.comparison.ComparisonRenderer.renderComparison(ComparisonRenderer.java:148)
+	at org.hl7.fhir.r5.comparison.ComparisonRenderer.processList(ComparisonRenderer.java:115)
+	at org.hl7.fhir.r5.comparison.ComparisonRenderer.render(ComparisonRenderer.java:91)
+	at org.hl7.fhir.validation.cli.services.ComparisonService.compareStructureDefinitions(ComparisonService.java:76)
+	at org.hl7.fhir.validation.cli.services.ComparisonService.doLeftRightComparison(ComparisonService.java:39)
+	at org.hl7.fhir.validation.cli.tasks.CompareTask.executeTask(CompareTask.java:57)
+	at org.hl7.fhir.validation.ValidatorCli.readParamsAndExecuteTask(ValidatorCli.java:375)
 	at org.hl7.fhir.validation.ValidatorCli.readParamsAndExecuteTask(ValidatorCli.java:172)
 	at org.hl7.fhir.validation.ValidatorCli.main(ValidatorCli.java:207)
+Headless environment detected; skipping browser launch.
+Done: file:/home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/Comparison/EPS-AllergyIntolerance/index.html
+Done. Times: Loading: 02:15.696. Max Memory = 3Gb

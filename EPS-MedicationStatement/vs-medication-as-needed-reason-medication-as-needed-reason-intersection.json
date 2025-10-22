@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e5025a4e-c14c-426e-b9a7-668f3dad2db6-24",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e5025a4e-c14c-426e-b9a7-668f3dad2db6-24",
+  "name" : "IntersectionSNOMEDCTMedicationAsNeededReasonCodesAndSNOMEDCTMedicationAsNeededReasonCodes",
+  "title" : "Intersection of SNOMED CT Medication As Needed Reason Codes And SNOMED CT Medication As Needed Reason Codes",
+  "status" : "draft",
+  "date" : "2025-10-22T11:24:56+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    }]
+  }
+}

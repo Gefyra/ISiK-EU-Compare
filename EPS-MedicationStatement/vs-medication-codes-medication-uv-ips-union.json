@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e5025a4e-c14c-426e-b9a7-668f3dad2db6-14",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e5025a4e-c14c-426e-b9a7-668f3dad2db6-14",
+  "name" : "UnionSNOMEDCTMedicationCodesAndMedicationsUvIps",
+  "title" : "Union of SNOMED CT Medication Codes And Medications - IPS",
+  "status" : "draft",
+  "date" : "2025-10-22T11:24:56+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "410942007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "373873005"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "106181007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "763158003"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "787481004"
+      }]
+    }],
+    "exclude" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "787859002"
+      }]
+    }]
+  }
+}

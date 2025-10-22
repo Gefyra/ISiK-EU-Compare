@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e5025a4e-c14c-426e-b9a7-668f3dad2db6-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e5025a4e-c14c-426e-b9a7-668f3dad2db6-11",
+  "name" : "UnionMedication usage category codesAndMedication usage category codes",
+  "title" : "Union of Medication usage category codes And Medication usage category codes",
+  "status" : "draft",
+  "date" : "2025-10-22T11:24:56+00:00"
+}

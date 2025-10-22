@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e13dd428-8512-4d7b-9bc2-69ef2e2806a1-15",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e13dd428-8512-4d7b-9bc2-69ef2e2806a1-15",
+  "name" : "IntersectionSNOMEDCTClinicalFindingsAndAllergyReactionUvIps",
+  "title" : "Intersection of SNOMED CT Clinical Findings And Allergy Reaction - IPS",
+  "status" : "draft",
+  "date" : "2025-10-22T11:23:23+00:00"
+}

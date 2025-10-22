@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "6a09cc45-34f4-4a22-ba48-29c3ebe50e42-12",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6a09cc45-34f4-4a22-ba48-29c3ebe50e42-12",
+  "name" : "IntersectionLOINCCodesAndResultsLaboratoryObservationUvIps",
+  "title" : "Intersection of LOINC Codes And Results Laboratory Observation - IPS",
+  "status" : "draft",
+  "date" : "2025-10-22T11:25:00+00:00"
+}

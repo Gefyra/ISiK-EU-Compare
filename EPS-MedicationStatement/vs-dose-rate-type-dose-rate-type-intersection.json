@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e5025a4e-c14c-426e-b9a7-668f3dad2db6-33",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e5025a4e-c14c-426e-b9a7-668f3dad2db6-33",
+  "name" : "IntersectionDoseAndRateTypeAndDoseAndRateType",
+  "title" : "Intersection of DoseAndRateType And DoseAndRateType",
+  "status" : "draft",
+  "date" : "2025-10-22T11:24:56+00:00"
+}

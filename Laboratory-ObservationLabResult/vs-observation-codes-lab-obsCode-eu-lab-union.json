@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "6a09cc45-34f4-4a22-ba48-29c3ebe50e42-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6a09cc45-34f4-4a22-ba48-29c3ebe50e42-5",
+  "name" : "UnionLOINCCodesAndLaboratoryResultStandardEuVs",
+  "title" : "Union of LOINC Codes And Laboratory Code",
+  "status" : "draft",
+  "date" : "2025-10-22T11:25:00+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    },
+    {
+      "valueSet" : ["http://hl7.eu/fhir/laboratory/ValueSet/lab-obsCode-npu-eu-lab"]
+    },
+    {
+      "valueSet" : ["http://hl7.eu/fhir/laboratory/ValueSet/lab-obsCode-loinc-eu-lab"]
+    }]
+  }
+}
