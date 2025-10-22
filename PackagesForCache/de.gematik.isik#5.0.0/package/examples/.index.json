@@ -1,0 +1,921 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "Account-AbrechnungsfallDRG.json",
+      "resourceType" : "Account",
+      "id" : "AbrechnungsfallDRG",
+      "type" : "{"
+    },
+    {
+      "filename" : "Account-AbrechnungsfallGonarthrose.json",
+      "resourceType" : "Account",
+      "id" : "AbrechnungsfallGonarthrose",
+      "type" : "{"
+    },
+    {
+      "filename" : "Account-SZ1DRGFall.json",
+      "resourceType" : "Account",
+      "id" : "SZ1DRGFall",
+      "type" : "{"
+    },
+    {
+      "filename" : "Account-SZ2DRGFall.json",
+      "resourceType" : "Account",
+      "id" : "SZ2DRGFall",
+      "type" : "{"
+    },
+    {
+      "filename" : "AllergyIntolerance-ISiKAllergieUnvertraeglichkeitBeispiel1.json",
+      "resourceType" : "AllergyIntolerance",
+      "id" : "ISiKAllergieUnvertraeglichkeitBeispiel1",
+      "type" : "allergy"
+    },
+    {
+      "filename" : "Appointment-ISiKTerminExample.json",
+      "resourceType" : "Appointment",
+      "id" : "ISiKTerminExample"
+    },
+    {
+      "filename" : "Appointment-ISiKTerminExampleExtendedICU.json",
+      "resourceType" : "Appointment",
+      "id" : "ISiKTerminExampleExtendedICU"
+    },
+    {
+      "filename" : "Binary-Binary-JPEG-Example-short.json",
+      "resourceType" : "Binary",
+      "id" : "Binary-JPEG-Example-short"
+    },
+    {
+      "filename" : "Binary-Binary-JPEG-Example.json",
+      "resourceType" : "Binary",
+      "id" : "Binary-JPEG-Example"
+    },
+    {
+      "filename" : "Binary-Binary-PDF-Example-short.json",
+      "resourceType" : "Binary",
+      "id" : "Binary-PDF-Example-short"
+    },
+    {
+      "filename" : "Binary-Binary-PDF-Example.json",
+      "resourceType" : "Binary",
+      "id" : "Binary-PDF-Example"
+    },
+    {
+      "filename" : "Bundle-ExampleISiKMedikationTransaction.json",
+      "resourceType" : "Bundle",
+      "id" : "ExampleISiKMedikationTransaction",
+      "type" : "transaction"
+    },
+    {
+      "filename" : "Bundle-ExampleISiKMedikationTransactionResponse.json",
+      "resourceType" : "Bundle",
+      "id" : "ExampleISiKMedikationTransactionResponse",
+      "type" : "transaction-response"
+    },
+    {
+      "filename" : "Bundle-ISiKBundle-Example.json",
+      "resourceType" : "Bundle",
+      "id" : "ISiKBundle-Example",
+      "type" : "document"
+    },
+    {
+      "filename" : "Bundle-SubscriptionNotificationBundleExample.json",
+      "resourceType" : "Bundle",
+      "id" : "SubscriptionNotificationBundleExample",
+      "type" : "history"
+    },
+    {
+      "filename" : "Bundle-Suchergebnis-Beispiel.json",
+      "resourceType" : "Bundle",
+      "id" : "Suchergebnis-Beispiel",
+      "type" : "searchset"
+    },
+    {
+      "filename" : "Bundle-Szenario1.json",
+      "resourceType" : "Bundle",
+      "id" : "Szenario1",
+      "type" : "collection"
+    },
+    {
+      "filename" : "Bundle-Szenario2.json",
+      "resourceType" : "Bundle",
+      "id" : "Szenario2",
+      "type" : "collection"
+    },
+    {
+      "filename" : "Composition-CompositionExampleBlutdruck.json",
+      "resourceType" : "Composition",
+      "id" : "CompositionExampleBlutdruck",
+      "type" : "{"
+    },
+    {
+      "filename" : "Condition-AltersbedingteKreislaufstoerung.json",
+      "resourceType" : "Condition",
+      "id" : "AltersbedingteKreislaufstoerung"
+    },
+    {
+      "filename" : "Condition-BehandlungsDiagnoseFreitext.json",
+      "resourceType" : "Condition",
+      "id" : "BehandlungsDiagnoseFreitext"
+    },
+    {
+      "filename" : "Condition-Example-condition-ausrufezeichen-primaer.json",
+      "resourceType" : "Condition",
+      "id" : "Example-condition-ausrufezeichen-primaer"
+    },
+    {
+      "filename" : "Condition-Example-condition-ausrufezeichen-sekundaer.json",
+      "resourceType" : "Condition",
+      "id" : "Example-condition-ausrufezeichen-sekundaer"
+    },
+    {
+      "filename" : "Condition-Example-condition-kreuz-stern-primaer.json",
+      "resourceType" : "Condition",
+      "id" : "Example-condition-kreuz-stern-primaer"
+    },
+    {
+      "filename" : "Condition-Example-condition-kreuz-stern-sekundaer.json",
+      "resourceType" : "Condition",
+      "id" : "Example-condition-kreuz-stern-sekundaer"
+    },
+    {
+      "filename" : "Condition-MittelgradigeIntelligenzminderung.json",
+      "resourceType" : "Condition",
+      "id" : "MittelgradigeIntelligenzminderung"
+    },
+    {
+      "filename" : "Condition-PrimaereGonarthroseMinimal.json",
+      "resourceType" : "Condition",
+      "id" : "PrimaereGonarthroseMinimal"
+    },
+    {
+      "filename" : "Condition-PrimaereGonarthroseNormal.json",
+      "resourceType" : "Condition",
+      "id" : "PrimaereGonarthroseNormal"
+    },
+    {
+      "filename" : "Condition-SZ2Primaerdiagnose.json",
+      "resourceType" : "Condition",
+      "id" : "SZ2Primaerdiagnose"
+    },
+    {
+      "filename" : "Condition-SZ2Sekundaerdiagnose.json",
+      "resourceType" : "Condition",
+      "id" : "SZ2Sekundaerdiagnose"
+    },
+    {
+      "filename" : "Coverage-CoverageGesetzlich.json",
+      "resourceType" : "Coverage",
+      "id" : "CoverageGesetzlich",
+      "type" : "{"
+    },
+    {
+      "filename" : "Coverage-CoveragePrivat.json",
+      "resourceType" : "Coverage",
+      "id" : "CoveragePrivat",
+      "type" : "{"
+    },
+    {
+      "filename" : "Coverage-CoverageSonstige.json",
+      "resourceType" : "Coverage",
+      "id" : "CoverageSonstige",
+      "type" : "{"
+    },
+    {
+      "filename" : "Coverage-SZ1VersicherungGesetzlich.json",
+      "resourceType" : "Coverage",
+      "id" : "SZ1VersicherungGesetzlich",
+      "type" : "{"
+    },
+    {
+      "filename" : "Coverage-SZ1VersicherungSelbstzahler.json",
+      "resourceType" : "Coverage",
+      "id" : "SZ1VersicherungSelbstzahler",
+      "type" : "{"
+    },
+    {
+      "filename" : "Coverage-SZ2VersicherungGesetzlich.json",
+      "resourceType" : "Coverage",
+      "id" : "SZ2VersicherungGesetzlich",
+      "type" : "{"
+    },
+    {
+      "filename" : "Device-ExampleDevice.json",
+      "resourceType" : "Device",
+      "id" : "ExampleDevice"
+    },
+    {
+      "filename" : "DocumentReference-dok-beispiel-client-with-binary-jpeg-example-short.json",
+      "resourceType" : "DocumentReference",
+      "id" : "dok-beispiel-client-with-binary-jpeg-example-short",
+      "type" : "{",
+      "content" : "{"
+    },
+    {
+      "filename" : "DocumentReference-dok-beispiel-client-with-binary-jpeg-example.json",
+      "resourceType" : "DocumentReference",
+      "id" : "dok-beispiel-client-with-binary-jpeg-example",
+      "type" : "{",
+      "content" : "{"
+    },
+    {
+      "filename" : "DocumentReference-dok-beispiel-client-with-binary-pdf-example-short.json",
+      "resourceType" : "DocumentReference",
+      "id" : "dok-beispiel-client-with-binary-pdf-example-short",
+      "type" : "{",
+      "content" : "{"
+    },
+    {
+      "filename" : "DocumentReference-dok-beispiel-client-with-binary-pdf-example.json",
+      "resourceType" : "DocumentReference",
+      "id" : "dok-beispiel-client-with-binary-pdf-example",
+      "type" : "{",
+      "content" : "{"
+    },
+    {
+      "filename" : "DocumentReference-dok-beispiel-server.json",
+      "resourceType" : "DocumentReference",
+      "id" : "dok-beispiel-server",
+      "type" : "{",
+      "content" : "{"
+    },
+    {
+      "filename" : "Encounter-Fachabteilungskontakt.json",
+      "resourceType" : "Encounter",
+      "id" : "Fachabteilungskontakt",
+      "type" : "["
+    },
+    {
+      "filename" : "Encounter-FachabteilungskontaktMinimal.json",
+      "resourceType" : "Encounter",
+      "id" : "FachabteilungskontaktMinimal",
+      "type" : "["
+    },
+    {
+      "filename" : "Encounter-FachabteilungskontaktMinimal2.json",
+      "resourceType" : "Encounter",
+      "id" : "FachabteilungskontaktMinimal2",
+      "type" : "["
+    },
+    {
+      "filename" : "Encounter-FachabteilungskontaktNormal.json",
+      "resourceType" : "Encounter",
+      "id" : "FachabteilungskontaktNormal",
+      "type" : "["
+    },
+    {
+      "filename" : "Encounter-SZ1Nachstationaer.json",
+      "resourceType" : "Encounter",
+      "id" : "SZ1Nachstationaer",
+      "type" : "["
+    },
+    {
+      "filename" : "Encounter-SZ1Stationaer.json",
+      "resourceType" : "Encounter",
+      "id" : "SZ1Stationaer",
+      "type" : "["
+    },
+    {
+      "filename" : "Encounter-SZ1Vorstationaer.json",
+      "resourceType" : "Encounter",
+      "id" : "SZ1Vorstationaer",
+      "type" : "["
+    },
+    {
+      "filename" : "Encounter-SZ2Encounter.json",
+      "resourceType" : "Encounter",
+      "id" : "SZ2Encounter",
+      "type" : "["
+    },
+    {
+      "filename" : "HealthcareService-ISiKMedizinischeBehandlungseinheitExample.json",
+      "resourceType" : "HealthcareService",
+      "id" : "ISiKMedizinischeBehandlungseinheitExample",
+      "type" : "["
+    },
+    {
+      "filename" : "List-ExampleISiKMedikationsListe.json",
+      "resourceType" : "List",
+      "id" : "ExampleISiKMedikationsListe"
+    },
+    {
+      "filename" : "List-ExampleISiKMedikationsListeParkinson.json",
+      "resourceType" : "List",
+      "id" : "ExampleISiKMedikationsListeParkinson"
+    },
+    {
+      "filename" : "Location-BettenstellplatzStandortBeispiel.json",
+      "resourceType" : "Location",
+      "id" : "BettenstellplatzStandortBeispiel"
+    },
+    {
+      "filename" : "Location-RaumStandortBeispiel.json",
+      "resourceType" : "Location",
+      "id" : "RaumStandortBeispiel"
+    },
+    {
+      "filename" : "Location-StationStandortBeispiel.json",
+      "resourceType" : "Location",
+      "id" : "StationStandortBeispiel",
+      "type" : "["
+    },
+    {
+      "filename" : "Medication-ExampleISiKMedikament1.json",
+      "resourceType" : "Medication",
+      "id" : "ExampleISiKMedikament1"
+    },
+    {
+      "filename" : "Medication-ExampleISiKMedikament2.json",
+      "resourceType" : "Medication",
+      "id" : "ExampleISiKMedikament2"
+    },
+    {
+      "filename" : "Medication-ExampleISiKMedikament3.json",
+      "resourceType" : "Medication",
+      "id" : "ExampleISiKMedikament3"
+    },
+    {
+      "filename" : "Medication-ExampleISiKMedikament4.json",
+      "resourceType" : "Medication",
+      "id" : "ExampleISiKMedikament4"
+    },
+    {
+      "filename" : "Medication-ExampleISiKMedikament5.json",
+      "resourceType" : "Medication",
+      "id" : "ExampleISiKMedikament5"
+    },
+    {
+      "filename" : "Medication-ExampleISiKMedikament6.json",
+      "resourceType" : "Medication",
+      "id" : "ExampleISiKMedikament6"
+    },
+    {
+      "filename" : "Medication-ExampleISiKMedikament7.json",
+      "resourceType" : "Medication",
+      "id" : "ExampleISiKMedikament7"
+    },
+    {
+      "filename" : "Medication-ExampleISiKMedikament8.json",
+      "resourceType" : "Medication",
+      "id" : "ExampleISiKMedikament8"
+    },
+    {
+      "filename" : "Medication-ExampleISiKMedikament9.json",
+      "resourceType" : "Medication",
+      "id" : "ExampleISiKMedikament9"
+    },
+    {
+      "filename" : "Medication-ParacetamolInfusion.json",
+      "resourceType" : "Medication",
+      "id" : "ParacetamolInfusion"
+    },
+    {
+      "filename" : "MedicationAdministration-ExampleISiKMedikationsVerabreichung.json",
+      "resourceType" : "MedicationAdministration",
+      "id" : "ExampleISiKMedikationsVerabreichung"
+    },
+    {
+      "filename" : "MedicationAdministration-ExampleISiKMedikationsVerabreichung2.json",
+      "resourceType" : "MedicationAdministration",
+      "id" : "ExampleISiKMedikationsVerabreichung2"
+    },
+    {
+      "filename" : "MedicationAdministration-ExampleISiKMedikationsVerabreichung3.json",
+      "resourceType" : "MedicationAdministration",
+      "id" : "ExampleISiKMedikationsVerabreichung3"
+    },
+    {
+      "filename" : "MedicationAdministration-ExampleISiKMedikationsVerabreichung4.json",
+      "resourceType" : "MedicationAdministration",
+      "id" : "ExampleISiKMedikationsVerabreichung4"
+    },
+    {
+      "filename" : "MedicationRequest-ExampleISiKMedikationsVerordnung.json",
+      "resourceType" : "MedicationRequest",
+      "id" : "ExampleISiKMedikationsVerordnung"
+    },
+    {
+      "filename" : "MedicationRequest-ExampleISiKMedikationsVerordnung2.json",
+      "resourceType" : "MedicationRequest",
+      "id" : "ExampleISiKMedikationsVerordnung2"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformation1.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformation1"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformation2.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformation2"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformation3.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformation3"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformation4.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformation4"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformation5.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformation5"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformation6.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformation6"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformationParkinson1.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformationParkinson1"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformationParkinson2.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformationParkinson2"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformationParkinson3.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformationParkinson3"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformationParkinson4.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformationParkinson4"
+    },
+    {
+      "filename" : "MedicationStatement-ExampleISiKMedikationsInformationParkinson5.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "ExampleISiKMedikationsInformationParkinson5"
+    },
+    {
+      "filename" : "Observation-ExampleISiKLaboruntersuchungCRP1.json",
+      "resourceType" : "Observation",
+      "id" : "ExampleISiKLaboruntersuchungCRP1"
+    },
+    {
+      "filename" : "Observation-ExampleISiKLaboruntersuchungGFR1.json",
+      "resourceType" : "Observation",
+      "id" : "ExampleISiKLaboruntersuchungGFR1"
+    },
+    {
+      "filename" : "Observation-ExampleISiKLaboruntersuchungHb1.json",
+      "resourceType" : "Observation",
+      "id" : "ExampleISiKLaboruntersuchungHb1"
+    },
+    {
+      "filename" : "Observation-ExampleISiKLaboruntersuchungPCT1.json",
+      "resourceType" : "Observation",
+      "id" : "ExampleISiKLaboruntersuchungPCT1"
+    },
+    {
+      "filename" : "Observation-ExampleISiKLaboruntersuchungSerumkreatinin1.json",
+      "resourceType" : "Observation",
+      "id" : "ExampleISiKLaboruntersuchungSerumkreatinin1"
+    },
+    {
+      "filename" : "Observation-ExampleISiKLaboruntersuchungTSH1.json",
+      "resourceType" : "Observation",
+      "id" : "ExampleISiKLaboruntersuchungTSH1"
+    },
+    {
+      "filename" : "Observation-ExampleISiKLaboruntersuchungThrombozyten1.json",
+      "resourceType" : "Observation",
+      "id" : "ExampleISiKLaboruntersuchungThrombozyten1"
+    },
+    {
+      "filename" : "Observation-ExampleISiKLaboruntersuchungTroponin1.json",
+      "resourceType" : "Observation",
+      "id" : "ExampleISiKLaboruntersuchungTroponin1"
+    },
+    {
+      "filename" : "Observation-Herzzeitvolumen.json",
+      "resourceType" : "Observation",
+      "id" : "Herzzeitvolumen"
+    },
+    {
+      "filename" : "Observation-ISiKAlkoholAbususBeispiel.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKAlkoholAbususBeispiel"
+    },
+    {
+      "filename" : "Observation-ISiKAtemfrequenzExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKAtemfrequenzExample"
+    },
+    {
+      "filename" : "Observation-ISiKBlutdruckSystemischArteriellExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKBlutdruckSystemischArteriellExample"
+    },
+    {
+      "filename" : "Observation-ISiKEKGExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKEKGExample"
+    },
+    {
+      "filename" : "Observation-ISiKGCSExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKGCSExample"
+    },
+    {
+      "filename" : "Observation-ISiKHerzfrequenzExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKHerzfrequenzExample"
+    },
+    {
+      "filename" : "Observation-ISiKKoerpergewichtExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKKoerpergewichtExample"
+    },
+    {
+      "filename" : "Observation-ISiKKoerpergroesseExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKKoerpergroesseExample"
+    },
+    {
+      "filename" : "Observation-ISiKKoerperkerntemperaturExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKKoerperkerntemperaturExample"
+    },
+    {
+      "filename" : "Observation-ISiKKoerpertemperaturExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKKoerpertemperaturExample"
+    },
+    {
+      "filename" : "Observation-ISiKKopfumfangExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKKopfumfangExample"
+    },
+    {
+      "filename" : "Observation-ISiKRaucherStatusBeispiel.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKRaucherStatusBeispiel"
+    },
+    {
+      "filename" : "Observation-ISiKSauerstoffsaettigungArteriellExample.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKSauerstoffsaettigungArteriellExample"
+    },
+    {
+      "filename" : "Observation-ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKSchwangerschaftErwarteterEntbindungsterminBeispiel"
+    },
+    {
+      "filename" : "Observation-ISiKSchwangerschaftsstatusBeispiel.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKSchwangerschaftsstatusBeispiel"
+    },
+    {
+      "filename" : "Observation-ISiKStillstatusBeispiel.json",
+      "resourceType" : "Observation",
+      "id" : "ISiKStillstatusBeispiel"
+    },
+    {
+      "filename" : "Observation-Ideales-Koerpergewicht.json",
+      "resourceType" : "Observation",
+      "id" : "Ideales-Koerpergewicht"
+    },
+    {
+      "filename" : "Observation-Intrakranieller-Druck-ICP.json",
+      "resourceType" : "Observation",
+      "id" : "Intrakranieller-Druck-ICP"
+    },
+    {
+      "filename" : "Observation-Koerpergewicht-Percentile-altersabhaengig.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpergewicht-Percentile-altersabhaengig"
+    },
+    {
+      "filename" : "Observation-Koerpergroesse-Percentil.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpergroesse-Percentil"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Achsel.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Achsel"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Atemwege.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Atemwege"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Blut.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Blut"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Brust.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Brust"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Brustwirbelsaeule.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Brustwirbelsaeule"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Gelenk.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Gelenk"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Halswirbelsaeule.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Halswirbelsaeule"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Harnblase.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Harnblase"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Kern.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Kern"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Leiste.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Leiste"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Lendenwirbelsaeule.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Lendenwirbelsaeule"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Myokard.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Myokard"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Nasen-Rachen-Raum.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Nasen-Rachen-Raum"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Oral.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Oral"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Speiseroehre.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Speiseroehre"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Stirn.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Stirn"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-Trommelfell.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-Trommelfell"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-nasal.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-nasal"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-rektal.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-rektal"
+    },
+    {
+      "filename" : "Observation-Koerpertemperatur-vaginal.json",
+      "resourceType" : "Observation",
+      "id" : "Koerpertemperatur-vaginal"
+    },
+    {
+      "filename" : "Observation-Linksatrialer-Druck.json",
+      "resourceType" : "Observation",
+      "id" : "Linksatrialer-Druck"
+    },
+    {
+      "filename" : "Observation-Linksvent-Schlagvolumenindex-Durch-Indikatorverduennung.json",
+      "resourceType" : "Observation",
+      "id" : "Linksvent-Schlagvolumenindex-Durch-Indikatorverduennung"
+    },
+    {
+      "filename" : "Observation-Linksventrikulaerer-Druck.json",
+      "resourceType" : "Observation",
+      "id" : "Linksventrikulaerer-Druck"
+    },
+    {
+      "filename" : "Observation-Linksventrikulaerer-Herzindex-Durch-Indikatorverduennung.json",
+      "resourceType" : "Observation",
+      "id" : "Linksventrikulaerer-Herzindex-Durch-Indikatorverduennung"
+    },
+    {
+      "filename" : "Observation-Linksventrikulaerer-Herzindex.json",
+      "resourceType" : "Observation",
+      "id" : "Linksventrikulaerer-Herzindex"
+    },
+    {
+      "filename" : "Observation-Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung.json",
+      "resourceType" : "Observation",
+      "id" : "Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung"
+    },
+    {
+      "filename" : "Observation-Linksventrikulaeres-Schlagvolumen-Durch-Indikatorverduennung.json",
+      "resourceType" : "Observation",
+      "id" : "Linksventrikulaeres-Schlagvolumen-Durch-Indikatorverduennung"
+    },
+    {
+      "filename" : "Observation-Linksventrikulaeres-Schlagvolumen.json",
+      "resourceType" : "Observation",
+      "id" : "Linksventrikulaeres-Schlagvolumen"
+    },
+    {
+      "filename" : "Observation-Linksventrikulaeres-Schlagvolumenindex.json",
+      "resourceType" : "Observation",
+      "id" : "Linksventrikulaeres-Schlagvolumenindex"
+    },
+    {
+      "filename" : "Observation-Pulmonalarterieller-Blutdruck.json",
+      "resourceType" : "Observation",
+      "id" : "Pulmonalarterieller-Blutdruck"
+    },
+    {
+      "filename" : "Observation-Pulmonalarterieller-wedge-Blutdruck.json",
+      "resourceType" : "Observation",
+      "id" : "Pulmonalarterieller-wedge-Blutdruck"
+    },
+    {
+      "filename" : "Observation-Pulmonalvaskulaerer-Widerstandsindex.json",
+      "resourceType" : "Observation",
+      "id" : "Pulmonalvaskulaerer-Widerstandsindex"
+    },
+    {
+      "filename" : "Observation-Puls.json",
+      "resourceType" : "Observation",
+      "id" : "Puls"
+    },
+    {
+      "filename" : "Observation-Rechtsatrialer-Druck.json",
+      "resourceType" : "Observation",
+      "id" : "Rechtsatrialer-Druck"
+    },
+    {
+      "filename" : "Observation-Rechtsventrikulaerer-Druck.json",
+      "resourceType" : "Observation",
+      "id" : "Rechtsventrikulaerer-Druck"
+    },
+    {
+      "filename" : "Observation-Sauerstoffsaettigung-im-Arteriellen-Blut-durch-Pulsoxymetrie.json",
+      "resourceType" : "Observation",
+      "id" : "Sauerstoffsaettigung-im-Arteriellen-Blut-durch-Pulsoxymetrie"
+    },
+    {
+      "filename" : "Observation-Sauerstoffsaettigung-im-Blut-Postduktal-durch-Pulsoxymetrie.json",
+      "resourceType" : "Observation",
+      "id" : "Sauerstoffsaettigung-im-Blut-Postduktal-durch-Pulsoxymetrie"
+    },
+    {
+      "filename" : "Observation-Sauerstoffsaettigung-im-Blut-Preduktal-durch-Pulsoxymetrie.json",
+      "resourceType" : "Observation",
+      "id" : "Sauerstoffsaettigung-im-Blut-Preduktal-durch-Pulsoxymetrie"
+    },
+    {
+      "filename" : "Observation-Systemischer-vaskulaerer-Widerstandsindex.json",
+      "resourceType" : "Observation",
+      "id" : "Systemischer-vaskulaerer-Widerstandsindex"
+    },
+    {
+      "filename" : "Observation-Zentralvenoeser-Blutdruck.json",
+      "resourceType" : "Observation",
+      "id" : "Zentralvenoeser-Blutdruck"
+    },
+    {
+      "filename" : "Organization-AbteilungAllgemeinchirurgieOrganisationBeispiel.json",
+      "resourceType" : "Organization",
+      "id" : "AbteilungAllgemeinchirurgieOrganisationBeispiel",
+      "type" : "["
+    },
+    {
+      "filename" : "Organization-KrankenhausOrganisationBeispiel.json",
+      "resourceType" : "Organization",
+      "id" : "KrankenhausOrganisationBeispiel"
+    },
+    {
+      "filename" : "Parameters-ISiKSubscriptionStatusExample.json",
+      "resourceType" : "Parameters",
+      "id" : "ISiKSubscriptionStatusExample"
+    },
+    {
+      "filename" : "Parameters-ParametersExampleUpdateMetadata.json",
+      "resourceType" : "Parameters",
+      "id" : "ParametersExampleUpdateMetadata"
+    },
+    {
+      "filename" : "Patient-DorisQuelle.json",
+      "resourceType" : "Patient",
+      "id" : "DorisQuelle"
+    },
+    {
+      "filename" : "Patient-DorisResultat.json",
+      "resourceType" : "Patient",
+      "id" : "DorisZiel"
+    },
+    {
+      "filename" : "Patient-DorisZiel.json",
+      "resourceType" : "Patient",
+      "id" : "DorisZiel"
+    },
+    {
+      "filename" : "Patient-ISiKPatientTest.json",
+      "resourceType" : "Patient",
+      "id" : "ISiKPatientTest"
+    },
+    {
+      "filename" : "Patient-PatientinMinimal.json",
+      "resourceType" : "Patient",
+      "id" : "PatientinMinimal"
+    },
+    {
+      "filename" : "Patient-PatientinMusterfrau.json",
+      "resourceType" : "Patient",
+      "id" : "PatientinMusterfrau"
+    },
+    {
+      "filename" : "Patient-PatientinMusterfrauMinimal.json",
+      "resourceType" : "Patient",
+      "id" : "PatientinMusterfrauMinimal"
+    },
+    {
+      "filename" : "Patient-PatientinNormal.json",
+      "resourceType" : "Patient",
+      "id" : "PatientinNormal"
+    },
+    {
+      "filename" : "Patient-SZ1Patient.json",
+      "resourceType" : "Patient",
+      "id" : "SZ1Patient"
+    },
+    {
+      "filename" : "Patient-SZ2Patient.json",
+      "resourceType" : "Patient",
+      "id" : "SZ2Patient"
+    },
+    {
+      "filename" : "Practitioner-PractitionerWalterArzt.json",
+      "resourceType" : "Practitioner",
+      "id" : "PractitionerWalterArzt"
+    },
+    {
+      "filename" : "Procedure-Appendektomie.json",
+      "resourceType" : "Procedure",
+      "id" : "Appendektomie"
+    },
+    {
+      "filename" : "Questionnaire-QuestionnaireDemo.json",
+      "resourceType" : "Questionnaire",
+      "id" : "QuestionnaireDemo",
+      "url" : "https://gematik.de/fhir/isik/Questionnaire/Demo"
+    },
+    {
+      "filename" : "RelatedPerson-ISiKAngehoerigerMustermann.json",
+      "resourceType" : "RelatedPerson",
+      "id" : "ISiKAngehoerigerMustermann"
+    },
+    {
+      "filename" : "RelatedPerson-SZ1Mutter.json",
+      "resourceType" : "RelatedPerson",
+      "id" : "SZ1Mutter"
+    },
+    {
+      "filename" : "RiskAssessment-ExampleISiKAMTSBewertung1.json",
+      "resourceType" : "RiskAssessment",
+      "id" : "ExampleISiKAMTSBewertung1"
+    },
+    {
+      "filename" : "Schedule-ISiKKalenderExample.json",
+      "resourceType" : "Schedule",
+      "id" : "ISiKKalenderExample"
+    },
+    {
+      "filename" : "Slot-ISiKTerminblockExample.json",
+      "resourceType" : "Slot",
+      "id" : "ISiKTerminblockExample"
+    },
+    {
+      "filename" : "Subscription-PatientMergeSubscriptionExample.json",
+      "resourceType" : "Subscription",
+      "id" : "PatientMergeSubscriptionExample"
+    }
+  ]
+}

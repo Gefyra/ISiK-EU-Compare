@@ -1,0 +1,18 @@
+{
+  "name": "de.gematik.isik",
+  "version": "5.0.0",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "description": "Die Stufe 5 der Informationssysteme im Krankenhaus (ISiK) Festlegung",
+  "author": "gematik",
+  "dependencies": {
+    "hl7.fhir.uv.subscriptions-backport.r4": "1.1.0",
+    "de.basisprofil.r4": "1.5.4",
+    "de.ihe-d.terminology": "3.0.1",
+    "dvmd.kdl.r4": "2025.0.1",
+    "hl7.fhir.uv.sdc": "3.0.0",
+    "de.gematik.terminology": "1.0.6"
+  },
+  "jurisdiction": "urn:iso:std:iso:3166#DE"
+}

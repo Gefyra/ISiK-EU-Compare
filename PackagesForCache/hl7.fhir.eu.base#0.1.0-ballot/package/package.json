@@ -1,14 +1,14 @@
 {
+  "name" : "hl7.fhir.eu.base",
   "version" : "0.1.0-ballot",
   "tools-version" : 3,
   "type" : "IG",
-  "date" : "20250504135514",
+  "date" : "20250505220739",
   "license" : "CC0-1.0",
   "canonical" : "http://hl7.eu/fhir/base",
-  "notForPublication" : true,
-  "url" : "https://build.fhir.org/ig/hl7-eu/base/",
+  "url" : "http://hl7.eu/fhir/base/0.1.0-ballot",
   "title" : "HL7 Europe Base and Core FHIR IG",
-  "description" : "This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card. (built Sun, May 4, 2025 13:55+0000+00:00)",
+  "description" : "This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card. (built Mon, May 5, 2025 22:07+0200+02:00)",
   "fhirVersions" : ["4.0.1"],
   "dependencies" : {
     "hl7.fhir.r4.core" : "4.0.1",
@@ -28,6 +28,5 @@
     "lib" : "package",
     "example" : "example"
   },
-  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#150",
-  "name" : "hl7.fhir.eu.base"
+  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#150"
 }

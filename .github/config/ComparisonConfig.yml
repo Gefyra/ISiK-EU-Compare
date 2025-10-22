@@ -1,8 +1,4 @@
 igs:
-#  - name: hl7.fhir.eu.hdr.r4
-#    url: https://hl7.eu/fhir/build/hdr/package.r4.tgz
-#  - name: hl7.fhir.eu.eps.r4
-#    url: https://hl7.eu/fhir/build/eps/package.r4.tgz
    - name: hl7.fhir.eu.mpd
      url: https://build.fhir.org/ig/hl7-eu/mpd/package.tgz
    - name: hl7.fhir.eu.laboratory
@@ -29,8 +25,8 @@ profiles:
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf
     rightProfile: http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu
   - dest: Comparison/EU-Base-Address
-    leftIg: de.gematik.isik@5.0.0
-    rightIg: de.basisprofil.r4@1.5.4
+    leftIg: de.basisprofil.r4@1.5.4
+    rightIg: hl7.fhir.eu.base@0.1.0-ballot
     leftProfile: http://fhir.de/StructureDefinition/address-de-basis
     rightProfile: http://hl7.eu/fhir/base/StructureDefinition/Address-eu
   - dest: Comparison/HDR-Encounter
@@ -55,32 +51,32 @@ profiles:
     rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/procedure-eu-hdr
   - dest: Comparison/EPS-Patient
     leftIg: de.gematik.isik@5.0.0
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+    rightIg: hl7.fhir.eu.eps@0.0.1-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient
     rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/patient-eu-eps
   - dest: Comparison/EPS-Condition
     leftIg: de.gematik.isik@5.0.0
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+    rightIg: hl7.fhir.eu.eps@0.0.1-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose
     rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/condition-eu-eps
   - dest: Comparison/EPS-Procedure
     leftIg: de.gematik.isik@5.0.0
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+    rightIg: hl7.fhir.eu.eps@0.0.1-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedur
     rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/procedure-eu-hdr
   - dest: Comparison/EPS-AllergyIntolerance
     leftIg: de.gematik.isik@5.0.0
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+    rightIg: hl7.fhir.eu.eps@0.0.1-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKAllergieUnvertraeglichkeit
     rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/allergyIntolerance-eu-eps
   - dest: Comparison/EPS-Medication
     leftIg: de.gematik.isik@5.0.0
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+    rightIg: hl7.fhir.eu.eps@0.0.1-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikament
     rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/Medication-eu-eps
   - dest: Comparison/EPS-MedicationStatement
     leftIg: de.gematik.isik@5.0.0
-    rightIg: hl7.fhir.eu.eps.r4@0.0.1-ci
+    rightIg: hl7.fhir.eu.eps@0.0.1-ci
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsInformation
     rightProfile: http://hl7.eu/fhir/eps/StructureDefinition/MedicationStatement-eu-eps
   - dest: Comparison/MPD-Medication
@@ -90,7 +86,7 @@ profiles:
     rightProfile: http://hl7.eu/fhir/mpd/StructureDefinition/Medication-eu-mpd
   - dest: Comparison/MPD-MedicationRequest
     leftIg: de.gematik.isik@5.0.0
-    rightIg: hl7.fhir.eu.mpd@0.1.0
+    rightIg: hl7.fhir.eu.mpd@0.1.0-ballot
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerordnung
     rightProfile: http://hl7.eu/fhir/mpd/StructureDefinition/MedicationRequest-eu-mpd
   - dest: Comparison/Laboratory-ObservationLabResult

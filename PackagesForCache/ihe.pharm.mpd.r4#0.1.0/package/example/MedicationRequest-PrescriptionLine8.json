@@ -1,1 +1,0 @@
-{"resourceType":"MedicationRequest","id":"PrescriptionLine8","identifier":[{"system":"http://example.org/prescriptionlines","value":"line8"}],"status":"active","intent":"order","medicationCodeableConcept":{"coding":[{"system":"http://id.who.int/icd/release/11/mms","code":"med1"}]},"subject":{"identifier":{"value":"patient1"}}}

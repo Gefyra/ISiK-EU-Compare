@@ -1,0 +1,370 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "ImplementationGuide-hl7.fhir.eu.eps.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "hl7.fhir.eu.eps",
+      "url" : "http://hl7.eu/fhir/eps/ImplementationGuide/hl7.fhir.eu.eps",
+      "version" : "0.0.1-ci"
+    },
+    {
+      "filename" : "ConceptMap-patientSummary2FHIR.json",
+      "resourceType" : "ConceptMap",
+      "id" : "patientSummary2FHIR",
+      "url" : "http://hl7.eu/fhir/eps/ConceptMap/patientSummary2FHIR",
+      "version" : "0.0.1-ci"
+    },
+    {
+      "filename" : "ConceptMap-subjectPs2FHIR.json",
+      "resourceType" : "ConceptMap",
+      "id" : "subjectPs2FHIR",
+      "url" : "http://hl7.eu/fhir/eps/ConceptMap/subjectPs2FHIR",
+      "version" : "0.0.1-ci"
+    },
+    {
+      "filename" : "ConceptMap-vaccination2FHIR-eu-eps.json",
+      "resourceType" : "ConceptMap",
+      "id" : "vaccination2FHIR-eu-eps",
+      "url" : "http://hl7.eu/fhir/hdr/ConceptMap/vaccination2FHIR-eu-eps",
+      "version" : "0.0.1-ci"
+    },
+    {
+      "filename" : "StructureDefinition-Allergy.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Allergy",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/Allergy",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/Allergy",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-ClosedProblem.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ClosedProblem",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/ClosedProblem",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/ClosedProblem",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-FunctionalStatus.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "FunctionalStatus",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/FunctionalStatus",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/FunctionalStatus",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-MedicalDevice.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "MedicalDevice",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/MedicalDevice",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/MedicalDevice",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Medication-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Medication-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/Medication-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Medication",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-MedicationStatement-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "MedicationStatement-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/MedicationStatement-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "MedicationStatement",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Medicine.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Medicine",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/Medicine",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/Medicine",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-PatientSummary.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "PatientSummary",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/PatientSummary",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/PatientSummary",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Pregnancy.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Pregnancy",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/Pregnancy",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/Pregnancy",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Problem.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Problem",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/Problem",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/Problem",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-ProcedurePs.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ProcedurePs",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/ProcedurePs",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/ProcedurePs",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Result.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Result",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/Result",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/Result",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Subject.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Subject",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/Subject",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/Subject",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Vaccination.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Vaccination",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/Vaccination",
+      "version" : "0.0.1-ci",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/eps/StructureDefinition/Vaccination",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-allergyIntolerance-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "allergyIntolerance-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/allergyIntolerance-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "AllergyIntolerance",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bundle-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bundle-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/bundle-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Bundle",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-composition-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "composition-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/composition-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Composition",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-condition-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "condition-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/condition-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Condition",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-condition-statusReason.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "condition-statusReason",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/condition-statusReason",
+      "version" : "0.0.1-ci",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-consent-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "consent-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/consent-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Consent",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-device-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "device-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/device-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Device",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-deviceUseStatement-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "deviceUseStatement-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/deviceUseStatement-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "DeviceUseStatement",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-flag-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "flag-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/flag-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Flag",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-immunization-administeredProduct.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "immunization-administeredProduct",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/immunization-administeredProduct",
+      "version" : "0.0.1-ci",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-immunization-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "immunization-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/immunization-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Immunization",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-immunizationRecommendation-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "immunizationRecommendation-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/immunizationRecommendation-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "ImmunizationRecommendation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-medicationAdministration-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "medicationAdministration-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/medicationAdministration-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "MedicationAdministration",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-medicationDispense-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "medicationDispense-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/medicationDispense-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "MedicationDispense",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-medicationRequest-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "medicationRequest-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/medicationRequest-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "MedicationRequest",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-observation-travel-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "observation-travel-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/observation-travel-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-patient-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "patient-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/patient-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-procedure-eu-eps.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "procedure-eu-eps",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/procedure-eu-eps",
+      "version" : "0.0.1-ci",
+      "kind" : "resource",
+      "type" : "Procedure",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-supportingInformation.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "supportingInformation",
+      "url" : "http://hl7.eu/fhir/eps/StructureDefinition/supportingInformation",
+      "version" : "0.0.1-ci",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "ValueSet-eHDSISeverity.json",
+      "resourceType" : "ValueSet",
+      "id" : "eHDSISeverity",
+      "url" : "http://terminology.ehdsi.eu/ValueSet/eHDSISeverity",
+      "version" : "0.0.1-ci"
+    }
+  ]
+}

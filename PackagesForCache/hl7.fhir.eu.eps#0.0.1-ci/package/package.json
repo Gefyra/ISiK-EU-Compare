@@ -1,0 +1,37 @@
+{
+  "name" : "hl7.fhir.eu.eps",
+  "version" : "0.0.1-ci",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20251022085235",
+  "license" : "CC0-1.0",
+  "canonical" : "http://hl7.eu/fhir/eps",
+  "notForPublication" : true,
+  "url" : "https://build.fhir.org/ig/hl7-eu/eps/",
+  "title" : "HL7 Europe Patient Summary",
+  "description" : "This guide describes how the Patient Summary can be represented in the European REALM. (built Wed, Oct 22, 2025 08:52+0000+00:00)",
+  "fhirVersions" : ["4.0.1"],
+  "dependencies" : {
+    "hl7.fhir.r4.core" : "4.0.1",
+    "hl7.terminology.r4" : "6.5.0",
+    "hl7.fhir.uv.extensions.r4" : "5.2.0",
+    "hl7.fhir.uv.ips" : "2.0.0",
+    "hl7.fhir.eu.extensions.r4" : "0.1.1-ballot",
+    "hl7.fhir.eu.laboratory" : "0.1.1",
+    "hl7.fhir.eu.hdr" : "0.1.0-ballot",
+    "hl7.fhir.eu.base" : "current",
+    "ihe.pharm.mpd.r4" : "1.0.0-comment-2"
+  },
+  "author" : "HL7 Europe",
+  "maintainers" : [
+    {
+      "name" : "HL7 Europe",
+      "url" : "http://hl7.eu"
+    }
+  ],
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  },
+  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#150"
+}

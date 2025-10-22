@@ -1,0 +1,33 @@
+{
+  "name" : "hl7.fhir.eu.mpd",
+  "version" : "0.1.0-ballot",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20250604093154",
+  "license" : "CC0-1.0",
+  "canonical" : "http://hl7.eu/fhir/mpd",
+  "url" : "http://hl7.eu/fhir/mpd/0.1.0-ballot",
+  "title" : "HL7 Europe Medication Prescription and Dispense",
+  "description" : "This guide describes how to represent in HL7 FHIR Prescription and Dispense in the European context (built Wed, Jun 4, 2025 09:31+0200+02:00)",
+  "fhirVersions" : ["4.0.1"],
+  "dependencies" : {
+    "hl7.fhir.r4.core" : "4.0.1",
+    "hl7.terminology.r4" : "6.4.0",
+    "hl7.fhir.uv.extensions.r4" : "5.2.0",
+    "hl7.fhir.eu.extensions.r4" : "0.1.1-ballot",
+    "hl7.fhir.eu.base" : "0.1.0-ballot",
+    "ihe.pharm.mpd.r4" : "1.0.0-comment-2"
+  },
+  "author" : "HL7 Europe",
+  "maintainers" : [
+    {
+      "name" : "HL7 Europe",
+      "url" : "http://hl7.eu"
+    }
+  ],
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  },
+  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#150"
+}

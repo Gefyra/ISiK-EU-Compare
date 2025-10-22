@@ -1,1 +1,0 @@
-{"resourceType":"Patient","id":"patient1","identifier":[{"value":"12345"}],"name":[{"family":"Engine","given":["Thomas"]}],"gender":"male","birthDate":"1950-09-15"}

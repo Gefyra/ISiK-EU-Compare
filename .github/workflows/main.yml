@@ -39,7 +39,7 @@ jobs:
           mkdir -p tmp
           if [ ! -f tmp/validator_cli.jar ]; then
             echo "Cache miss – downloading"
-            curl -L -o tmp/validator_cli.jar http://horvac.de/org.hl7.fhir.validation.cli-6.4.0.jar
+            curl -L -o tmp/validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
           else
             echo "✅ Using cached version"
           fi
