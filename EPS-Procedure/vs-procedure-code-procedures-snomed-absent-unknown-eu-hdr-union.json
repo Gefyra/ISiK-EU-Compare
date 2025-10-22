@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "e6ee90a7-ecb3-4552-a7e2-4f4d8d760b80-5",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/e6ee90a7-ecb3-4552-a7e2-4f4d8d760b80-5",
+  "id" : "ae463476-0c57-41e6-88d9-049d75bbed10-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ae463476-0c57-41e6-88d9-049d75bbed10-5",
   "name" : "UnionProcedureCodes(SNOMEDCT)AndProceduresSnomedAbsentUnknownHdrVS",
   "title" : "Union of Procedure Codes (SNOMED CT) And Procedures - SNOMED CT + Absent/Unknown - IPS",
   "status" : "draft",
-  "date" : "2025-08-28T11:21:42+00:00",
+  "date" : "2025-10-22T10:46:48+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

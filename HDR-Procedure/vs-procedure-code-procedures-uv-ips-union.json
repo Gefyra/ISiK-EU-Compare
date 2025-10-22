@@ -1,0 +1,101 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aa2385d7-d260-4734-9a88-5f062fac5f28-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/aa2385d7-d260-4734-9a88-5f062fac5f28-5",
+  "name" : "UnionProcedureCodes(SNOMEDCT)AndProceduresSnomedCtUvIps",
+  "title" : "Union of Procedure Codes (SNOMED CT) And Procedures (SNOMED CT) - IPS",
+  "status" : "draft",
+  "date" : "2025-10-22T10:45:14+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71388002"
+      },
+      {
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "71388002"
+      }]
+    }],
+    "exclude" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "14734007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "59524001"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "389067005"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "442006003"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "225288009"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "308335008"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "710135002"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "389084004"
+      }]
+    }]
+  }
+}

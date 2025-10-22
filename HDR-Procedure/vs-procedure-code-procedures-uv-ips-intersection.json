@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aa2385d7-d260-4734-9a88-5f062fac5f28-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/aa2385d7-d260-4734-9a88-5f062fac5f28-6",
+  "name" : "IntersectionProcedureCodes(SNOMEDCT)AndProceduresSnomedCtUvIps",
+  "title" : "Intersection of Procedure Codes (SNOMED CT) And Procedures (SNOMED CT) - IPS",
+  "status" : "draft",
+  "date" : "2025-10-22T10:45:14+00:00"
+}
