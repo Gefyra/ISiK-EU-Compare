@@ -54,6 +54,31 @@ profiles:
     rightIg: hl7.fhir.eu.hdr@0.1.0-ballot
     leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose
     rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/condition-eu-hdr
+  - dest: Comparison/HDR-Encounter-obl
+    leftIg: de.gematik.isik@5.0.0
+    rightIg: hl7.fhir.eu.hdr#0.1.0-ballot
+    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung
+    rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/encounter-obl-eu-hdr
+  - dest: Comparison/HDR-Composition-obl
+    leftIg: de.gematik.isik@5.0.0
+    rightIg: hl7.fhir.eu.hdr#0.1.0-ballot
+    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKBerichtSubSysteme
+    rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/composition-obl-eu-hdr
+  - dest: Comparison/HDR-AllergyIntolerance-obl
+    leftIg: de.gematik.isik@5.0.0
+    rightIg: hl7.fhir.eu.hdr#0.1.0-ballot
+    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKAllergieUnvertraeglichkeit
+    rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/allergyIntolerance-obl-eu-hdr
+  - dest: Comparison/HDR-Procedure-obl
+    leftIg: de.gematik.isik@5.0.0
+    rightIg: hl7.fhir.eu.hdr#0.1.0-ballot
+    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedur
+    rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/procedure-obl-eu-hdr
+  - dest: Comparison/HDR-Condition-obl
+    leftIg: de.gematik.isik@5.0.0
+    rightIg: hl7.fhir.eu.hdr@0.1.0-ballot
+    leftProfile: https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose
+    rightProfile: http://hl7.eu/fhir/hdr/StructureDefinition/condition-obl-eu-hdr
   - dest: Comparison/EPS-Patient
     leftIg: de.gematik.isik@5.0.0
     rightIg: hl7.fhir.eu.eps@0.0.1-ci
