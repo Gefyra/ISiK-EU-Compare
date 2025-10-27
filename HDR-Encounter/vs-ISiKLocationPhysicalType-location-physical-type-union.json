@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "75f24ea2-97fc-4827-a6af-31cc240dfcb6-23",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/75f24ea2-97fc-4827-a6af-31cc240dfcb6-23",
+  "id" : "6f31c1f5-601c-458b-a0a0-06e13371a810-23",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6f31c1f5-601c-458b-a0a0-06e13371a810-23",
   "name" : "UnionISiKLocationPhysicalTypeAndLocationType",
   "title" : "Union of null And Location type",
   "status" : "active",
-  "date" : "2025-10-27T08:45:55+00:00",
+  "date" : "2025-10-27T09:57:37+00:00",
   "compose" : {
     "include" : [{
       "concept" : [{

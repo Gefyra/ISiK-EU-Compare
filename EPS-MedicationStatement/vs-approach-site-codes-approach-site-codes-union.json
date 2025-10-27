@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "6d478460-09f5-457f-8931-3803acca2559-26",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/6d478460-09f5-457f-8931-3803acca2559-26",
+  "id" : "ccd72d35-5714-481b-9d1f-474d68540a75-26",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ccd72d35-5714-481b-9d1f-474d68540a75-26",
   "name" : "UnionSNOMEDCTAnatomicalStructureForAdministrationSiteCodesAndSNOMEDCTAnatomicalStructureForAdministrationSiteCodes",
   "title" : "Union of SNOMED CT Anatomical Structure for Administration Site Codes And SNOMED CT Anatomical Structure for Administration Site Codes",
   "status" : "draft",
-  "date" : "2025-10-27T08:55:46+00:00",
+  "date" : "2025-10-27T10:06:17+00:00",
   "compose" : {
     "include" : [{
       "filter" : [{

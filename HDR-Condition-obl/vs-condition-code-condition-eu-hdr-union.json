@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "9b7073b5-5a8f-4a4b-9d1f-edda88692584-5",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/9b7073b5-5a8f-4a4b-9d1f-edda88692584-5",
+  "id" : "2fdab13a-2336-4be1-b4f9-e6efe9f76d7a-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/2fdab13a-2336-4be1-b4f9-e6efe9f76d7a-5",
   "name" : "UnionCondition/Problem/DiagnosisCodesAndConditionHdrVS",
   "title" : "Union of Condition/Problem/Diagnosis Codes And Condition Value Set",
   "status" : "draft",
-  "date" : "2025-10-27T08:51:42+00:00",
+  "date" : "2025-10-27T10:04:17+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
