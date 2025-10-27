@@ -5,7 +5,7 @@ SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
 SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
 SLF4J: Ignoring binding found at [jar:file:/home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/tmp/validator_cli.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
-FHIR Validation tool Version 6.4.0 (Git# 2f8ab91c55ac). Built 2025-05-12T11:32:12.116+02:00 (163 days old)
+FHIR Validation tool Version 6.4.0 (Git# 2f8ab91c55ac). Built 2025-05-12T11:32:12.116+02:00 (167 days old)
   Java:   21.0.8 from /usr/lib/jvm/temurin-21-jdk-amd64 on amd64 (64bit). 4000MB available
   Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
   Params: -compare -dest Comparison/EU-Base-Address -version 4.0 -ig de.basisprofil.r4#1.5.4 -ig hl7.fhir.eu.base#0.1.0-ballot -left http://fhir.de/StructureDefinition/address-de-basis -right http://hl7.eu/fhir/base/StructureDefinition/Address-eu
@@ -23,7 +23,7 @@ Installing hl7.fhir.xver-extensions#0.1.0 to the package cache
 
 Installing hl7.fhir.xver-extensions#0.1.0
  done.
- - 4576 resources (00:17.901)
+ - 4576 resources (00:19.443)
 Installing hl7.terminology#6.5.0 to the package cache
   Fetching:
 
@@ -34,8 +34,8 @@ Installing hl7.fhir.uv.extensions.r5#5.2.0 to the package cache
 
 Installing hl7.fhir.uv.extensions.r5#5.2.0
  done.
-  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:03.108)
-  Load hl7.terminology#6.5.0 - 4356 resources (00:00.866)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:04.131)
+  Load hl7.terminology#6.5.0 - 4356 resources (00:01.314)
 Installing hl7.fhir.uv.extensions#5.3.0-ballot-tc1 to the package cache
   Fetching:
 
@@ -46,15 +46,15 @@ Installing hl7.terminology.r5#6.5.0 to the package cache
 
 Installing hl7.terminology.r5#6.5.0
  done.
-  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:01.952)
-  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.846)
-  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.431)
+  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:01.751)
+  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.859)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:01.024)
 Installing de.basisprofil.r4#1.5.4 to the package cache
   Fetching:
 
 Installing de.basisprofil.r4#1.5.4
  done.
-  Load de.basisprofil.r4#1.5.4 - 186 resources (00:00.682)
+  Load de.basisprofil.r4#1.5.4 - 186 resources (00:00.766)
 Installing hl7.terminology.r4#6.3.0 to the package cache
   Fetching:
 
@@ -65,8 +65,8 @@ Installing hl7.fhir.uv.extensions.r4#5.2.0 to the package cache
 
 Installing hl7.fhir.uv.extensions.r4#5.2.0
  done.
-  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:02.485)
-  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.069)
+  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:02.688)
+  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.950)
 Installing hl7.fhir.uv.ips#1.1.0 to the package cache
   Fetching:
 
@@ -77,54 +77,54 @@ Installing hl7.terminology.r4#5.0.0 to the package cache
 
 Installing hl7.terminology.r4#5.0.0
  done.
-  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:07.533)
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:08.306)
 Installing fhir.dicom#2022.4.20221006 to the package cache
   Fetching:
 
 Installing fhir.dicom#2022.4.20221006
  done.
-  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:02.473)
-  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.393)
+  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:03.222)
+  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.251)
 Installing hl7.terminology.r4#6.2.0 to the package cache
   Fetching:
 
 Installing hl7.terminology.r4#6.2.0
  done.
-  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:02.848)
+  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:03.809)
   Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.003)
-  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.037)
+  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.038)
   Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, de.basisprofil.r4#1.5.4, hl7.fhir.uv.extensions.r4#5.2.0, hl7.terminology.r4#6.3.0, hl7.terminology.r4#5.0.0, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.terminology.r4#6.2.0, hl7.fhir.eu.extensions.r4#0.1.1-ballot, hl7.fhir.eu.base#0.1.0-ballot]
   Terminology Cache at /tmp/default-tx-cache
-  Get set...  go (00:00.287)
+  Get set...  go (00:00.237)
 Cached new session. Cache size = 1
   Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
   Params: -compare -dest Comparison/EU-Base-Address -version 4.0 -ig de.basisprofil.r4#1.5.4 -ig hl7.fhir.eu.base#0.1.0-ballot -left http://fhir.de/StructureDefinition/address-de-basis -right http://hl7.eu/fhir/base/StructureDefinition/Address-eu
 Valid destination directory provided: "Comparison/EU-Base-Address")
-  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:01.286)
-  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:00.951)
-  Load hl7.terminology#6.5.0 - 4356 resources (00:00.558)
-  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:00.442)
-  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.777)
-  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.090)
-  Load de.basisprofil.r4#1.5.4 - 186 resources (00:00.132)
-  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:00.866)
-  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:00.548)
-  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:01.131)
-  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:00.015)
-  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.184)
-  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:01.729)
+  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:01.209)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:00.976)
+  Load hl7.terminology#6.5.0 - 4356 resources (00:00.529)
+  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:00.504)
+  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.920)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.254)
+  Load de.basisprofil.r4#1.5.4 - 186 resources (00:00.164)
+  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:00.889)
+  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:00.633)
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:01.431)
+  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:00.017)
+  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.192)
+  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:02.432)
   Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.002)
-  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.036)
+  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.040)
   Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, de.basisprofil.r4#1.5.4, hl7.fhir.uv.extensions.r4#5.2.0, hl7.terminology.r4#6.3.0, hl7.terminology.r4#5.0.0, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.terminology.r4#6.2.0, hl7.fhir.eu.extensions.r4#0.1.1-ballot, hl7.fhir.eu.base#0.1.0-ballot]
   Terminology Cache at /tmp/default-tx-cache
-  Get set...  go (00:00.119)
+  Get set...  go (00:00.144)
 Cached new session. Cache size = 2
 Installing hl7.fhir.pubpack#0.2.3 to the package cache
   Fetching:
 
 Installing hl7.fhir.pubpack#0.2.3
  done.
-  Load hl7.fhir.pubpack#0.2.3 - 0 resources (00:01.398)
+  Load hl7.fhir.pubpack#0.2.3 - 0 resources (00:06.920)
 Comparing StructureDefinitions http://fhir.de/StructureDefinition/address-de-basis to http://hl7.eu/fhir/base/StructureDefinition/Address-eu
 Generating output to Comparison/EU-Base-Address...
 Exception rendering http://fhir.de/StructureDefinition/address-de-basis|1.5.4||http://hl7.eu/fhir/base/StructureDefinition/Address-eu|0.1.0-ballot: Cannot invoke "String.length()" because "this.source" is null
@@ -145,4 +145,4 @@ java.lang.NullPointerException: Cannot invoke "String.length()" because "this.so
 	at org.hl7.fhir.validation.ValidatorCli.main(ValidatorCli.java:207)
 Headless environment detected; skipping browser launch.
 Done: file:/home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/Comparison/EU-Base-Address/index.html
-Done. Times: Loading: 00:43.466. Max Memory = 3Gb
+Done. Times: Loading: 00:50.312. Max Memory = 3Gb

@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "72e3f8d4-0a6f-4f5d-80a3-e851cae8496c-14",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/72e3f8d4-0a6f-4f5d-80a3-e851cae8496c-14",
+  "name" : "UnionActPriorityAndAdmissionUrgencyHdrVS",
+  "title" : "Union of ActPriority And Admission Urgency Value Set",
+  "status" : "active",
+  "date" : "2025-10-27T08:49:44+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "A"
+      },
+      {
+        "code" : "CR"
+      },
+      {
+        "code" : "EL",
+        "display" : "elective"
+      },
+      {
+        "code" : "EM",
+        "display" : "emergency"
+      },
+      {
+        "code" : "P"
+      },
+      {
+        "code" : "PRN"
+      },
+      {
+        "code" : "R",
+        "display" : "routine"
+      },
+      {
+        "code" : "RR"
+      },
+      {
+        "code" : "S"
+      },
+      {
+        "code" : "T"
+      },
+      {
+        "code" : "UD"
+      },
+      {
+        "code" : "UR",
+        "display" : "urgent"
+      }]
+    },
+    {
+      "valueSet" : ["http://terminology.hl7.org/ValueSet/v3-ActPriorityCallback"]
+    },
+    {
+      "valueSet" : ["http://terminology.hl7.org/ValueSet/v3-xEncounterAdmissionUrgency"]
+    }]
+  }
+}

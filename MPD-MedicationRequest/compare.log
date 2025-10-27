@@ -5,7 +5,7 @@ SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
 SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
 SLF4J: Ignoring binding found at [jar:file:/home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/tmp/validator_cli.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
-FHIR Validation tool Version 6.4.0 (Git# 2f8ab91c55ac). Built 2025-05-12T11:32:12.116+02:00 (163 days old)
+FHIR Validation tool Version 6.4.0 (Git# 2f8ab91c55ac). Built 2025-05-12T11:32:12.116+02:00 (167 days old)
   Java:   21.0.8 from /usr/lib/jvm/temurin-21-jdk-amd64 on amd64 (64bit). 4000MB available
   Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
   Params: -compare -dest Comparison/MPD-MedicationRequest -version 4.0 -ig de.gematik.isik#5.0.0 -ig hl7.fhir.eu.mpd#0.1.0-ballot -left https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerordnung -right http://hl7.eu/fhir/mpd/StructureDefinition/MedicationRequest-eu-mpd
@@ -23,7 +23,7 @@ Installing hl7.fhir.xver-extensions#0.1.0 to the package cache
 
 Installing hl7.fhir.xver-extensions#0.1.0
  done.
- - 4576 resources (00:15.290)
+ - 4576 resources (00:18.454)
 Installing hl7.terminology#6.5.0 to the package cache
   Fetching:
 
@@ -34,8 +34,8 @@ Installing hl7.fhir.uv.extensions.r5#5.2.0 to the package cache
 
 Installing hl7.fhir.uv.extensions.r5#5.2.0
  done.
-  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:03.112)
-  Load hl7.terminology#6.5.0 - 4356 resources (00:00.857)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:03.403)
+  Load hl7.terminology#6.5.0 - 4356 resources (00:01.342)
 Installing hl7.fhir.uv.extensions#5.3.0-ballot-tc1 to the package cache
   Fetching:
 
@@ -46,9 +46,9 @@ Installing hl7.terminology.r5#6.5.0 to the package cache
 
 Installing hl7.terminology.r5#6.5.0
  done.
-  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:01.975)
-  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.830)
-  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.370)
+  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:01.496)
+  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.804)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.621)
 Installing hl7.fhir.uv.subscriptions-backport.r4#1.1.0 to the package cache
   Fetching:
 
@@ -59,26 +59,26 @@ Installing hl7.terminology.r4#5.0.0 to the package cache
 
 Installing hl7.terminology.r4#5.0.0
  done.
-  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:07.112)
-  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.034)
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:06.544)
+  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.029)
 Installing de.basisprofil.r4#1.5.4 to the package cache
   Fetching:
 
 Installing de.basisprofil.r4#1.5.4
  done.
-  Load de.basisprofil.r4#1.5.4 - 186 resources (00:01.326)
+  Load de.basisprofil.r4#1.5.4 - 186 resources (00:01.391)
 Installing de.ihe-d.terminology#3.0.1 to the package cache
   Fetching:
 
 Installing de.ihe-d.terminology#3.0.1
  done.
-  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.181)
+  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.183)
 Installing dvmd.kdl.r4#2025.0.1 to the package cache
   Fetching:
 
 Installing dvmd.kdl.r4#2025.0.1
  done.
-  Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.127)
+  Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.124)
 Installing hl7.fhir.uv.sdc#3.0.0 to the package cache
   Fetching:
 
@@ -89,8 +89,8 @@ Installing hl7.fhir.r4.examples#4.0.1 to the package cache
 
 Installing hl7.fhir.r4.examples#4.0.1
  done.
-  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:12.252)
-  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.279)
+  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:11.720)
+  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.278)
 Installing de.gematik.terminology#1.0.6 to the package cache
   Fetching:
 
@@ -106,28 +106,28 @@ Installing hl7.fhir.uv.extensions.r4#5.2.0 to the package cache
 
 Installing hl7.fhir.uv.extensions.r4#5.2.0
  done.
-  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:03.610)
-  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.255)
+  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:03.295)
+  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.175)
 Installing dvmd.kdl.r4#2025.0.0 to the package cache
   Fetching:
 
 Installing dvmd.kdl.r4#2025.0.0
  done.
-  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.133)
+  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.122)
   Load de.gematik.terminology#1.0.6 - 50 resources (00:00.007)
-  Load de.gematik.isik#5.0.0 - 238 resources (00:01.153)
+  Load de.gematik.isik#5.0.0 - 238 resources (00:01.242)
 Installing hl7.terminology.r4#6.4.0 to the package cache
   Fetching:
 
 Installing hl7.terminology.r4#6.4.0
  done.
-  Load hl7.terminology.r4#6.4.0 - 4345 resources (00:02.951)
+  Load hl7.terminology.r4#6.4.0 - 4345 resources (00:02.844)
 Installing hl7.terminology.r4#6.2.0 to the package cache
   Fetching:
 
 Installing hl7.terminology.r4#6.2.0
  done.
-  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:03.948)
+  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:03.766)
   Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.003)
 Installing hl7.fhir.uv.ips#1.1.0 to the package cache
   Fetching:
@@ -139,59 +139,59 @@ Installing fhir.dicom#2022.4.20221006 to the package cache
 
 Installing fhir.dicom#2022.4.20221006
  done.
-  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:02.252)
-  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.179)
-  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.035)
+  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:02.072)
+  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.196)
+  Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.034)
 Installing ihe.pharm.mpd.r4#1.0.0-comment-2 to the package cache
   Fetching:
 
 Installing ihe.pharm.mpd.r4#1.0.0-comment-2
  done.
-  Load ihe.pharm.mpd.r4#1.0.0-comment-2 - 39 resources (00:00.171)
+  Load ihe.pharm.mpd.r4#1.0.0-comment-2 - 39 resources (00:00.172)
   Load hl7.fhir.eu.mpd#0.1.0-ballot - 7 resources (00:00.023)
   Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, hl7.terminology.r4#5.0.0, hl7.fhir.uv.subscriptions-backport.r4#1.1.0, de.basisprofil.r4#1.5.4, de.ihe-d.terminology#3.0.1, dvmd.kdl.r4#2025.0.1, hl7.fhir.r4.examples#4.0.1, hl7.fhir.uv.sdc#3.0.0, hl7.fhir.uv.extensions.r4#5.2.0, hl7.terminology.r4#6.3.0, dvmd.kdl.r4#2025.0.0, de.gematik.terminology#1.0.6, de.gematik.isik#5.0.0, hl7.terminology.r4#6.4.0, hl7.terminology.r4#6.2.0, hl7.fhir.eu.extensions.r4#0.1.1-ballot, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.fhir.eu.base#0.1.0-ballot, ihe.pharm.mpd.r4#1.0.0-comment-2, hl7.fhir.eu.mpd#0.1.0-ballot]
   Terminology Cache at /tmp/default-tx-cache
-  Get set...  go (00:00.296)
+  Get set...  go (00:00.367)
 Cached new session. Cache size = 1
   Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
   Params: -compare -dest Comparison/MPD-MedicationRequest -version 4.0 -ig de.gematik.isik#5.0.0 -ig hl7.fhir.eu.mpd#0.1.0-ballot -left https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerordnung -right http://hl7.eu/fhir/mpd/StructureDefinition/MedicationRequest-eu-mpd
 Valid destination directory provided: "Comparison/MPD-MedicationRequest")
-  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:01.056)
-  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:00.876)
-  Load hl7.terminology#6.5.0 - 4356 resources (00:00.588)
-  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:00.424)
-  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.739)
-  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.072)
-  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:00.598)
-  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.026)
-  Load de.basisprofil.r4#1.5.4 - 186 resources (00:00.132)
+  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:01.205)
+  Load hl7.fhir.uv.extensions.r5#5.2.0 - 758 resources (00:00.879)
+  Load hl7.terminology#6.5.0 - 4356 resources (00:00.596)
+  Load hl7.terminology.r5#6.5.0 - 4356 resources (00:00.498)
+  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 822 resources (00:00.725)
+  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:00.132)
+  Load hl7.terminology.r4#5.0.0 - 4174 resources (00:00.664)
+  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 23 resources (00:00.032)
+  Load de.basisprofil.r4#1.5.4 - 186 resources (00:00.191)
   Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.008)
   Load dvmd.kdl.r4#2025.0.1 - 4 resources (00:00.000)
-  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:01.891)
-  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.175)
-  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:00.888)
-  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.154)
-  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.000)
+  Load hl7.fhir.r4.examples#4.0.1 - 4582 resources (00:01.861)
+  Load hl7.fhir.uv.sdc#3.0.0 - 137 resources (00:00.205)
+  Load hl7.fhir.uv.extensions.r4#5.2.0 - 758 resources (00:00.901)
+  Load hl7.terminology.r4#6.3.0 - 4338 resources (00:01.037)
+  Load dvmd.kdl.r4#2025.0.0 - 4 resources (00:00.001)
   Load de.gematik.terminology#1.0.6 - 50 resources (00:00.008)
-  Load de.gematik.isik#5.0.0 - 238 resources (00:00.907)
-  Load hl7.terminology.r4#6.4.0 - 4345 resources (00:02.675)
-  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:03.276)
+  Load de.gematik.isik#5.0.0 - 238 resources (00:01.227)
+  Load hl7.terminology.r4#6.4.0 - 4345 resources (00:01.821)
+  Load hl7.terminology.r4#6.2.0 - 4287 resources (00:02.682)
   Load hl7.fhir.eu.extensions.r4#0.1.1-ballot - 6 resources (00:00.003)
   Load fhir.dicom#2022.4.20221006 - 1319 resources (00:00.023)
-  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.175)
+  Load hl7.fhir.uv.ips#1.1.0 - 103 resources (00:00.168)
   Load hl7.fhir.eu.base#0.1.0-ballot - 22 resources (00:00.034)
-  Load ihe.pharm.mpd.r4#1.0.0-comment-2 - 39 resources (00:00.013)
+  Load ihe.pharm.mpd.r4#1.0.0-comment-2 - 39 resources (00:00.012)
   Load hl7.fhir.eu.mpd#0.1.0-ballot - 7 resources (00:00.022)
   Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, hl7.terminology.r4#5.0.0, hl7.fhir.uv.subscriptions-backport.r4#1.1.0, de.basisprofil.r4#1.5.4, de.ihe-d.terminology#3.0.1, dvmd.kdl.r4#2025.0.1, hl7.fhir.r4.examples#4.0.1, hl7.fhir.uv.sdc#3.0.0, hl7.fhir.uv.extensions.r4#5.2.0, hl7.terminology.r4#6.3.0, dvmd.kdl.r4#2025.0.0, de.gematik.terminology#1.0.6, de.gematik.isik#5.0.0, hl7.terminology.r4#6.4.0, hl7.terminology.r4#6.2.0, hl7.fhir.eu.extensions.r4#0.1.1-ballot, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.fhir.eu.base#0.1.0-ballot, ihe.pharm.mpd.r4#1.0.0-comment-2, hl7.fhir.eu.mpd#0.1.0-ballot]
   Terminology Cache at /tmp/default-tx-cache
-  Get set...  go (00:00.187)
+  Get set...  go (00:00.224)
 Cached new session. Cache size = 2
 Installing hl7.fhir.pubpack#0.2.3 to the package cache
   Fetching:
 
 Installing hl7.fhir.pubpack#0.2.3
  done.
-  Load hl7.fhir.pubpack#0.2.3 - 0 resources (00:01.369)
+  Load hl7.fhir.pubpack#0.2.3 - 0 resources (00:01.615)
 Comparing StructureDefinitions https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerordnung to http://hl7.eu/fhir/mpd/StructureDefinition/MedicationRequest-eu-mpd
 Generating output to Comparison/MPD-MedicationRequest...
 Exception rendering https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerordnung|5.0.0||http://hl7.eu/fhir/mpd/StructureDefinition/MedicationRequest-eu-mpd|0.1.0-ballot: Cannot invoke "String.length()" because "this.source" is null
@@ -212,4 +212,4 @@ java.lang.NullPointerException: Cannot invoke "String.length()" because "this.so
 	at org.hl7.fhir.validation.ValidatorCli.main(ValidatorCli.java:207)
 Headless environment detected; skipping browser launch.
 Done: file:/home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/Comparison/MPD-MedicationRequest/index.html
-Done. Times: Loading: 01:00.141. Max Memory = 3Gb
+Done. Times: Loading: 01:02.485. Max Memory = 3Gb

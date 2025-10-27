@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e60dd406-1ffc-44a4-b138-cb5684a92510-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e60dd406-1ffc-44a4-b138-cb5684a92510-6",
+  "name" : "IntersectionAllergyIntoleranceSubstance/Product,ConditionAndNegationCodesAndAllergyIntoleranceUvIps",
+  "title" : "Intersection of AllergyIntolerance Substance/Product, Condition and Negation Codes And Allergy Intolerance - IPS",
+  "status" : "draft",
+  "date" : "2025-10-27T08:50:01+00:00"
+}

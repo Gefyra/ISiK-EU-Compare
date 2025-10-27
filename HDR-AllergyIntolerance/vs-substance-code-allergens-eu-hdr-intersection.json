@@ -1,9 +1,9 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "c4f57d79-5085-430b-973a-4cc7a21c23e2-9",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/c4f57d79-5085-430b-973a-4cc7a21c23e2-9",
+  "id" : "c3ca4114-7215-42d8-a8d2-f89fc4e80c76-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c3ca4114-7215-42d8-a8d2-f89fc4e80c76-9",
   "name" : "IntersectionSubstanceCodeAndAllergensHdrVS",
   "title" : "Intersection of Substance Code And Allergens Value Set",
   "status" : "draft",
-  "date" : "2025-10-22T12:22:31+00:00"
+  "date" : "2025-10-27T08:46:59+00:00"
 }

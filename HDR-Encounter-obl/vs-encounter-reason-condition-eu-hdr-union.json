@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "72e3f8d4-0a6f-4f5d-80a3-e851cae8496c-17",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/72e3f8d4-0a6f-4f5d-80a3-e851cae8496c-17",
+  "name" : "UnionEncounterReasonCodesAndConditionHdrVS",
+  "title" : "Union of Encounter Reason Codes And Condition Value Set",
+  "status" : "draft",
+  "date" : "2025-10-27T08:49:44+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71388002"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "243796009"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "272379006"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10"
+    },
+    {
+      "system" : "https://www.orpha.net"
+    }]
+  }
+}

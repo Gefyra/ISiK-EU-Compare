@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9b7073b5-5a8f-4a4b-9d1f-edda88692584-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9b7073b5-5a8f-4a4b-9d1f-edda88692584-5",
+  "name" : "UnionCondition/Problem/DiagnosisCodesAndConditionHdrVS",
+  "title" : "Union of Condition/Problem/Diagnosis Codes And Condition Value Set",
+  "status" : "draft",
+  "date" : "2025-10-27T08:51:42+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "160245001",
+        "display" : "No current problems or disability"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10"
+    },
+    {
+      "system" : "https://www.orpha.net"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71388002"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "243796009"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "272379006"
+      }]
+    }]
+  }
+}

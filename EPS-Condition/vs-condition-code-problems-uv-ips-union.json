@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "d304cbbd-1aaa-4a64-9a69-b1dc72efef49-11",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/d304cbbd-1aaa-4a64-9a69-b1dc72efef49-11",
+  "id" : "f334ac3e-a1b7-4468-957f-c7c0662b7649-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f334ac3e-a1b7-4468-957f-c7c0662b7649-11",
   "name" : "UnionCondition/Problem/DiagnosisCodesAndProblemsUvIps",
   "title" : "Union of Condition/Problem/Diagnosis Codes And Problems - IPS",
   "status" : "draft",
-  "date" : "2025-10-22T12:24:39+00:00",
+  "date" : "2025-10-27T08:52:09+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
