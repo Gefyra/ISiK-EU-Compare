@@ -11,6 +11,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Checkout existing pages snapshot
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          path: gh-pages
+        continue-on-error: true
+
+      - name: Restore existing comparison results
+        run: |
+          if [ -d gh-pages ] && [ "$(ls -A gh-pages)" ]; then
+            echo "Restoring existing comparison output from gh-pages branch"
+            mkdir -p Comparison
+            rsync -a --exclude '.git' gh-pages/ Comparison/
+          else
+            echo "No existing gh-pages content to restore."
+          fi
+
       - name: 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

@@ -14,13 +14,7 @@ The goal is to help implementers and standard developers understand structural a
 
 The repository defines three GitHub Actions workflows that automate the comparison and deployment:
 
-### 1. `ig-preparing.yml` – 📥 IG Download and Extraction
-
-- Reads IG package metadata from [`ComparisonConfig.yml`](.github/config/ComparisonConfig.yml)
-- Installs the specified FHIR packages from Simplifier via `npm run install-igs -- --sync-cache`
-- Populates the Firely cache (`~/.fhir/packages`) automatically — no manual `PackagesForCache/` updates required
-
-### 2. `main.yml` – 🔬 Compare & 🚀 Publish Profiles
+### 🔄 `main.yml` – Compare & Publish
 
 - Sets up Node and Java
 - Installs the FHIR validator CLI via Node helper scripts
@@ -29,12 +23,13 @@ The repository defines three GitHub Actions workflows that automate the comparis
 - For each profile pair in the config:
   - Runs structural comparison
   - Saves HTML results in `Comparison/<profile-name>`
-- Creates a central index with links to all comparisons
-- Pushes the output to GitHub Pages
+  - Creates a central index with links to all comparisons
+  - Pushes the output to GitHub Pages
+- Preserves earlier results by merging new artifacts with the current `gh-pages` content before deployment
 
-### 3. `deploy.yml` – Manual Redeploy
+### 🚀 `deploy.yml` – Manual Redeploy
 
-- Allows manual redeployment of the `Comparison/` folder contents to GitHub Pages
+- Restores the currently published comparison results before re-deploying the refreshed `Comparison/` folder
 
 ## 🗂 Configuration
 
