@@ -36,7 +36,7 @@ jobs:
           if [ -d gh-pages ] && [ "$(ls -A gh-pages)" ]; then
             echo "Restoring existing comparison output from gh-pages branch"
             mkdir -p Comparison
-            rsync -a --exclude '.git' gh-pages/ Comparison/
+            cp -a gh-pages/. Comparison/
           else
             echo "No existing gh-pages content to restore."
           fi
