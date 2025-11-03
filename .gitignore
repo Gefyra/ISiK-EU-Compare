@@ -1,3 +1,4 @@
 Comparison/Local/*
 validator_cli*
 localignore/*
+node_modules/*
