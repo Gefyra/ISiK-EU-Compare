@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "fd07c6c7-ad4d-4311-8702-0d27ed48e46e-44",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-44",
-  "name" : "UnionDoseAndRateTypeAndDoseAndRateType",
-  "title" : "Union of DoseAndRateType And DoseAndRateType",
-  "status" : "draft",
-  "date" : "2025-11-03T17:22:12+00:00"
-}

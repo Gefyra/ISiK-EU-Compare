@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "7b2f6f23-8678-4db6-ae58-a0736351ad91-38",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-38",
-  "name" : "UnionSpecialArrangementsAndSpecialArrangements",
-  "title" : "Union of Special arrangements And Special arrangements",
-  "status" : "draft",
-  "date" : "2025-11-03T17:13:57+00:00"
-}
