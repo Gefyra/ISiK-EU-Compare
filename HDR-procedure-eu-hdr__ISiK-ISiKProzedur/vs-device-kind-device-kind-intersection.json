@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "5959bec7-7dc9-4992-97e7-2df937f0ee39-39",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-39",
+  "name" : "IntersectionFHIRDeviceTypesAndFHIRDeviceTypes",
+  "title" : "Intersection of FHIR Device Types And FHIR Device Types",
+  "status" : "draft",
+  "date" : "2025-11-03T17:18:58+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "49062001"
+      }]
+    }]
+  }
+}

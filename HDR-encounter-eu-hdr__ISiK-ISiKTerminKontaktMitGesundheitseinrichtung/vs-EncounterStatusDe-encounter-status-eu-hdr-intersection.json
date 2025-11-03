@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "c51de260-d05a-4abc-bf62-b81ed0d5b579-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c51de260-d05a-4abc-bf62-b81ed0d5b579-9",
+  "name" : "IntersectionEncounterStatusDeAndEncounterStatusHdrVS",
+  "title" : "Intersection of Encounter Status ValueSet And In-patient Encounter Status Value Set",
+  "status" : "active",
+  "date" : "2025-11-03T17:14:44+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "in-progress",
+        "display" : "In Progress"
+      },
+      {
+        "code" : "onleave",
+        "display" : "On Leave"
+      },
+      {
+        "code" : "finished",
+        "display" : "Finished"
+      },
+      {
+        "code" : "unknown",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

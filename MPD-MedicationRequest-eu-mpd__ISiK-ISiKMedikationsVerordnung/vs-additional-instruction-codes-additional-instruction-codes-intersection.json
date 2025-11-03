@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fd07c6c7-ad4d-4311-8702-0d27ed48e46e-27",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-27",
+  "name" : "IntersectionSNOMEDCTAdditionalDosageInstructionsAndSNOMEDCTAdditionalDosageInstructions",
+  "title" : "Intersection of SNOMED CT Additional Dosage Instructions And SNOMED CT Additional Dosage Instructions",
+  "status" : "draft",
+  "date" : "2025-11-03T17:22:12+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "419492006"
+      }]
+    }]
+  }
+}

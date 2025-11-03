@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "36a0c237-1c37-42d7-bf20-a8c508686de3-20",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/36a0c237-1c37-42d7-bf20-a8c508686de3-20",
+  "name" : "UnionProcedureReasonCodesAndProcedureReasonCodes",
+  "title" : "Union of Procedure Reason Codes And Procedure Reason Codes",
+  "status" : "draft",
+  "date" : "2025-11-03T17:19:26+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71388002"
+      }]
+    }]
+  }
+}
