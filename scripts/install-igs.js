@@ -17,11 +17,62 @@ function readConfig(filePath) {
   }
 }
 
-function extractPackageNames(yamlContent) {
-  const matches = [...yamlContent.matchAll(/^\s*-\s+name:\s*(.+?)\s*$/gm)];
-  return matches
-    .map(([, name]) => name.trim())
-    .filter(Boolean);
+function extractPackageEntries(yamlContent) {
+  const lines = yamlContent.split(/\r?\n/);
+  const entries = [];
+  let inIgsSection = false;
+  let current = null;
+
+  const pushCurrent = () => {
+    if (current && current.name) {
+      entries.push(current);
+    }
+    current = null;
+  };
+
+  lines.forEach((rawLine) => {
+    const line = rawLine.trimEnd();
+
+    if (/^\s*#/u.test(line)) {
+      return;
+    }
+
+    if (!inIgsSection) {
+      if (/^\s*igs\s*:/u.test(line)) {
+        inIgsSection = true;
+      }
+      return;
+    }
+
+    if (/^\s*profiles\s*:/u.test(line)) {
+      pushCurrent();
+      inIgsSection = false;
+      return;
+    }
+
+    const nameMatch = line.match(/^\s*-\s+name:\s*(.+)\s*$/u);
+    if (nameMatch) {
+      pushCurrent();
+      current = {
+        spec: nameMatch[1].trim(),
+      };
+      const { name } = splitPackageSpec(current.spec);
+      current.name = name;
+      return;
+    }
+
+    if (!current) {
+      return;
+    }
+
+    const overrideMatch = line.match(/^\s*overrideNpm:\s*(.+)\s*$/u);
+    if (overrideMatch) {
+      current.override = overrideMatch[1].trim();
+    }
+  });
+
+  pushCurrent();
+  return entries;
 }
 
 function splitPackageSpec(spec) {
@@ -35,8 +86,19 @@ function splitPackageSpec(spec) {
   return { name: spec, version: null };
 }
 
-function installPackages(packages, registry) {
-  const npmArgs = ['--registry', registry, 'install', '--no-save', ...packages];
+function installPackages(entries, registry) {
+  const installSpecs = [
+    ...new Set(
+      entries.map((entry) => entry.override || entry.spec),
+    ),
+  ];
+
+  if (!installSpecs.length) {
+    console.log('No IG packages to install.');
+    return;
+  }
+
+  const npmArgs = ['--registry', registry, 'install', '--no-save', ...installSpecs];
   const spawnOptions = {
     cwd: WORKSPACE_ROOT,
     stdio: 'inherit',
@@ -59,12 +121,13 @@ function installPackages(packages, registry) {
   }
 }
 
-function syncCache(packageNames) {
+function syncCache(entries) {
   const cacheDir = process.env.FHIR_CACHE_DIR || path.join(os.homedir(), '.fhir', 'packages');
   fs.mkdirSync(cacheDir, { recursive: true });
 
-  packageNames.forEach((pkgSpec) => {
-    const { name: pkgName } = splitPackageSpec(pkgSpec);
+  const uniqueNames = [...new Set(entries.map((entry) => entry.name))];
+
+  uniqueNames.forEach((pkgName) => {
     const nodeModulesDir = path.join(WORKSPACE_ROOT, 'node_modules');
     let modulePath = path.join(nodeModulesDir, pkgName);
 
@@ -80,6 +143,11 @@ function syncCache(packageNames) {
       }
     }
 
+    if (!fs.existsSync(modulePath)) {
+      console.warn(`⚠️  Skipping ${pkgName} – not found in node_modules.`);
+      return;
+    }
+
     const packagedSubDir = path.join(modulePath, 'package');
     const hasPackageSubDir = fs.existsSync(packagedSubDir) && fs.statSync(packagedSubDir).isDirectory();
     const contentDir = hasPackageSubDir ? packagedSubDir : modulePath;
@@ -88,12 +156,12 @@ function syncCache(packageNames) {
       : path.join(modulePath, 'package.json');
 
     if (!fs.existsSync(contentDir)) {
-      console.warn(`⚠️  Skipping ${pkgSpec} – expected package content directory is missing.`);
+      console.warn(`⚠️  Skipping ${pkgName} – expected package content directory is missing.`);
       return;
     }
 
     if (!fs.existsSync(metadataPath)) {
-      console.warn(`⚠️  Skipping ${pkgSpec} – missing package metadata (${metadataPath}).`);
+      console.warn(`⚠️  Skipping ${pkgName} – missing package metadata (${metadataPath}).`);
       return;
     }
 
@@ -101,7 +169,7 @@ function syncCache(packageNames) {
     try {
       metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf8'));
     } catch (error) {
-      console.warn(`⚠️  Skipping ${pkgSpec} – unable to read package metadata: ${error.message}`);
+      console.warn(`⚠️  Skipping ${pkgName} – unable to read package metadata: ${error.message}`);
       return;
     }
 
@@ -119,20 +187,28 @@ function syncCache(packageNames) {
 
 function main() {
   const yamlContent = readConfig(CONFIG_PATH);
-  const packageNames = extractPackageNames(yamlContent);
-  const uniquePackages = [...new Set(packageNames)];
+  const packageEntries = extractPackageEntries(yamlContent);
+  const uniqueEntries = packageEntries.filter(
+    (entry, index, arr) => arr.findIndex((other) => other.spec === entry.spec) === index,
+  );
   const isDryRun = process.argv.includes('--dry-run');
   const syncCacheRequested = process.argv.includes('--sync-cache');
 
-  if (!uniquePackages.length) {
+  if (!uniqueEntries.length) {
     console.log('No IG packages found in ComparisonConfig.yml. Nothing to install.');
     return;
   }
 
   const registry = process.env.SIMPLIFIER_REGISTRY || DEFAULT_REGISTRY;
 
-  console.log(`Installing IG packages from ${registry}:`);
-  uniquePackages.forEach((pkg) => console.log(`  - ${pkg}`));
+  console.log('Installing IG packages:');
+  uniqueEntries.forEach((entry) => {
+    if (entry.override) {
+      console.log(`  - ${entry.spec} (override: ${entry.override})`);
+    } else {
+      console.log(`  - ${entry.spec} (registry: ${registry})`);
+    }
+  });
 
   if (isDryRun) {
     console.log('Dry run enabled; skipping npm install.');
@@ -142,10 +218,10 @@ function main() {
     return;
   }
 
-  installPackages(uniquePackages, registry);
+  installPackages(uniqueEntries, registry);
 
   if (syncCacheRequested) {
-    syncCache(uniquePackages);
+    syncCache(uniqueEntries);
   }
 }
 if (require.main === module) {
