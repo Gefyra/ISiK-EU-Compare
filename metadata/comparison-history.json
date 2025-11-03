@@ -1,4 +1,76 @@
 {
+  "Comparison/EPS-Medication-eu-eps__ISiK-ISiKMedikament": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-MedicationStatement-eu-eps__ISiK-ISiKMedikationsInformation": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-Patient-animal-eu-lab__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-Patient-eu-lab__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-Patient-obl-eu-lab__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-Practitioner-eu-lab__ISiK-ISiKPersonImGesundheitsberuf": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-allergyIntolerance-eu-eps__ISiK-ISiKAllergieUnvertraeglichkeit": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-condition-eu-eps__ISiK-ISiKDiagnose": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-medicationAdministration-eu-eps__ISiK-ISiKMedikationsVerabreichung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-medicationRequest-eu-eps__ISiK-ISiKMedikationsVerordnung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-patient-eu-eps__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
+  "Comparison/EPS-procedure-eu-eps__ISiK-ISiKProzedur": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "unknown",
+    "lastRun": null
+  },
   "Comparison/EU-Base-location-eu-core__ISiK-ISiKStandort": {
     "leftIg": "de.gematik.isik@5.1.0",
     "rightIg": "hl7.fhir.eu.base@0.1.0",
