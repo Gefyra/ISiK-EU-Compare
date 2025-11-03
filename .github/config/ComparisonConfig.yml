@@ -9,6 +9,7 @@ igs:
     group: right
   - name: hl7.fhir.eu.eps@0.0.1-ci
     group: right
+    overrideNpm: https://build.fhir.org/ig/hl7-eu/eps/package.tgz
   - name: de.gematik.isik
     group: left
 
