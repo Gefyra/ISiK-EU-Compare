@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "7b2f6f23-8678-4db6-ae58-a0736351ad91-42",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-42",
-  "name" : "IntersectionDischargeDispositionAndDischargeDisposition",
-  "title" : "Intersection of Discharge disposition And Discharge disposition",
-  "status" : "draft",
-  "date" : "2025-11-03T17:13:57+00:00"
-}
