@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "7f700c94-b6d8-46dc-89c4-6b2d3585e224-39",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/7f700c94-b6d8-46dc-89c4-6b2d3585e224-39",
-  "name" : "IntersectionSpecialArrangementsAndSpecialArrangements",
-  "title" : "Intersection of Special arrangements And Special arrangements",
-  "status" : "draft",
-  "date" : "2025-11-03T17:14:46+00:00"
-}

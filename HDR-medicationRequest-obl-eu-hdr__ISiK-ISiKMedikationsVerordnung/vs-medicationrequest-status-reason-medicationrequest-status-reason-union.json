@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "874d780b-2a73-4686-892f-24e727652ef4-8",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/874d780b-2a73-4686-892f-24e727652ef4-8",
-  "name" : "UnionmedicationRequest Status Reason CodesAndmedicationRequest Status Reason Codes",
-  "title" : "Union of Medication request  status  reason  codes And Medication request  status  reason  codes",
-  "status" : "draft",
-  "date" : "2025-11-03T17:17:23+00:00"
-}

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "2a77f6d6-fe55-4b90-8a08-43bb06570ec2-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/2a77f6d6-fe55-4b90-8a08-43bb06570ec2-2",
+  "id" : "a3217368-ec39-4e89-8ecc-e2b229030d0c-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a3217368-ec39-4e89-8ecc-e2b229030d0c-2",
   "name" : "UnionISiKMedikamentAndMedicationEuEps",
   "title" : "Union of null And Medication (EPS)",
   "status" : "active",
-  "date" : "2025-11-03T17:05:22+00:00",
+  "date" : "2025-11-03T17:30:11+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
