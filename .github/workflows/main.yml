@@ -110,7 +110,9 @@ jobs:
   post-process:
     name: 🪩 Generate Index & Deploy
     runs-on: ubuntu-latest
-    needs: compare
+    needs:
+      - prepare-matrix
+      - compare
 
     steps:
       - uses: actions/checkout@v3
