@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "874d780b-2a73-4686-892f-24e727652ef4-42",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/874d780b-2a73-4686-892f-24e727652ef4-42",
+  "name" : "IntersectionSNOMEDCTAdministrationMethodCodesAndSNOMEDCTAdministrationMethodCodes",
+  "title" : "Intersection of SNOMED CT Administration Method Codes And SNOMED CT Administration Method Codes",
+  "status" : "draft",
+  "date" : "2025-11-03T17:17:23+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "422096002"
+      }]
+    }]
+  }
+}

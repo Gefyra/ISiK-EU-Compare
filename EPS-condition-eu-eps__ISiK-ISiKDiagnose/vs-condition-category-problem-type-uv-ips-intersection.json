@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "d3c0da4b-5d25-466d-a8ec-fe505c8cee29-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/d3c0da4b-5d25-466d-a8ec-fe505c8cee29-6",
+  "name" : "IntersectionConditionCategoryCodesAndProblemTypeUvIps",
+  "title" : "Intersection of Condition Category Codes And Problem Type - IPS",
+  "status" : "draft",
+  "date" : "2025-11-03T17:05:12+00:00"
+}

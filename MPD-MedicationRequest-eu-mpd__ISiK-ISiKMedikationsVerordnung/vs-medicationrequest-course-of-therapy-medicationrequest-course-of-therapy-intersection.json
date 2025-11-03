@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fd07c6c7-ad4d-4311-8702-0d27ed48e46e-24",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-24",
+  "name" : "IntersectionmedicationRequest Course of Therapy CodesAndmedicationRequest Course of Therapy Codes",
+  "title" : "Intersection of Medication request  course of  therapy  codes And Medication request  course of  therapy  codes",
+  "status" : "draft",
+  "date" : "2025-11-03T17:22:12+00:00"
+}

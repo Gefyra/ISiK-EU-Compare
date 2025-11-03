@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "1b125897-0a6c-4cc0-9c4d-34439154b330-20",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/1b125897-0a6c-4cc0-9c4d-34439154b330-20",
+  "name" : "UnionCondition/Problem/DiagnosisCodesAndCondition/Problem/DiagnosisCodes",
+  "title" : "Union of Condition/Problem/Diagnosis Codes And Condition/Problem/Diagnosis Codes",
+  "status" : "draft",
+  "date" : "2025-11-03T17:17:18+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "160245001",
+        "display" : "No current problems or disability"
+      }]
+    }]
+  }
+}
