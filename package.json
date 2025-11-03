@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "install-igs": "node scripts/install-igs.js",
+    "generate-profiles": "node scripts/generate-profile-config.js"
+  },
+  "dependencies": {
+  }
+}

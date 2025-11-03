@@ -69,6 +69,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: 🟢 Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       #- name: 🔧 Set up tools
       #  run: |
       #    sudo apt-get update -y -o Acquire::Retries=3 -o Acquire::http::Timeout=30
@@ -97,24 +102,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-validator-cli-
 
-      - name: 📦 Copy manually unpacked packages into Firely cache
-        run: |
-          CACHE_DIR="$HOME/.fhir/packages"
-          if [ -d "PackagesForCache" ]; then
-            for pkgdir in PackagesForCache/*; do
-              if [ -d "$pkgdir/package" ]; then
-                pkg_id=$(basename "$pkgdir")
-                target_dir="$CACHE_DIR/$pkg_id"
-                echo "📂 Copying $pkgdir → $target_dir"
-                mkdir -p "$target_dir"
-                cp -r "$pkgdir/package" "$target_dir/"
-              else
-                echo "⚠️ Skipping $pkgdir – no 'package/' subfolder found"
-              fi
-            done
-          else
-            echo "ℹ️ No PackagesForCache directory found – skipping"
-          fi
+      - name: 📦 Install and cache IG packages
+        run: npm run install-igs -- --sync-cache
               
       - name: 🔧 Set artifact name
         id: vars
