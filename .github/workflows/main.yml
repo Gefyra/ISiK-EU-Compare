@@ -146,3 +146,4 @@ jobs:
         with:
           commit_message: 'chore: update comparison history'
           file_pattern: metadata/comparison-history.json
+          push_options: --set-upstream origin ${{ github.ref_name }}
