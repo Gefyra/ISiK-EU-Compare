@@ -25,11 +25,11 @@ The repository defines three GitHub Actions workflows that automate the comparis
   - Saves HTML results in `Comparison/<profile-name>`
   - Creates a central index with links to all comparisons
   - Pushes the output to GitHub Pages
-- Preserves earlier results by merging new artifacts with the current `gh-pages` content before deployment
+- Preserves earlier results by merging new artifacts with the current `gh-pages` content and deploying with `clean: false`
 
 ### 🚀 `deploy.yml` – Manual Redeploy
 
-- Restores the currently published comparison results before re-deploying the refreshed `Comparison/` folder
+- Restores the currently published comparison results before re-deploying the refreshed `Comparison/` folder and keeps history via `clean: false`
 
 ## 🗂 Configuration
 

@@ -158,6 +158,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: 'Comparison'
+          clean: false
 
       - name: 💾 Commit updated comparison history
         uses: stefanzweifel/git-auto-commit-action@v5
