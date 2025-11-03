@@ -23,7 +23,7 @@ jobs:
           if [ -d gh-pages ] && [ "$(ls -A gh-pages)" ]; then
             echo "Merging existing comparison output from gh-pages branch"
             mkdir -p Comparison
-            cp -an gh-pages/. Comparison/
+            cp -a gh-pages/. Comparison/
             rm -rf Comparison/.git
           else
             echo "No existing gh-pages content to merge."

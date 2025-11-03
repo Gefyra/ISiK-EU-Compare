@@ -127,21 +127,39 @@ jobs:
         with:
           node-version: 20
 
-      - name: 📥 Download all comparison results
+      - name: 📂 Checkout existing pages snapshot
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          path: gh-pages
+        continue-on-error: true
+
+      - name: ♻️ Restore existing comparison results
+        run: |
+          mkdir -p Comparison
+          if [ -d gh-pages ] && [ "$(ls -A gh-pages)" ]; then
+            echo "Restoring existing comparison output from gh-pages branch"
+            cp -a gh-pages/. Comparison/
+            rm -rf Comparison/.git
+          else
+            echo "No existing gh-pages content to restore."
+          fi
+
+      - name: 📥 Download comparison artifacts
         if: needs.prepare-matrix.outputs.hasSelections == 'true'
         uses: actions/download-artifact@v4
         with:
-          path: Comparison
+          path: Comparison_new
 
-      - name: ♻️ Merge existing comparison results
+      - name: ♻️ Merge new comparison artifacts
+        if: needs.prepare-matrix.outputs.hasSelections == 'true'
         run: |
-          if [ -d gh-pages ] && [ "$(ls -A gh-pages)" ]; then
-            echo "Merging existing comparison output from gh-pages branch"
-            mkdir -p Comparison
-            cp -an gh-pages/. Comparison/
-            rm -rf Comparison/.git
+          if [ -d Comparison_new ]; then
+            echo "Merging newly generated comparison artifacts"
+            cp -a Comparison_new/. Comparison/
+            rm -rf Comparison_new
           else
-            echo "No existing gh-pages content to merge."
+            echo "No new comparison artifacts found."
           fi
 
       - name: 🧾 Update comparison history
@@ -150,11 +168,9 @@ jobs:
           FILTERED_MATRIX: ${{ needs.prepare-matrix.outputs.matrix }}
 
       - name: 👐 Generate central index.html
-        if: needs.prepare-matrix.outputs.hasSelections == 'true'
         run: node scripts/generate-index.js
 
       - name: 🚀 Deploy to GitHub Pages
-        if: needs.prepare-matrix.outputs.hasSelections == 'true'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: 'Comparison'
