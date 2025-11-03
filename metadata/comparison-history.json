@@ -1,8 +1,296 @@
 {
+  "Comparison/EPS-Medication-eu-eps__ISiK-ISiKMedikament": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:05:23.270Z"
+  },
+  "Comparison/EPS-MedicationStatement-eu-eps__ISiK-ISiKMedikationsInformation": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:06:40.365Z"
+  },
+  "Comparison/EPS-Patient-animal-eu-lab__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:06:51.933Z"
+  },
+  "Comparison/EPS-Patient-eu-lab__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:06:49.666Z"
+  },
+  "Comparison/EPS-Patient-obl-eu-lab__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:08:01.256Z"
+  },
+  "Comparison/EPS-Practitioner-eu-lab__ISiK-ISiKPersonImGesundheitsberuf": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:07:59.191Z"
+  },
   "Comparison/EPS-allergyIntolerance-eu-eps__ISiK-ISiKAllergieUnvertraeglichkeit": {
     "leftIg": "de.gematik.isik@5.1.0",
     "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
     "status": "success",
     "lastRun": "2025-11-03T16:59:49.860Z"
+  },
+  "Comparison/EPS-condition-eu-eps__ISiK-ISiKDiagnose": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:05:14.593Z"
+  },
+  "Comparison/EPS-medicationAdministration-eu-eps__ISiK-ISiKMedikationsVerabreichung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:05:10.150Z"
+  },
+  "Comparison/EPS-medicationRequest-eu-eps__ISiK-ISiKMedikationsVerordnung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:05:13.071Z"
+  },
+  "Comparison/EPS-patient-eu-eps__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:06:38.462Z"
+  },
+  "Comparison/EPS-procedure-eu-eps__ISiK-ISiKProzedur": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
+    "status": "success",
+    "lastRun": "2025-11-03T17:08:21.945Z"
+  },
+  "Comparison/EU-Base-location-eu-core__ISiK-ISiKStandort": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:08:12.844Z"
+  },
+  "Comparison/EU-Base-location-eu-core__ISiK-ISiKStandortBettenstellplatz": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:09:15.526Z"
+  },
+  "Comparison/EU-Base-location-eu-core__ISiK-ISiKStandortRaum": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:09:15.481Z"
+  },
+  "Comparison/EU-Base-organization-eu-core__ISiK-ISiKOrganisation": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:10:45.396Z"
+  },
+  "Comparison/EU-Base-organization-eu-core__ISiK-ISiKOrganisationFachabteilung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:10:32.738Z"
+  },
+  "Comparison/EU-Base-organization-eu__ISiK-ISiKOrganisation": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:09:39.816Z"
+  },
+  "Comparison/EU-Base-organization-eu__ISiK-ISiKOrganisationFachabteilung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:09:44.175Z"
+  },
+  "Comparison/EU-Base-patient-animal-eu-core__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:11:02.587Z"
+  },
+  "Comparison/EU-Base-patient-eu-core__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:11:51.649Z"
+  },
+  "Comparison/EU-Base-patient-eu__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:10:59.396Z"
+  },
+  "Comparison/EU-Base-practitioner-eu-core__ISiK-ISiKPersonImGesundheitsberuf": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:12:24.722Z"
+  },
+  "Comparison/EU-Base-practitioner-eu__ISiK-ISiKPersonImGesundheitsberuf": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.base@0.1.0",
+    "status": "success",
+    "lastRun": "2025-11-03T17:12:03.762Z"
+  },
+  "Comparison/HDR-allergyIntolerance-eu-hdr__ISiK-ISiKAllergieUnvertraeglichkeit": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:12:40.550Z"
+  },
+  "Comparison/HDR-allergyIntolerance-obl-eu-hdr__ISiK-ISiKAllergieUnvertraeglichkeit": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:13:22.797Z"
+  },
+  "Comparison/HDR-condition-eu-hdr__ISiK-ISiKDiagnose": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:13:21.583Z"
+  },
+  "Comparison/HDR-condition-obl-eu-hdr__ISiK-ISiKDiagnose": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:13:43.982Z"
+  },
+  "Comparison/HDR-encounter-eu-hdr__ISiK-ISiKKontaktGesundheitseinrichtung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:13:59.111Z"
+  },
+  "Comparison/HDR-encounter-eu-hdr__ISiK-ISiKTerminKontaktMitGesundheitseinrichtung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:14:45.627Z"
+  },
+  "Comparison/HDR-encounter-obl-eu-hdr__ISiK-ISiKKontaktGesundheitseinrichtung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:14:47.228Z"
+  },
+  "Comparison/HDR-encounter-obl-eu-hdr__ISiK-ISiKTerminKontaktMitGesundheitseinrichtung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:15:03.641Z"
+  },
+  "Comparison/HDR-medication-eu-hdr__ISiK-ISiKMedikament": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:15:40.937Z"
+  },
+  "Comparison/HDR-medication-obl-eu-hdr__ISiK-ISiKMedikament": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:16:07.539Z"
+  },
+  "Comparison/HDR-medicationAdministration-eu-hdr__ISiK-ISiKMedikationsVerabreichung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:16:26.308Z"
+  },
+  "Comparison/HDR-medicationAdministration-obl-eu-hdr__ISiK-ISiKMedikationsVerabreichung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:16:32.327Z"
+  },
+  "Comparison/HDR-medicationRequest-eu-hdr__ISiK-ISiKMedikationsVerordnung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:17:20.553Z"
+  },
+  "Comparison/HDR-medicationRequest-obl-eu-hdr__ISiK-ISiKMedikationsVerordnung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:17:24.982Z"
+  },
+  "Comparison/HDR-medicationStatement-eu-hdr__ISiK-ISiKMedikationsInformation": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:17:43.985Z"
+  },
+  "Comparison/HDR-medicationStatement-obl-eu-hdr__ISiK-ISiKMedikationsInformation": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:17:54.031Z"
+  },
+  "Comparison/HDR-patient-obl-eu-hdr__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:19:44.223Z"
+  },
+  "Comparison/HDR-procedure-eu-hdr__ISiK-ISiKProzedur": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:19:04.065Z"
+  },
+  "Comparison/HDR-procedure-obl-eu-hdr__ISiK-ISiKProzedur": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.hdr@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:19:33.491Z"
+  },
+  "Comparison/Laboratory-Patient-animal-eu-lab__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.laboratory@0.1.1",
+    "status": "success",
+    "lastRun": "2025-11-03T17:19:27.364Z"
+  },
+  "Comparison/Laboratory-Patient-eu-lab__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.laboratory@0.1.1",
+    "status": "success",
+    "lastRun": "2025-11-03T17:20:34.975Z"
+  },
+  "Comparison/Laboratory-Patient-obl-eu-lab__ISiK-ISiKPatient": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.laboratory@0.1.1",
+    "status": "success",
+    "lastRun": "2025-11-03T17:20:59.629Z"
+  },
+  "Comparison/Laboratory-Practitioner-eu-lab__ISiK-ISiKPersonImGesundheitsberuf": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.laboratory@0.1.1",
+    "status": "success",
+    "lastRun": "2025-11-03T17:20:52.401Z"
+  },
+  "Comparison/MPD-Medication-eu-mpd__ISiK-ISiKMedikament": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.mpd@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:21:16.986Z"
+  },
+  "Comparison/MPD-MedicationRequest-eu-mpd__ISiK-ISiKMedikationsVerordnung": {
+    "leftIg": "de.gematik.isik@5.1.0",
+    "rightIg": "hl7.fhir.eu.mpd@0.1.0-ballot",
+    "status": "success",
+    "lastRun": "2025-11-03T17:22:14.161Z"
   }
 }
