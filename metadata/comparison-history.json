@@ -2,8 +2,8 @@
   "Comparison/EPS-Medication-eu-eps__ISiK-ISiKMedikament": {
     "leftIg": "de.gematik.isik@5.1.0",
     "rightIg": "hl7.fhir.eu.eps@0.0.1-ci",
-    "status": "failed",
-    "lastRun": "2025-11-03T17:30:12.254Z"
+    "status": "success",
+    "lastRun": "2025-11-03T17:43:38.150Z"
   },
   "Comparison/EPS-MedicationStatement-eu-eps__ISiK-ISiKMedikationsInformation": {
     "leftIg": "de.gematik.isik@5.1.0",
