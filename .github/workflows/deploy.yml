@@ -18,14 +18,15 @@ jobs:
           path: gh-pages
         continue-on-error: true
 
-      - name: Restore existing comparison results
+      - name: Merge existing comparison results
         run: |
           if [ -d gh-pages ] && [ "$(ls -A gh-pages)" ]; then
-            echo "Restoring existing comparison output from gh-pages branch"
+            echo "Merging existing comparison output from gh-pages branch"
             mkdir -p Comparison
-            cp -a gh-pages/. Comparison/
+            cp -an gh-pages/. Comparison/
+            rm -rf Comparison/.git
           else
-            echo "No existing gh-pages content to restore."
+            echo "No existing gh-pages content to merge."
           fi
 
       - name: 🚀 Deploy to GitHub Pages

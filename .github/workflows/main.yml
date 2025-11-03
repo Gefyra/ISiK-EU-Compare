@@ -31,16 +31,6 @@ jobs:
           path: gh-pages
         continue-on-error: true
 
-      - name: ♻️ Restore existing comparison results
-        run: |
-          if [ -d gh-pages ] && [ "$(ls -A gh-pages)" ]; then
-            echo "Restoring existing comparison output from gh-pages branch"
-            mkdir -p Comparison
-            cp -a gh-pages/. Comparison/
-          else
-            echo "No existing gh-pages content to restore."
-          fi
-
       - name: 📅 Prepare cache metadata
         id: cache-meta
         run: node scripts/prepare-cache-meta.js
@@ -142,6 +132,17 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: Comparison
+
+      - name: ♻️ Merge existing comparison results
+        run: |
+          if [ -d gh-pages ] && [ "$(ls -A gh-pages)" ]; then
+            echo "Merging existing comparison output from gh-pages branch"
+            mkdir -p Comparison
+            cp -an gh-pages/. Comparison/
+            rm -rf Comparison/.git
+          else
+            echo "No existing gh-pages content to merge."
+          fi
 
       - name: 🧾 Update comparison history
         run: node scripts/update-history.js
