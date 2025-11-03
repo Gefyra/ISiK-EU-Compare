@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "dc0d0e82-6781-413a-a194-3a5e43def00e-30",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/dc0d0e82-6781-413a-a194-3a5e43def00e-30",
+  "name" : "IntersectionAufnahmeanlassVSAndAdmitSource",
+  "title" : "Intersection of Aufnahmeanlass ValueSet And Admit source",
+  "status" : "active",
+  "date" : "2025-11-03T17:15:02+00:00"
+}

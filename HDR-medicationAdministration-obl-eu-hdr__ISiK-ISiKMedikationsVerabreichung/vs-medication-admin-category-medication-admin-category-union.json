@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ad13251a-c827-4a8b-a21d-16526ef91fce-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ad13251a-c827-4a8b-a21d-16526ef91fce-11",
+  "name" : "UnionMedicationAdministration Category CodesAndMedicationAdministration Category Codes",
+  "title" : "Union of Medication administration  category  codes And Medication administration  category  codes",
+  "status" : "draft",
+  "date" : "2025-11-03T17:16:29+00:00"
+}
