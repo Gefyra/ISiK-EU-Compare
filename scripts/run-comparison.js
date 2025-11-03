@@ -8,6 +8,10 @@ const WORKSPACE_ROOT = path.resolve(__dirname, '..');
 const TMP_DIR = path.join(WORKSPACE_ROOT, 'tmp');
 const VALIDATOR_PATH = path.join(TMP_DIR, 'validator_cli.jar');
 
+function toCamelCase(key) {
+  return key.replace(/-([a-z])/g, (_, char) => char.toUpperCase());
+}
+
 function parseArgs(argv) {
   const args = {};
 
@@ -22,7 +26,7 @@ function parseArgs(argv) {
     if (typeof value === 'undefined' || value.startsWith('--')) {
       throw new Error(`Missing value for argument --${key}`);
     }
-    args[key] = value;
+    args[toCamelCase(key)] = value;
     i += 1;
   }
 
@@ -48,6 +52,7 @@ function runComparison({ dest, leftIg, rightIg, leftProfile, rightProfile }) {
 
   const destPath = path.resolve(WORKSPACE_ROOT, dest);
   fs.mkdirSync(destPath, { recursive: true });
+  const statusPath = path.join(destPath, 'comparison-status.json');
 
   const args = [
     '-jar',
@@ -80,7 +85,31 @@ function runComparison({ dest, leftIg, rightIg, leftProfile, rightProfile }) {
 
   const output = `${result.stdout || ''}${result.stderr || ''}`;
   const logPath = path.join(destPath, 'compare.log');
-  fs.writeFileSync(logPath, output, 'utf8');
+  const status = result.status === 0 ? 'success' : 'failure';
+
+  const extendedLog = [
+    `Status: ${status}`,
+    `Left IG: ${leftIg}`,
+    `Right IG: ${rightIg}`,
+    '----- validator output -----',
+    output,
+  ].join('\n');
+
+  fs.writeFileSync(logPath, `${extendedLog}\n`, 'utf8');
+  fs.writeFileSync(
+    statusPath,
+    `${JSON.stringify(
+      {
+        status,
+        leftIg,
+        rightIg,
+        timestamp: new Date().toISOString(),
+      },
+      null,
+      2,
+    )}\n`,
+    'utf8',
+  );
 
   process.stdout.write(output);
 
@@ -93,6 +122,7 @@ function runComparison({ dest, leftIg, rightIg, leftProfile, rightProfile }) {
     console.log(`✅ ${path.basename(destPath)} comparison succeeded`);
   } else {
     console.error(`❌ ${path.basename(destPath)} comparison failed (exit code ${result.status})`);
+    process.exitCode = 1;
   }
 }
 

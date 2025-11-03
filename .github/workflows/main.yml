@@ -2,6 +2,11 @@ name: 🔬 Compare & 🚀 Publish Profiles (Parallel)
 
 on:
   workflow_dispatch:
+    inputs:
+      run_all:
+        description: 'Run all comparisons regardless of history'
+        type: boolean
+        default: false
 
 jobs:
   prepare-matrix:
@@ -10,6 +15,8 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
       today: ${{ steps.cache-meta.outputs.today }}
+      total: ${{ steps.set-matrix.outputs.total }}
+      selected: ${{ steps.set-matrix.outputs.selected }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v4
@@ -40,6 +47,8 @@ jobs:
       - name: ⚖️ Read ComparisonConfig.yml
         id: set-matrix
         run: node scripts/prepare-matrix.js
+        env:
+          RUN_ALL_COMPARISONS: ${{ inputs.run_all }}
 
   compare:
     name: 🔬 Compare ${{ matrix.profile.dest }}
@@ -109,14 +118,28 @@ jobs:
           node-version: 20
 
       - name: 📥 Download all comparison results
+        if: needs.prepare-matrix.outputs.selected != '0'
         uses: actions/download-artifact@v4
         with:
           path: Comparison
 
+      - name: 🧾 Update comparison history
+        run: node scripts/update-history.js
+        env:
+          FILTERED_MATRIX: ${{ needs.prepare-matrix.outputs.matrix }}
+
       - name: 👐 Generate central index.html
+        if: needs.prepare-matrix.outputs.selected != '0'
         run: node scripts/generate-index.js
 
       - name: 🚀 Deploy to GitHub Pages
+        if: needs.prepare-matrix.outputs.selected != '0'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: 'Comparison'
+
+      - name: 💾 Commit updated comparison history
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update comparison history'
+          file_pattern: metadata/comparison-history.json

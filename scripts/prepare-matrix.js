@@ -2,9 +2,12 @@
 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
 const WORKSPACE_ROOT = path.resolve(__dirname, '..');
 const CONFIG_PATH = path.join(WORKSPACE_ROOT, '.github', 'config', 'ComparisonConfig.yml');
+const HISTORY_PATH = path.join(WORKSPACE_ROOT, 'metadata', 'comparison-history.json');
+const RUN_ALL = String(process.env.RUN_ALL_COMPARISONS || '').toLowerCase() === 'true';
 
 function readConfig() {
   try {
@@ -84,28 +87,71 @@ function parseProfiles(yamlContent) {
   return profiles;
 }
 
-function writeOutput(matrix) {
+function loadHistory() {
+  try {
+    const content = fs.readFileSync(HISTORY_PATH, 'utf8');
+    const parsed = JSON.parse(content);
+    if (parsed && typeof parsed === 'object') {
+      return parsed;
+    }
+  } catch (error) {
+    console.warn(`⚠️  Unable to read comparison history: ${error.message}. Treating as empty history.`);
+  }
+  return {};
+}
+
+function shouldInclude(entry, previous) {
+  if (RUN_ALL) {
+    return true;
+  }
+
+  if (!previous) {
+    return true;
+  }
+
+  if (!previous.status || previous.status !== 'success') {
+    return true;
+  }
+
+  if (previous.leftIg !== entry.leftIg || previous.rightIg !== entry.rightIg) {
+    return true;
+  }
+
+  return false;
+}
+
+function writeOutput(matrix, total, selected) {
   const outputFile = process.env.GITHUB_OUTPUT;
   if (!outputFile) {
     throw new Error('GITHUB_OUTPUT is not defined.');
   }
 
-  fs.appendFileSync(outputFile, `matrix=${matrix}${require('os').EOL}`, 'utf8');
+  fs.appendFileSync(outputFile, `matrix=${matrix}${os.EOL}`, 'utf8');
+  fs.appendFileSync(outputFile, `total=${total}${os.EOL}`, 'utf8');
+  fs.appendFileSync(outputFile, `selected=${selected}${os.EOL}`, 'utf8');
 }
 
 function main() {
   const yamlContent = readConfig();
   const profiles = parseProfiles(yamlContent);
+  const history = loadHistory();
 
   const enriched = profiles.map((profile) => ({
     ...profile,
     artifactName: path.basename(profile.dest),
   }));
 
-  const matrixJson = JSON.stringify(enriched);
-  writeOutput(matrixJson);
+  const filtered = enriched.filter((entry) => shouldInclude(entry, history[entry.dest]));
 
-  console.log(`Prepared comparison matrix with ${enriched.length} entries.`);
+  console.log(`Matrix entries total: ${enriched.length}. Selected for run: ${filtered.length}.`);
+  if (!RUN_ALL && filtered.length === 0) {
+    console.log('All comparisons succeeded previously with unchanged packages. Skipping comparisons.');
+  }
+
+  const matrixJson = JSON.stringify(filtered);
+  writeOutput(matrixJson, enriched.length, filtered.length);
+
+  console.log(`Prepared comparison matrix with ${filtered.length} entries.`);
 }
 
 main();

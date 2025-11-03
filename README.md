@@ -25,6 +25,7 @@ The repository defines three GitHub Actions workflows that automate the comparis
 - Sets up Node and Java
 - Installs the FHIR validator CLI via Node helper scripts
 - Loads IGs into the local FHIR cache
+- Skips comparisons that previously succeeded with unchanged IG versions (configurable via workflow input)
 - For each profile pair in the config:
   - Runs structural comparison
   - Saves HTML results in `Comparison/<profile-name>`
@@ -71,6 +72,10 @@ To run or debug locally:
 ### Profile Matrix Generation
 
 After installing IGs locally, run `npm run generate-profiles` to regenerate the `profiles:` matrix in [`ComparisonConfig.yml`](.github/config/ComparisonConfig.yml). The script pairs every right-hand profile with matching resource types from the left-hand IGs.
+
+### Comparison History
+
+Workflow runs automatically persist the outcome and IG versions per comparison in `metadata/comparison-history.json`. New runs only repeat failed comparisons, entries with updated IG versions, or newly added comparisons. Trigger the workflow with the `run_all` input set to `true` if you want to force all comparisons.
 
 ## 📄 License
 
