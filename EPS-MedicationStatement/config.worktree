@@ -1,5 +1,0 @@
-[core]
-	sparseCheckout = false
-	sparseCheckoutCone = false
-[index]
-	sparse = false

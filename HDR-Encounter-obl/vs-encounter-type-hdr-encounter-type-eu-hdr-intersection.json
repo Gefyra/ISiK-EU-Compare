@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "a25db2ad-7168-42a7-8552-40119d3c3242-12",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/a25db2ad-7168-42a7-8552-40119d3c3242-12",
-  "name" : "IntersectionEncounterTypeAndEncounterTypeHdrVS",
-  "title" : "Intersection of Encounter type And In-patient Encounter Type Value Set",
-  "status" : "draft",
-  "date" : "2025-10-27T10:01:08+00:00"
-}
