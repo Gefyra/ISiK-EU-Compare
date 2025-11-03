@@ -62,6 +62,11 @@ function parseIgs(yamlContent) {
     if (groupMatch) {
       current.group = groupMatch[1].trim();
     }
+
+    const overrideMatch = rawLine.match(/^\s*overrideNpm:\s*(.+)\s*$/u);
+    if (overrideMatch) {
+      current.override = overrideMatch[1].trim();
+    }
   }
 
   return igs;
@@ -379,6 +384,9 @@ function buildConfigContent(igs, profiles) {
     lines.push(`  - name: ${nameField}`);
     if (ig.group) {
       lines.push(`    group: ${ig.group}`);
+    }
+    if (ig.override) {
+      lines.push(`    overrideNpm: ${ig.override}`);
     }
   });
 

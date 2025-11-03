@@ -17,6 +17,7 @@ jobs:
       today: ${{ steps.cache-meta.outputs.today }}
       total: ${{ steps.set-matrix.outputs.total }}
       selected: ${{ steps.set-matrix.outputs.selected }}
+      hasSelections: ${{ steps.set-matrix.outputs.hasSelections }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v4
@@ -118,7 +119,7 @@ jobs:
           node-version: 20
 
       - name: 📥 Download all comparison results
-        if: needs.prepare-matrix.outputs.selected != '0'
+        if: needs.prepare-matrix.outputs.hasSelections == 'true'
         uses: actions/download-artifact@v4
         with:
           path: Comparison
@@ -129,11 +130,11 @@ jobs:
           FILTERED_MATRIX: ${{ needs.prepare-matrix.outputs.matrix }}
 
       - name: 👐 Generate central index.html
-        if: needs.prepare-matrix.outputs.selected != '0'
+        if: needs.prepare-matrix.outputs.hasSelections == 'true'
         run: node scripts/generate-index.js
 
       - name: 🚀 Deploy to GitHub Pages
-        if: needs.prepare-matrix.outputs.selected != '0'
+        if: needs.prepare-matrix.outputs.hasSelections == 'true'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: 'Comparison'

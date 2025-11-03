@@ -129,6 +129,7 @@ function writeOutput(matrix, total, selected) {
   fs.appendFileSync(outputFile, `matrix=${matrix}${os.EOL}`, 'utf8');
   fs.appendFileSync(outputFile, `total=${total}${os.EOL}`, 'utf8');
   fs.appendFileSync(outputFile, `selected=${selected}${os.EOL}`, 'utf8');
+  fs.appendFileSync(outputFile, `hasSelections=${selected > 0}${os.EOL}`, 'utf8');
 }
 
 function main() {
