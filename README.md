@@ -22,9 +22,9 @@ The repository defines three GitHub Actions workflows that automate the comparis
 
 ### 2. `main.yml` – 🔬 Compare & 🚀 Publish Profiles
 
-- Sets up Java, Node, and yq
-- Installs the FHIR validator CLI
-- Loads IGs into local  FHIR cache
+- Sets up Node and Java
+- Installs the FHIR validator CLI via Node helper scripts
+- Loads IGs into the local FHIR cache
 - For each profile pair in the config:
   - Runs structural comparison
   - Saves HTML results in `Comparison/<profile-name>`
@@ -66,7 +66,6 @@ To run or debug locally:
 
 - Node.js v18
 - Java 21
-- yq and jq
 - FHIR Validator CLI (e.g. `org.hl7.fhir.validation.cli-6.4.0.jar`)
 
 ### Profile Matrix Generation

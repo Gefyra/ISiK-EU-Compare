@@ -9,53 +9,37 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
+      today: ${{ steps.cache-meta.outputs.today }}
     steps:
       - uses: actions/checkout@v3
-
-      - name: 🔧 Install yq and jq
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y yq jq curl
-
-      - name: ☕ Set up Java
-        uses: actions/setup-java@v3
+      - uses: actions/setup-node@v4
         with:
-          distribution: 'temurin'
-          java-version: '21'
+          node-version: 20
 
-      - name: 📅 Set current date for cache
-        run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+      - name: 📅 Prepare cache metadata
+        id: cache-meta
+        run: node scripts/prepare-cache-meta.js
 
       - name: 🔄 Restore cache for validator_cli.jar
         uses: actions/cache@v3
         with:
           path: tmp/validator_cli.jar
-          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+          key: ${{ runner.os }}-validator-cli-${{ steps.cache-meta.outputs.today }}
           restore-keys: |
             ${{ runner.os }}-validator-cli-
 
-      - name: 😇 Download validator_cli.jar (if not cached)
-        run: |
-          mkdir -p tmp
-          if [ ! -f tmp/validator_cli.jar ]; then
-            echo "Cache miss – downloading"
-            curl -L -o tmp/validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
-          else
-            echo "✅ Using cached version"
-          fi
+      - name: 😇 Fetch validator_cli.jar
+        run: node scripts/fetch-validator.js
 
       - name: 💾 Save cache for validator_cli.jar
         uses: actions/cache@v3
         with:
           path: tmp/validator_cli.jar
-          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+          key: ${{ runner.os }}-validator-cli-${{ steps.cache-meta.outputs.today }}
 
       - name: ⚖️ Read ComparisonConfig.yml
         id: set-matrix
-        run: |
-          CONFIG_PATH=.github/config/ComparisonConfig.yml
-          json=$(yq '.profiles' "$CONFIG_PATH" | jq -c .)
-          echo "matrix=$json" >> "$GITHUB_OUTPUT"
+        run: node scripts/prepare-matrix.js
 
   compare:
     name: 🔬 Compare ${{ matrix.profile.dest }}
@@ -74,19 +58,8 @@ jobs:
         with:
           node-version: 20
 
-      #- name: 🔧 Set up tools
-      #  run: |
-      #    sudo apt-get update -y -o Acquire::Retries=3 -o Acquire::http::Timeout=30
-      #    sudo apt-get install -y --no-install-recommends yq curl
-
-      - name: 🔧 Set up tools (fast)
-        run: |
-          YQ_VERSION=v4.40.5
-          curl -L "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64" -o /usr/local/bin/yq
-          chmod +x /usr/local/bin/yq
-
       - name: 🚫 Ensure paths exists
-        run: mkdir -p tmp
+        run: node scripts/ensure-dirs.js tmp
 
       - name: ☕ Set up Java
         uses: actions/setup-java@v3
@@ -98,41 +71,29 @@ jobs:
         uses: actions/cache@v3
         with:
           path: tmp/validator_cli.jar
-          key: ${{ runner.os }}-validator-cli-${{ env.TODAY }}
+          key: ${{ runner.os }}-validator-cli-${{ needs.prepare-matrix.outputs.today }}
           restore-keys: |
             ${{ runner.os }}-validator-cli-
 
+      - name: 😇 Fetch validator_cli.jar
+        run: node scripts/fetch-validator.js
+
       - name: 📦 Install and cache IG packages
         run: npm run install-igs -- --sync-cache
-              
-      - name: 🔧 Set artifact name
-        id: vars
-        run: echo "artifact_name=$(basename ${{ matrix.profile.dest }})" >> $GITHUB_OUTPUT
 
       - name: 🔬 Run comparison
         run: |
-          dest=${{ matrix.profile.dest }}
-          name=$(basename $dest)
-          leftIg=$(echo ${{ matrix.profile.leftIg }} | sed 's/@/#/')
-          rightIg=$(echo ${{ matrix.profile.rightIg }} | sed 's/@/#/')
-          leftProfile=${{ matrix.profile.leftProfile }}
-          rightProfile=${{ matrix.profile.rightProfile }}
-
-          mkdir -p $dest
-          echo "🔬 Comparing $name"
-
-          if JAVA_TOOL_OPTIONS=-Djava.awt.headless=true \
-            java -jar tmp/validator_cli.jar -compare -dest $dest -version 4.0 \
-            -ig $leftIg -ig $rightIg -left $leftProfile -right $rightProfile > $dest/compare.log 2>&1; then
-            echo "✅ $name comparison succeeded"
-          else
-            echo "❌ $name comparison failed"
-          fi
+          node scripts/run-comparison.js \
+            --dest "${{ matrix.profile.dest }}" \
+            --left-ig "${{ matrix.profile.leftIg }}" \
+            --right-ig "${{ matrix.profile.rightIg }}" \
+            --left-profile "${{ matrix.profile.leftProfile }}" \
+            --right-profile "${{ matrix.profile.rightProfile }}"
 
       - name: 📤 Upload comparison result
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ steps.vars.outputs.artifact_name }}
+          name: ${{ matrix.profile.artifactName }}
           path: ${{ matrix.profile.dest }}
           retention-days: 1
 
@@ -143,6 +104,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
       - name: 📥 Download all comparison results
         uses: actions/download-artifact@v4
@@ -150,22 +114,7 @@ jobs:
           path: Comparison
 
       - name: 👐 Generate central index.html
-        run: |
-          INDEX_PATH="Comparison/index.html"
-          echo "<html><head><title>Overview</title></head><body><h1>Result overview</h1><ul>" > "$INDEX_PATH"
-
-          for d in Comparison/*/ ; do
-            name=$(basename "$d")
-            if [[ -f "$d/index.html" ]]; then
-              echo "<li><a href=\"$name/index.html\">$name</a></li>" >> "$INDEX_PATH"
-            elif [[ -f "$d/compare.log" ]]; then
-              echo "<li><strong>$name</strong>: ❌ Failed – <a href=\"$name/compare.log\">View error log</a></li>" >> "$INDEX_PATH"
-            else
-              echo "<li><strong>$name</strong>: ⚠️ No result found</li>" >> "$INDEX_PATH"
-            fi
-          done
-
-          echo "</ul></body></html>" >> "$INDEX_PATH"
+        run: node scripts/generate-index.js
 
       - name: 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
