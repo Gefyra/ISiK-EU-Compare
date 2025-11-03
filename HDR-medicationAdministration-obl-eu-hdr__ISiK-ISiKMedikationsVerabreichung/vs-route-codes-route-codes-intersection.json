@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ad13251a-c827-4a8b-a21d-16526ef91fce-27",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ad13251a-c827-4a8b-a21d-16526ef91fce-27",
+  "name" : "IntersectionSNOMEDCTRouteCodesAndSNOMEDCTRouteCodes",
+  "title" : "Intersection of SNOMED CT Route Codes And SNOMED CT Route Codes",
+  "status" : "draft",
+  "date" : "2025-11-03T17:16:29+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "284009009"
+      }]
+    }]
+  }
+}

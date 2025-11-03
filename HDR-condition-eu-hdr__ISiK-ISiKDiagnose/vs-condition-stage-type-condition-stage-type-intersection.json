@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b175af0e-ecb3-4116-922a-99d846d7cadb-21",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b175af0e-ecb3-4116-922a-99d846d7cadb-21",
+  "name" : "IntersectionConditionStageTypeAndConditionStageType",
+  "title" : "Intersection of Condition Stage Type And Condition Stage Type",
+  "status" : "draft",
+  "date" : "2025-11-03T17:13:19+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "261023001",
+        "display" : "Pathological staging (qualifier value)"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "260998006",
+        "display" : "Clinical staging (qualifier value)"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "254291000"
+      }]
+    }]
+  }
+}

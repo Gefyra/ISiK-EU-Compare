@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "277f5367-e245-4ae0-8dd1-c0dd2ed92f3a-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/277f5367-e245-4ae0-8dd1-c0dd2ed92f3a-11",
+  "name" : "UnionSubstanceCodeAndAllergensHdrVS",
+  "title" : "Union of Substance Code And Allergens Value Set",
+  "status" : "draft",
+  "date" : "2025-11-03T17:13:09+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "105590001"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "373873005"
+      }]
+    },
+    {
+      "valueSet" : ["http://terminology.ehdsi.eu/ValueSet/eHDSIAllergenNoDrug"]
+    },
+    {
+      "valueSet" : ["http://terminology.ehdsi.eu/ValueSet/eHDSISubstance"]
+    },
+    {
+      "valueSet" : ["http://terminology.ehdsi.eu/ValueSet/eHDSIActiveIngredient"]
+    }]
+  }
+}
