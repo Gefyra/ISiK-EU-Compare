@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "6e339c89-d730-47f6-839a-ea9cd4e4ee9d-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6e339c89-d730-47f6-839a-ea9cd4e4ee9d-2",
+  "id" : "a033d2ab-73fa-4837-ad48-83f0100010e7-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a033d2ab-73fa-4837-ad48-83f0100010e7-2",
   "name" : "UnionISiKPersonImGesundheitsberufAndPractitionerEu",
   "title" : "Union of null And Practitioner (EU base)",
   "status" : "active",
-  "date" : "2025-11-03T17:12:02+00:00",
+  "date" : "2025-11-05T12:08:58+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

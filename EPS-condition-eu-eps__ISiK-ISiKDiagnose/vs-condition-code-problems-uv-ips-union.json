@@ -1,0 +1,65 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "570a6bf7-8ed1-47a7-b54a-26384a2e23d7-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/570a6bf7-8ed1-47a7-b54a-26384a2e23d7-11",
+  "name" : "UnionCondition/Problem/DiagnosisCodesAndProblemsUvIps",
+  "title" : "Union of Condition/Problem/Diagnosis Codes And Problems - IPS",
+  "status" : "draft",
+  "date" : "2025-11-05T12:01:52+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "160245001",
+        "display" : "No current problems or disability"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "243796009"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "272379006"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "160245001"
+      }]
+    }]
+  }
+}

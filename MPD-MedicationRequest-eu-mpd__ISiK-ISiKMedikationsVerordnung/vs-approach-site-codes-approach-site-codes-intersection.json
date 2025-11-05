@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "fd07c6c7-ad4d-4311-8702-0d27ed48e46e-36",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-36",
+  "id" : "2e0add43-43b1-4159-b4c9-0ba42291ac9a-36",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-36",
   "name" : "IntersectionSNOMEDCTAnatomicalStructureForAdministrationSiteCodesAndSNOMEDCTAnatomicalStructureForAdministrationSiteCodes",
   "title" : "Intersection of SNOMED CT Anatomical Structure for Administration Site Codes And SNOMED CT Anatomical Structure for Administration Site Codes",
   "status" : "draft",
-  "date" : "2025-11-03T17:22:12+00:00",
+  "date" : "2025-11-05T12:19:19+00:00",
   "compose" : {
     "include" : [{
       "filter" : [{

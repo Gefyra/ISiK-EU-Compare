@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "bdcdbc84-fef8-4984-9117-e57c25ff56c3-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bdcdbc84-fef8-4984-9117-e57c25ff56c3-3",
+  "id" : "93e468d8-bf81-4a30-bb57-395690b94c65-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/93e468d8-bf81-4a30-bb57-395690b94c65-3",
   "name" : "IntersectionISiKProzedurAndProcedureEuEps",
   "title" : "Intersection of null And Procedure (EPS)",
   "status" : "active",
-  "date" : "2025-11-03T17:08:18+00:00",
+  "date" : "2025-11-05T12:05:41+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Procedure",

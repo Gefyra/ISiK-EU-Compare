@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a66a8e57-421f-4071-ae2f-da1585b1b3d7-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a66a8e57-421f-4071-ae2f-da1585b1b3d7-2",
+  "id" : "e224e0e1-df75-4379-a269-8e24d869ae47-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e224e0e1-df75-4379-a269-8e24d869ae47-2",
   "name" : "UnionISiKPatientAndPatientEuLab",
   "title" : "Union of null And Patient: Person",
   "status" : "active",
-  "date" : "2025-11-03T17:20:33+00:00",
+  "date" : "2025-11-05T12:17:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -482,7 +482,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a66a8e57-421f-4071-ae2f-da1585b1b3d7-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e224e0e1-df75-4379-a269-8e24d869ae47-5"
       }
     },
     {
@@ -2555,7 +2555,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a66a8e57-421f-4071-ae2f-da1585b1b3d7-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e224e0e1-df75-4379-a269-8e24d869ae47-5"
       },
       "mapping" : [{
         "identity" : "v2",

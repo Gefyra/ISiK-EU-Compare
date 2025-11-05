@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e37a7a21-916b-4622-b25a-22dd24101a15-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e37a7a21-916b-4622-b25a-22dd24101a15-3",
+  "id" : "07e8579f-c8f2-4b67-8ef1-e95936331dc8-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/07e8579f-c8f2-4b67-8ef1-e95936331dc8-3",
   "name" : "IntersectionISiKMedikationsInformationAndMedicationStatementEuHdr",
   "title" : "Intersection of null And MedicationStatement (HDR)",
   "status" : "active",
-  "date" : "2025-11-03T17:17:42+00:00",
+  "date" : "2025-11-05T12:15:24+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "MedicationStatement",

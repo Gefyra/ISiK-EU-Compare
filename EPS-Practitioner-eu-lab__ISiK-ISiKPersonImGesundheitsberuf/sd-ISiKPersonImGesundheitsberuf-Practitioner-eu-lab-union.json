@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "d91b9c08-1401-4d0d-9f84-afc416432551-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d91b9c08-1401-4d0d-9f84-afc416432551-2",
+  "id" : "034e4bea-d98d-498a-885c-94f5ccb647ec-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/034e4bea-d98d-498a-885c-94f5ccb647ec-2",
   "name" : "UnionISiKPersonImGesundheitsberufAndPractitionerEu",
   "title" : "Union of null And Practitioner: Laboratory Report",
   "status" : "active",
-  "date" : "2025-11-03T17:07:58+00:00",
+  "date" : "2025-11-05T12:04:58+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -485,7 +485,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d91b9c08-1401-4d0d-9f84-afc416432551-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/034e4bea-d98d-498a-885c-94f5ccb647ec-5"
       }
     },
     {
@@ -2024,7 +2024,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d91b9c08-1401-4d0d-9f84-afc416432551-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/034e4bea-d98d-498a-885c-94f5ccb647ec-5"
       },
       "mapping" : [{
         "identity" : "v2",

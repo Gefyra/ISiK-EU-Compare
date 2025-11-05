@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7b2f6f23-8678-4db6-ae58-a0736351ad91-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7b2f6f23-8678-4db6-ae58-a0736351ad91-2",
+  "id" : "184b3b25-d2c7-4c33-a5b9-1b00e46739ba-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-2",
   "name" : "UnionISiKKontaktGesundheitseinrichtungAndEncounterEuHdr",
   "title" : "Union of null And Encounter (HDR)",
   "status" : "active",
-  "date" : "2025-11-03T17:13:57+00:00",
+  "date" : "2025-11-05T12:12:16+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -531,7 +531,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-5"
       }
     },
     {
@@ -734,7 +734,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Eingeschränkter Status vgl. FHIR R5",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-8"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -977,7 +977,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-11"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1216,7 +1216,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The type of encounter.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-14"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1261,7 +1261,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Broad categorization of the service that is to be provided.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-17"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1482,7 +1482,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Indicates the urgency of the encounter.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-20"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-20"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -2422,7 +2422,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Reason why the encounter takes place.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-23"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-23"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2937,7 +2937,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "The type of diagnosis this condition represents.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-26"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-26"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -3642,7 +3642,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "From where the patient was admitted.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-29"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-29"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3718,7 +3718,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Medical, cultural or ethical food preferences to help with catering requirements.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-32"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-32"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3755,7 +3755,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Special courtesies.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-35"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-35"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3792,7 +3792,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Special arrangements.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-38"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-38"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3868,7 +3868,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Discharge Disposition.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-41"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-41"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -4290,7 +4290,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Physical form of the location.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-44"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-44"
       }
     },
     {

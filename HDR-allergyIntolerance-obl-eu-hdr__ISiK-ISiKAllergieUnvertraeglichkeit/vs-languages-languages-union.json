@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "277f5367-e245-4ae0-8dd1-c0dd2ed92f3a-5",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/277f5367-e245-4ae0-8dd1-c0dd2ed92f3a-5",
+  "id" : "b50627cb-5d70-4a05-831c-4d93eb23d928-5",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b50627cb-5d70-4a05-831c-4d93eb23d928-5",
   "name" : "UnionCommonLanguagesAndCommonLanguages",
   "title" : "Union of Common Languages And Common Languages",
   "status" : "draft",
-  "date" : "2025-11-03T17:13:09+00:00",
+  "date" : "2025-11-05T12:10:23+00:00",
   "compose" : {
     "include" : [{
       "concept" : [{

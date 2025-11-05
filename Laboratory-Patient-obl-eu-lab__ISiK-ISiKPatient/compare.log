@@ -2,7 +2,7 @@ Status: success
 Left IG: de.gematik.isik@5.1.0
 Right IG: hl7.fhir.eu.laboratory@0.1.1
 ----- validator output -----
-[39mFHIR Validation tool Version 6.7.6 (Git# d7148cb9f6ad). Built 2025-10-30T09:57:37.289Z (4 days old)
+[39mFHIR Validation tool Version 6.7.6 (Git# d7148cb9f6ad). Built 2025-10-30T09:57:37.289Z (6 days old)
 [0;39m[39m  Java:   21.0.9 from /usr/lib/jvm/temurin-21-jdk-amd64 on amd64 (64bit). 4000MB available
 [0;39m[39m  Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
 [0;39m[39m  Params: -compare -dest /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/Comparison/Laboratory-Patient-obl-eu-lab__ISiK-ISiKPatient -version 4.0 -ig de.gematik.isik#5.1.0 -ig hl7.fhir.eu.laboratory#0.1.1 -left https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient -right http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-obl-eu-lab
@@ -26,15 +26,15 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling hl7.terminology.r4#6.2.0
 [0;39m[39m done.
-[0;39m[39m  Load hl7.terminology.r4#6.2.0 - 4288 resources (00:14.667)
+[0;39m[39m  Load hl7.terminology.r4#6.2.0 - 4288 resources (00:14.138)
 [0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.2.0 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
 [0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.2.0
 [0;39m[39m done.
-[0;39m[39m  Load hl7.fhir.uv.extensions.r4#5.2.0 - 759 resources (00:02.545)
+[0;39m[39m  Load hl7.fhir.uv.extensions.r4#5.2.0 - 759 resources (00:02.723)
 [0;39m[39m  Loaded FHIR - 8265 resources (00:00.000)
-[0;39m[39m  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:01.572)
+[0;39m[39m  Terminology server http://tx.fhir.org - Version Connected to Terminology Server at http://tx.fhir.org (00:01.248)
 [0;39m[39mInstalling hl7.terminology#6.5.0 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
@@ -45,8 +45,8 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling hl7.fhir.uv.extensions.r5#5.2.0
 [0;39m[39m done.
-[0;39m[39m  Load hl7.fhir.uv.extensions.r5#5.2.0 - 759 resources (00:02.281)
-[0;39m[39m  Load hl7.terminology#6.5.0 - 4357 resources (00:00.875)
+[0;39m[39m  Load hl7.fhir.uv.extensions.r5#5.2.0 - 759 resources (00:03.682)
+[0;39m[39m  Load hl7.terminology#6.5.0 - 4357 resources (00:00.673)
 [0;39m[39mInstalling hl7.fhir.uv.extensions#5.3.0-ballot-tc1 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
@@ -57,8 +57,8 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling hl7.terminology.r5#6.5.0
 [0;39m[39m done.
-[0;39m[39m  Load hl7.terminology.r5#6.5.0 - 4357 resources (00:02.687)
-[0;39m[39m  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 823 resources (00:00.021)
+[0;39m[39m  Load hl7.terminology.r5#6.5.0 - 4357 resources (00:03.431)
+[0;39m[39m  Load hl7.fhir.uv.extensions#5.3.0-ballot-tc1 - 823 resources (00:00.020)
 [0;39m[39mInstalling hl7.fhir.uv.subscriptions-backport.r4#1.1.0 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
@@ -69,26 +69,26 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling hl7.terminology.r4#5.0.0
 [0;39m[39m done.
-[0;39m[39m  Load hl7.terminology.r4#5.0.0 - 4175 resources (00:03.157)
-[0;39m[39m  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 24 resources (00:00.001)
+[0;39m[39m  Load hl7.terminology.r4#5.0.0 - 4175 resources (00:03.272)
+[0;39m[39m  Load hl7.fhir.uv.subscriptions-backport.r4#1.1.0 - 24 resources (00:00.000)
 [0;39m[39mInstalling de.basisprofil.r4#1.5.4 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
 [0;39m[39mInstalling de.basisprofil.r4#1.5.4
 [0;39m[39m done.
-[0;39m[39m  Load de.basisprofil.r4#1.5.4 - 187 resources (00:00.604)
+[0;39m[39m  Load de.basisprofil.r4#1.5.4 - 187 resources (00:00.699)
 [0;39m[39mInstalling de.ihe-d.terminology#3.0.1 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
 [0;39m[39mInstalling de.ihe-d.terminology#3.0.1
 [0;39m[39m done.
-[0;39m[39m  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.463)
+[0;39m[39m  Load de.ihe-d.terminology#3.0.1 - 32 resources (00:00.418)
 [0;39m[39mInstalling dvmd.kdl.r4#2025.0.1 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
 [0;39m[39mInstalling dvmd.kdl.r4#2025.0.1
 [0;39m[39m done.
-[0;39m[39m  Load dvmd.kdl.r4#2025.0.1 - 5 resources (00:00.326)
+[0;39m[39m  Load dvmd.kdl.r4#2025.0.1 - 5 resources (00:00.318)
 [0;39m[39mInstalling hl7.fhir.uv.sdc#3.0.0 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
@@ -99,8 +99,8 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling hl7.fhir.r4.examples#4.0.1
 [0;39m[39m done.
-[0;39m[39m  Load hl7.fhir.r4.examples#4.0.1 - 4581 resources (00:06.208)
-[0;39m[39m  Load hl7.fhir.uv.sdc#3.0.0 - 138 resources (00:00.008)
+[0;39m[39m  Load hl7.fhir.r4.examples#4.0.1 - 4581 resources (00:06.362)
+[0;39m[39m  Load hl7.fhir.uv.sdc#3.0.0 - 138 resources (00:00.010)
 [0;39m[39mInstalling de.gematik.terminology#1.0.6 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
@@ -111,13 +111,13 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling hl7.terminology.r4#6.3.0
 [0;39m[39m done.
-[0;39m[39m  Load hl7.terminology.r4#6.3.0 - 4339 resources (00:04.053)
+[0;39m[39m  Load hl7.terminology.r4#6.3.0 - 4339 resources (00:04.341)
 [0;39m[39mInstalling dvmd.kdl.r4#2025.0.0 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
 [0;39m[39mInstalling dvmd.kdl.r4#2025.0.0
 [0;39m[39m done.
-[0;39m[39m  Load dvmd.kdl.r4#2025.0.0 - 5 resources (00:00.430)
+[0;39m[39m  Load dvmd.kdl.r4#2025.0.0 - 5 resources (00:00.319)
 [0;39m[39m  Load de.gematik.terminology#1.0.6 - 51 resources (00:00.007)
 [0;39m[39mInstalling de.fhir.medication#1.0.0 to the package cache
 [0;39m[39m  Fetching:
@@ -129,8 +129,8 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling hl7.terminology.r4#6.5.0
 [0;39m[39m done.
-[0;39m[39m  Load hl7.terminology.r4#6.5.0 - 4357 resources (00:03.932)
-[0;39m[39m  Load de.fhir.medication#1.0.0 - 15 resources (00:00.001)
+[0;39m[39m  Load hl7.terminology.r4#6.5.0 - 4357 resources (00:04.003)
+[0;39m[39m  Load de.fhir.medication#1.0.0 - 15 resources (00:00.000)
 [0;39m[39mInstalling de.gematik.ti#1.1.1 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
@@ -141,7 +141,7 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling de.gematik.terminology#1.0.7
 [0;39m[39m done.
-[0;39m[39m  Load de.gematik.terminology#1.0.7 - 52 resources (00:01.030)
+[0;39m[39m  Load de.gematik.terminology#1.0.7 - 52 resources (00:00.962)
 [0;39m[39m  Load de.gematik.ti#1.1.1 - 17 resources (00:00.000)
 [0;39m[39m  Load de.gematik.isik#5.1.0 - 247 resources (00:00.001)
 [0;39m[39mInstalling hl7.fhir.uv.ips#1.1.0 to the package cache
@@ -154,21 +154,21 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling fhir.dicom#2022.4.20221006
 [0;39m[39m done.
-[0;39m[39m  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:01.331)
+[0;39m[39m  Load fhir.dicom#2022.4.20221006 - 1319 resources (00:01.386)
 [0;39m[39m  Load hl7.fhir.uv.ips#1.1.0 - 104 resources (00:00.001)
 [0;39m[39mInstalling hl7.fhir.eu.extensions#0.1.x to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
 [0;39m[39mInstalling hl7.fhir.eu.extensions#0.1.1
 [0;39m[39m done.
-[0;39m[39m  Load hl7.fhir.eu.extensions#0.1.x - 10 resources (00:00.317)
-[0;39m[39m  Load hl7.fhir.eu.laboratory#0.1.1 - 63 resources (00:00.028)
+[0;39m[39m  Load hl7.fhir.eu.extensions#0.1.x - 10 resources (00:00.314)
+[0;39m[39m  Load hl7.fhir.eu.laboratory#0.1.1 - 63 resources (00:00.023)
 [0;39m[39m  Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.1.0, hl7.terminology.r4#6.2.0, hl7.fhir.uv.extensions.r4#5.2.0, hl7.fhir.uv.extensions.r5#5.2.0, hl7.terminology#6.5.0, hl7.terminology.r5#6.5.0, hl7.fhir.uv.extensions#5.3.0-ballot-tc1, hl7.terminology.r4#5.0.0, hl7.fhir.uv.subscriptions-backport.r4#1.1.0, de.basisprofil.r4#1.5.4, de.ihe-d.terminology#3.0.1, dvmd.kdl.r4#2025.0.1, hl7.fhir.r4.examples#4.0.1, hl7.fhir.uv.sdc#3.0.0, hl7.terminology.r4#6.3.0, dvmd.kdl.r4#2025.0.0, de.gematik.terminology#1.0.6, hl7.terminology.r4#6.5.0, de.fhir.medication#1.0.0, de.gematik.terminology#1.0.7, de.gematik.ti#1.1.1, de.gematik.isik#5.1.0, fhir.dicom#2022.4.20221006, hl7.fhir.uv.ips#1.1.0, hl7.fhir.eu.extensions#0.1.1, hl7.fhir.eu.laboratory#0.1.1]
 [0;39m[39m  Terminology Cache at /tmp/default-tx-cache
 [0;39m[39m  Get set... 
 [0;39m[33mCan't find Quantity profile https://gematik.de/fhir/isik/StructureDefinition/MedicationQuantity but trying to go on
 [0;39m[33mCan't find Quantity profile http://hl7.org/fhir/StructureDefinition/SimpleQuantity but trying to go on
-[0;39m[39m  ...go! (00:14.591)
+[0;39m[39m  ...go! (00:13.319)
 [0;39m[39mCached new session. Cache size = 1
 [0;39m[39m  Paths:  Current = /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare, Package Cache = /home/runner/.fhir/packages
 [0;39m[39m  Params: -compare -dest /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/Comparison/Laboratory-Patient-obl-eu-lab__ISiK-ISiKPatient -version 4.0 -ig de.gematik.isik#5.1.0 -ig hl7.fhir.eu.laboratory#0.1.1 -left https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient -right http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-obl-eu-lab
@@ -178,11 +178,11 @@ Right IG: hl7.fhir.eu.laboratory@0.1.1
 [0;39m[39m
 [0;39m[39mInstalling hl7.fhir.pubpack#0.2.3
 [0;39m[39m done.
-[0;39m[39m  Load hl7.fhir.pubpack#0.2.3 - 1 resources (00:00.941)
+[0;39m[39m  Load hl7.fhir.pubpack#0.2.3 - 1 resources (00:01.037)
 [0;39m[39mComparing StructureDefinitions https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient to http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-obl-eu-lab
 [0;39m[39mGenerating output to /home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/Comparison/Laboratory-Patient-obl-eu-lab__ISiK-ISiKPatient...
 [0;39m[39mHeadless environment detected; skipping browser launch.
 [0;39m[39mDone: file:/home/runner/work/ISiK-EU-Compare/ISiK-EU-Compare/Comparison/Laboratory-Patient-obl-eu-lab__ISiK-ISiKPatient/index.html
-[0;39m[39mDone. Times: Loading: 01:01.151. Max Memory = 3Gb
+[0;39m[39mDone. Times: Loading: 01:01.684. Max Memory = 3Gb
 [0;39mPicked up JAVA_TOOL_OPTIONS: -Djava.awt.headless=true
 

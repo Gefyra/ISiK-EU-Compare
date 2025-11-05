@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b175af0e-ecb3-4116-922a-99d846d7cadb-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b175af0e-ecb3-4116-922a-99d846d7cadb-3",
+  "id" : "8bcdec3c-42b5-4c86-925e-aa2486b07c18-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8bcdec3c-42b5-4c86-925e-aa2486b07c18-3",
   "name" : "IntersectionISiKDiagnoseAndConditionEuHdr",
   "title" : "Intersection of null And Condition (HDR)",
   "status" : "active",
-  "date" : "2025-11-03T17:13:19+00:00",
+  "date" : "2025-11-05T12:10:38+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Condition",

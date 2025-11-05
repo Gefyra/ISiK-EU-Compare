@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "384c24cd-5380-4a4b-a498-22c5310caf29-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/384c24cd-5380-4a4b-a498-22c5310caf29-2",
+  "id" : "8dd9a026-4130-4ebe-9c89-594d67c67769-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8dd9a026-4130-4ebe-9c89-594d67c67769-2",
   "name" : "UnionISiKMedikationsInformationAndMedicationStatementEuHdrObligation",
   "title" : "Union of null And MedicationStatement: obligations",
   "status" : "active",
-  "date" : "2025-11-03T17:17:50+00:00",
+  "date" : "2025-11-05T12:16:06+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -475,7 +475,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/384c24cd-5380-4a4b-a498-22c5310caf29-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/8dd9a026-4130-4ebe-9c89-594d67c67769-5"
       }
     },
     {
@@ -798,7 +798,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept indicating the reason for the status of the statement.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/384c24cd-5380-4a4b-a498-22c5310caf29-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/8dd9a026-4130-4ebe-9c89-594d67c67769-8"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -835,7 +835,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A coded concept identifying where the medication included in the MedicationStatement is expected to be consumed or administered.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/384c24cd-5380-4a4b-a498-22c5310caf29-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/8dd9a026-4130-4ebe-9c89-594d67c67769-11"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -877,7 +877,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept identifying the substance or product being taken.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/384c24cd-5380-4a4b-a498-22c5310caf29-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/8dd9a026-4130-4ebe-9c89-594d67c67769-14"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1606,7 +1606,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept identifying why the medication is being taken.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/384c24cd-5380-4a4b-a498-22c5310caf29-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/8dd9a026-4130-4ebe-9c89-594d67c67769-17"
       },
       "mapping" : [{
         "identity" : "workflow",

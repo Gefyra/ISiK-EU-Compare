@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c3631db9-a8fb-4a49-98a3-c903c99f782b-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c3631db9-a8fb-4a49-98a3-c903c99f782b-2",
+  "id" : "e672b5ef-fb87-4b64-b648-643a98dbf8a9-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e672b5ef-fb87-4b64-b648-643a98dbf8a9-2",
   "name" : "UnionISiKPatientAndPatientAnimalEuCore",
   "title" : "Union of null And Patient: Animal (EU core)",
   "status" : "active",
-  "date" : "2025-11-03T17:11:01+00:00",
+  "date" : "2025-11-05T12:08:47+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

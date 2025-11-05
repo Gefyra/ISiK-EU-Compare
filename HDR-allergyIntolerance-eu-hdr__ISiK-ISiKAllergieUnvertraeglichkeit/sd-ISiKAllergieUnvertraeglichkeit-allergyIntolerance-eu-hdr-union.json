@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4be04745-d035-4e82-9f71-c697f811d0d1-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4be04745-d035-4e82-9f71-c697f811d0d1-2",
+  "id" : "f6648bd7-ce13-4a0e-a278-e73efdc5cbe8-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f6648bd7-ce13-4a0e-a278-e73efdc5cbe8-2",
   "name" : "UnionISiKAllergieUnvertraeglichkeitAndAllergyIntoleranceEuHdr",
   "title" : "Union of null And Allergy Intolerance (HDR)",
   "status" : "active",
-  "date" : "2025-11-03T17:12:26+00:00",
+  "date" : "2025-11-05T12:10:24+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -496,7 +496,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4be04745-d035-4e82-9f71-c697f811d0d1-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f6648bd7-ce13-4a0e-a278-e73efdc5cbe8-5"
       }
     },
     {
@@ -1262,7 +1262,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "left: Type of the substance/product, allergy or intolerance condition, or negation/exclusion codes for reporting no known allergies.; right: Type of the substance/product, allergy or intolerance condition or a code for absent/unknown allergy.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4be04745-d035-4e82-9f71-c697f811d0d1-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f6648bd7-ce13-4a0e-a278-e73efdc5cbe8-8"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -3007,7 +3007,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Codes defining the type of the substance (including pharmaceutical products).",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4be04745-d035-4e82-9f71-c697f811d0d1-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f6648bd7-ce13-4a0e-a278-e73efdc5cbe8-11"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -3359,7 +3359,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4be04745-d035-4e82-9f71-c697f811d0d1-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f6648bd7-ce13-4a0e-a278-e73efdc5cbe8-14"
       },
       "mapping" : [{
         "identity" : "rim",

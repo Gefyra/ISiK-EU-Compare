@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e3ab0600-8fe6-40fa-82a7-aea304cba3ef-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e3ab0600-8fe6-40fa-82a7-aea304cba3ef-3",
+  "id" : "20be164d-ad53-4523-8c63-6fda12fe83be-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/20be164d-ad53-4523-8c63-6fda12fe83be-3",
   "name" : "IntersectionISiKPatientAndPatientEuObligations",
   "title" : "Intersection of null And Patient: Obligations",
   "status" : "active",
-  "date" : "2025-11-03T17:20:58+00:00",
+  "date" : "2025-11-05T12:18:02+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Patient",

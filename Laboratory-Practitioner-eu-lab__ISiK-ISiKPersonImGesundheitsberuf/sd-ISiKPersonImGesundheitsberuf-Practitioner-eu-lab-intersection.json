@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "d9e2d0ec-c507-4f0d-9ae6-77ba9af3cb68-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d9e2d0ec-c507-4f0d-9ae6-77ba9af3cb68-3",
+  "id" : "00e65315-b406-4549-bf17-5bbb0f966129-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/00e65315-b406-4549-bf17-5bbb0f966129-3",
   "name" : "IntersectionISiKPersonImGesundheitsberufAndPractitionerEu",
   "title" : "Intersection of null And Practitioner: Laboratory Report",
   "status" : "active",
-  "date" : "2025-11-03T17:20:50+00:00",
+  "date" : "2025-11-05T12:19:16+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Practitioner",

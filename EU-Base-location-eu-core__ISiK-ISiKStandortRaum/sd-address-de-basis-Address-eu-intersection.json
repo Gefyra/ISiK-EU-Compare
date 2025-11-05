@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "151604d6-816b-4ad8-bc45-81965db71eba-6",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/151604d6-816b-4ad8-bc45-81965db71eba-6",
+  "id" : "194d42b2-e7df-4611-8a04-b45154df30ad-6",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/194d42b2-e7df-4611-8a04-b45154df30ad-6",
   "name" : "IntersectionAddressDeBasisAndAddressEu",
   "title" : "Intersection of Adresse, deutsches Basisprofil And Address (EU)",
   "status" : "active",
-  "date" : "2025-11-03T17:09:14+00:00",
+  "date" : "2025-11-05T12:06:30+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Address",

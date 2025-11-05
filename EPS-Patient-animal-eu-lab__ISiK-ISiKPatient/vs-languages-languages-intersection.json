@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "8b50dfe3-1e5b-4d37-bd08-98ba64a3b133-6",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/8b50dfe3-1e5b-4d37-bd08-98ba64a3b133-6",
+  "id" : "cd312382-07cc-4393-a562-f7f513f58072-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/cd312382-07cc-4393-a562-f7f513f58072-6",
   "name" : "IntersectionCommonLanguagesAndCommonLanguages",
   "title" : "Intersection of Common Languages And Common Languages",
   "status" : "draft",
-  "date" : "2025-11-03T17:06:50+00:00",
+  "date" : "2025-11-05T12:03:39+00:00",
   "compose" : {
     "include" : [{
       "concept" : [{

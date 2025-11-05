@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c8cc498d-c26f-4030-8b21-b750da08ee3a-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c8cc498d-c26f-4030-8b21-b750da08ee3a-3",
+  "id" : "42e99a6f-a7a1-4444-875d-215c6f677d93-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/42e99a6f-a7a1-4444-875d-215c6f677d93-3",
   "name" : "IntersectionISiKPatientAndPatientEu",
   "title" : "Intersection of null And Patient (EU base)",
   "status" : "active",
-  "date" : "2025-11-03T17:10:58+00:00",
+  "date" : "2025-11-05T12:08:55+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Patient",

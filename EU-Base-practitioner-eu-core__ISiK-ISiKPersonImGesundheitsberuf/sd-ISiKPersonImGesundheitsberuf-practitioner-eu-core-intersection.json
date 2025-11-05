@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e2854806-507c-4d75-bb65-a1eff3a15005-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e2854806-507c-4d75-bb65-a1eff3a15005-3",
+  "id" : "0cbaddb5-836f-4e4d-b9ae-a034ca9cd862-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0cbaddb5-836f-4e4d-b9ae-a034ca9cd862-3",
   "name" : "IntersectionISiKPersonImGesundheitsberufAndPractitionerEuCore",
   "title" : "Intersection of null And Practitioner (EU core)",
   "status" : "active",
-  "date" : "2025-11-03T17:12:23+00:00",
+  "date" : "2025-11-05T12:10:01+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Practitioner",

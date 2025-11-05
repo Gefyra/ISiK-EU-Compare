@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9c7ace5f-fda5-421f-ba49-c6cace44b2c6-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9c7ace5f-fda5-421f-ba49-c6cace44b2c6-3",
+  "id" : "21cb263c-d43b-45cc-9558-236de00c2e57-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/21cb263c-d43b-45cc-9558-236de00c2e57-3",
   "name" : "IntersectionISiKMedikamentAndMedicationEuMpd",
   "title" : "Intersection of null And Medication: MPD",
   "status" : "active",
-  "date" : "2025-11-03T17:21:15+00:00",
+  "date" : "2025-11-05T12:19:23+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Medication",

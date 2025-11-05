@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a66a8e57-421f-4071-ae2f-da1585b1b3d7-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a66a8e57-421f-4071-ae2f-da1585b1b3d7-3",
+  "id" : "e224e0e1-df75-4379-a269-8e24d869ae47-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e224e0e1-df75-4379-a269-8e24d869ae47-3",
   "name" : "IntersectionISiKPatientAndPatientEuLab",
   "title" : "Intersection of null And Patient: Person",
   "status" : "active",
-  "date" : "2025-11-03T17:20:33+00:00",
+  "date" : "2025-11-05T12:17:52+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Patient",

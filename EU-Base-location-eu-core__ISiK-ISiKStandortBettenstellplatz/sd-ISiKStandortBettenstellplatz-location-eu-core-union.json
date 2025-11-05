@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "0aed71ec-74a5-4a06-9531-ebe157b4c0c3-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0aed71ec-74a5-4a06-9531-ebe157b4c0c3-2",
+  "id" : "6c4d5ef9-29c8-42a8-91d9-4db432a3305e-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6c4d5ef9-29c8-42a8-91d9-4db432a3305e-2",
   "name" : "UnionISiKStandortBettenstellplatzAndLocationEuCore",
   "title" : "Union of null And Location (EU core)",
   "status" : "active",
-  "date" : "2025-11-03T17:09:14+00:00",
+  "date" : "2025-11-05T12:06:20+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

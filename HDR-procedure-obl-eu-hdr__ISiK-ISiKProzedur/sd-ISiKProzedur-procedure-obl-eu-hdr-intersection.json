@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "36a0c237-1c37-42d7-bf20-a8c508686de3-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/36a0c237-1c37-42d7-bf20-a8c508686de3-3",
+  "id" : "39efa21b-6007-4108-bbd0-e656b1ff1def-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/39efa21b-6007-4108-bbd0-e656b1ff1def-3",
   "name" : "IntersectionISiKProzedurAndProcedureEuHdrObligation",
   "title" : "Intersection of null And Procedure: obligations",
   "status" : "active",
-  "date" : "2025-11-03T17:19:26+00:00",
+  "date" : "2025-11-05T12:16:58+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Procedure",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9572fc03-470e-44e4-a899-ae19ffb43163-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9572fc03-470e-44e4-a899-ae19ffb43163-2",
+  "id" : "85e1fb2b-e1be-4974-8753-a2d724703f88-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/85e1fb2b-e1be-4974-8753-a2d724703f88-2",
   "name" : "UnionISiKOrganisationFachabteilungAndOrganizationEu",
   "title" : "Union of null And Organization (EU base)",
   "status" : "active",
-  "date" : "2025-11-03T17:09:42+00:00",
+  "date" : "2025-11-05T12:07:32+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

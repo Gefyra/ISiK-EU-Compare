@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "36a0c237-1c37-42d7-bf20-a8c508686de3-9",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/36a0c237-1c37-42d7-bf20-a8c508686de3-9",
+  "id" : "39efa21b-6007-4108-bbd0-e656b1ff1def-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/39efa21b-6007-4108-bbd0-e656b1ff1def-9",
   "name" : "IntersectionProcedureNotPerformedReason(SNOMED-CT)AndProcedureNotPerformedReason(SNOMED-CT)",
   "title" : "Intersection of Procedure Not Performed Reason (SNOMED-CT) And Procedure Not Performed Reason (SNOMED-CT)",
   "status" : "active",
-  "date" : "2025-11-03T17:19:26+00:00",
+  "date" : "2025-11-05T12:16:58+00:00",
   "compose" : {
     "include" : [{
       "filter" : [{

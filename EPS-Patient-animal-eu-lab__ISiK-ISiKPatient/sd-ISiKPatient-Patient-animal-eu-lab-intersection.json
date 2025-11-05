@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "8b50dfe3-1e5b-4d37-bd08-98ba64a3b133-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8b50dfe3-1e5b-4d37-bd08-98ba64a3b133-3",
+  "id" : "cd312382-07cc-4393-a562-f7f513f58072-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cd312382-07cc-4393-a562-f7f513f58072-3",
   "name" : "IntersectionISiKPatientAndPatientAnimalEu",
   "title" : "Intersection of null And Patient: Animal",
   "status" : "active",
-  "date" : "2025-11-03T17:06:50+00:00",
+  "date" : "2025-11-05T12:03:39+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Patient",

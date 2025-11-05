@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "151604d6-816b-4ad8-bc45-81965db71eba-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/151604d6-816b-4ad8-bc45-81965db71eba-2",
+  "id" : "194d42b2-e7df-4611-8a04-b45154df30ad-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/194d42b2-e7df-4611-8a04-b45154df30ad-2",
   "name" : "UnionISiKStandortRaumAndLocationEuCore",
   "title" : "Union of null And Location (EU core)",
   "status" : "active",
-  "date" : "2025-11-03T17:09:14+00:00",
+  "date" : "2025-11-05T12:06:30+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

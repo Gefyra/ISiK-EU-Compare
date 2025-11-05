@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c8cc498d-c26f-4030-8b21-b750da08ee3a-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c8cc498d-c26f-4030-8b21-b750da08ee3a-2",
+  "id" : "42e99a6f-a7a1-4444-875d-215c6f677d93-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/42e99a6f-a7a1-4444-875d-215c6f677d93-2",
   "name" : "UnionISiKPatientAndPatientEu",
   "title" : "Union of null And Patient (EU base)",
   "status" : "active",
-  "date" : "2025-11-03T17:10:58+00:00",
+  "date" : "2025-11-05T12:08:55+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

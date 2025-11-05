@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "cc3372fa-5966-4bbb-a877-52c54aa257a0-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cc3372fa-5966-4bbb-a877-52c54aa257a0-2",
+  "id" : "879c4c53-95be-4d18-8c68-2d20e00238ae-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/879c4c53-95be-4d18-8c68-2d20e00238ae-2",
   "name" : "UnionISiKMedikamentAndMedicationEuHdr",
   "title" : "Union of null And Medication (HDR)",
   "status" : "active",
-  "date" : "2025-11-03T17:15:39+00:00",
+  "date" : "2025-11-05T12:13:35+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -481,7 +481,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cc3372fa-5966-4bbb-a877-52c54aa257a0-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/879c4c53-95be-4d18-8c68-2d20e00238ae-5"
       }
     },
     {
@@ -683,7 +683,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept that defines the type of a medication.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cc3372fa-5966-4bbb-a877-52c54aa257a0-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/879c4c53-95be-4d18-8c68-2d20e00238ae-8"
       },
       "mapping" : [{
         "identity" : "script10.6",
@@ -1219,7 +1219,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept defining the form of a medication.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cc3372fa-5966-4bbb-a877-52c54aa257a0-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/879c4c53-95be-4d18-8c68-2d20e00238ae-11"
       },
       "mapping" : [{
         "identity" : "script10.6",

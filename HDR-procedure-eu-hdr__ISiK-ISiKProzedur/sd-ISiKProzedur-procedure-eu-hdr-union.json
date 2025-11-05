@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5959bec7-7dc9-4992-97e7-2df937f0ee39-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5959bec7-7dc9-4992-97e7-2df937f0ee39-2",
+  "id" : "d820760d-2784-4a14-b317-03d47c827361-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d820760d-2784-4a14-b317-03d47c827361-2",
   "name" : "UnionISiKProzedurAndProcedureEuHdr",
   "title" : "Union of null And Procedure (HDR)",
   "status" : "active",
-  "date" : "2025-11-03T17:18:58+00:00",
+  "date" : "2025-11-05T12:16:24+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -488,7 +488,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-5"
       }
     },
     {
@@ -878,7 +878,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A code that identifies the reason a procedure was not performed.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-8"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -916,7 +916,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A code that classifies a procedure for searching, sorting and display purposes.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-11"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1149,7 +1149,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A code to identify a specific procedure .",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-14"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2231,7 +2231,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A code that identifies the role of a performer of the procedure.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-17"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2393,7 +2393,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A code that identifies the reason a procedure is  required.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-20"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-20"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2477,7 +2477,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Codes describing anatomical locations. May include laterality.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-23"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-23"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2515,7 +2515,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "An outcome of a procedure - whether it was resolved or otherwise.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-26"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-26"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2581,7 +2581,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing complications that resulted from a procedure.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-29"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-29"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2644,7 +2644,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Specific follow up required for a procedure e.g. removal of sutures.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-32"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-32"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2850,7 +2850,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A kind of change that happened to the device during the procedure.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-35"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-35"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2946,7 +2946,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing items used during a procedure.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5959bec7-7dc9-4992-97e7-2df937f0ee39-38"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d820760d-2784-4a14-b317-03d47c827361-38"
       },
       "mapping" : [{
         "identity" : "rim",

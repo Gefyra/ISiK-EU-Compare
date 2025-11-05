@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4ada30d9-4f3c-4f27-97fe-77b7be57c63b-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4ada30d9-4f3c-4f27-97fe-77b7be57c63b-2",
+  "id" : "cc4147d3-cbe6-480e-b322-0bf5b9ddce91-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cc4147d3-cbe6-480e-b322-0bf5b9ddce91-2",
   "name" : "UnionISiKPatientAndPatientEuEps",
   "title" : "Union of null And Patient (EPS)",
   "status" : "active",
-  "date" : "2025-11-03T17:06:37+00:00",
+  "date" : "2025-11-05T12:03:57+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

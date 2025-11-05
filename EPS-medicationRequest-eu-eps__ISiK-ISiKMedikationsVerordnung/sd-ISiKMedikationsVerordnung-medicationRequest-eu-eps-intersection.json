@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "6f0d49fd-507b-4d44-ba09-9a5c254281d1-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6f0d49fd-507b-4d44-ba09-9a5c254281d1-3",
+  "id" : "1f210232-635e-42b0-b213-7264dae1ca30-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1f210232-635e-42b0-b213-7264dae1ca30-3",
   "name" : "IntersectionISiKMedikationsVerordnungAndMedicationRequestEuEps",
   "title" : "Intersection of null And MedicationRequest (EPS)",
   "status" : "active",
-  "date" : "2025-11-03T17:05:11+00:00",
+  "date" : "2025-11-05T12:03:21+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "MedicationRequest",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7b2f6f23-8678-4db6-ae58-a0736351ad91-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7b2f6f23-8678-4db6-ae58-a0736351ad91-3",
+  "id" : "184b3b25-d2c7-4c33-a5b9-1b00e46739ba-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-3",
   "name" : "IntersectionISiKKontaktGesundheitseinrichtungAndEncounterEuHdr",
   "title" : "Intersection of null And Encounter (HDR)",
   "status" : "active",
-  "date" : "2025-11-03T17:13:57+00:00",
+  "date" : "2025-11-05T12:12:16+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Encounter",
@@ -454,7 +454,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Eingeschränkter Status vgl. FHIR R5",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-9"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -697,7 +697,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7b2f6f23-8678-4db6-ae58-a0736351ad91-12"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/184b3b25-d2c7-4c33-a5b9-1b00e46739ba-12"
       },
       "mapping" : [{
         "identity" : "w5",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "dc0d0e82-6781-413a-a194-3a5e43def00e-24",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/dc0d0e82-6781-413a-a194-3a5e43def00e-24",
+  "id" : "439a41de-85af-41bd-95ef-9a8151b2ac64-24",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/439a41de-85af-41bd-95ef-9a8151b2ac64-24",
   "name" : "IntersectionEncounterReasonCodesAndConditionHdrVS",
   "title" : "Intersection of Encounter Reason Codes And Condition Value Set",
   "status" : "draft",
-  "date" : "2025-11-03T17:15:02+00:00",
+  "date" : "2025-11-05T12:13:36+00:00",
   "compose" : {
     "include" : [{
       "filter" : [{

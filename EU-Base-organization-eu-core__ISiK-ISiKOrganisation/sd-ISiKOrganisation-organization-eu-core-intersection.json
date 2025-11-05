@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4652cefc-6428-4e34-8b11-5e63018ae53f-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4652cefc-6428-4e34-8b11-5e63018ae53f-3",
+  "id" : "cff5e3cf-fb5c-453a-a063-799370f340d4-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cff5e3cf-fb5c-453a-a063-799370f340d4-3",
   "name" : "IntersectionISiKOrganisationAndOrganizationEuCore",
   "title" : "Intersection of null And Organization (EU core)",
   "status" : "active",
-  "date" : "2025-11-03T17:10:44+00:00",
+  "date" : "2025-11-05T12:07:39+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Organization",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5959bec7-7dc9-4992-97e7-2df937f0ee39-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5959bec7-7dc9-4992-97e7-2df937f0ee39-3",
+  "id" : "d820760d-2784-4a14-b317-03d47c827361-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d820760d-2784-4a14-b317-03d47c827361-3",
   "name" : "IntersectionISiKProzedurAndProcedureEuHdr",
   "title" : "Intersection of null And Procedure (HDR)",
   "status" : "active",
-  "date" : "2025-11-03T17:18:58+00:00",
+  "date" : "2025-11-05T12:16:24+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Procedure",

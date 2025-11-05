@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "8b50dfe3-1e5b-4d37-bd08-98ba64a3b133-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8b50dfe3-1e5b-4d37-bd08-98ba64a3b133-2",
+  "id" : "cd312382-07cc-4393-a562-f7f513f58072-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cd312382-07cc-4393-a562-f7f513f58072-2",
   "name" : "UnionISiKPatientAndPatientAnimalEu",
   "title" : "Union of null And Patient: Animal",
   "status" : "active",
-  "date" : "2025-11-03T17:06:50+00:00",
+  "date" : "2025-11-05T12:03:39+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -482,7 +482,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/8b50dfe3-1e5b-4d37-bd08-98ba64a3b133-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cd312382-07cc-4393-a562-f7f513f58072-5"
       }
     },
     {
@@ -2159,7 +2159,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/8b50dfe3-1e5b-4d37-bd08-98ba64a3b133-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cd312382-07cc-4393-a562-f7f513f58072-5"
       },
       "mapping" : [{
         "identity" : "v2",

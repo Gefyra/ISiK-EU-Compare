@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "ad13251a-c827-4a8b-a21d-16526ef91fce-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ad13251a-c827-4a8b-a21d-16526ef91fce-3",
+  "id" : "1450692b-8c1d-4d08-99af-400a69449d3a-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1450692b-8c1d-4d08-99af-400a69449d3a-3",
   "name" : "IntersectionISiKMedikationsVerabreichungAndMedicationAdministrationEuHdrObligation",
   "title" : "Intersection of null And MedicationAdministration: obligations",
   "status" : "active",
-  "date" : "2025-11-03T17:16:29+00:00",
+  "date" : "2025-11-05T12:14:47+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "MedicationAdministration",

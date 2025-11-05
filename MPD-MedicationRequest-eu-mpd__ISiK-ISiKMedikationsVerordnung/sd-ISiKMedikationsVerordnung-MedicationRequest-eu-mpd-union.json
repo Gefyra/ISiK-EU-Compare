@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fd07c6c7-ad4d-4311-8702-0d27ed48e46e-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-2",
+  "id" : "2e0add43-43b1-4159-b4c9-0ba42291ac9a-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/2e0add43-43b1-4159-b4c9-0ba42291ac9a-2",
   "name" : "UnionISiKMedikationsVerordnungAndMedicationRequestEuMpd",
   "title" : "Union of null And MedicationRequest: MPD",
   "status" : "active",
-  "date" : "2025-11-03T17:22:12+00:00",
+  "date" : "2025-11-05T12:19:19+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -480,7 +480,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-5"
       }
     },
     {
@@ -733,7 +733,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Identifies the reasons for a given status.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-8"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -813,7 +813,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept identifying the category of medication request.  For example, where the medication is to be consumed or administered, or the type of medication treatment.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-11"
       },
       "mapping" : [{
         "identity" : "script10.6",
@@ -965,7 +965,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept identifying substance or product that can be ordered.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-14"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1978,7 +1978,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Identifies the type of individual that is desired to administer the medication.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-17"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2050,7 +2050,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept indicating why the medication was ordered.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-20"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-20"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2679,7 +2679,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Identifies the overall pattern of medication administratio.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-23"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-23"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -3212,7 +3212,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept identifying additional instructions such as \"take with water\" or \"avoid operating heavy machinery\".",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-26"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-26"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -4232,7 +4232,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Code for a known / defined timing pattern.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-29"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-29"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -4285,7 +4285,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept identifying the precondition that should be met or evaluated prior to consuming or administering a medication dose.  For example \"pain\", \"30 minutes prior to sexual intercourse\", \"on flare-up\" etc.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-32"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-32"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -4328,7 +4328,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept describing the site location the medicine enters into or onto the body.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-35"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-35"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -4564,7 +4564,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-38"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-38"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -4800,7 +4800,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept describing the technique by which the medicine is administered.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-41"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-41"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -4955,7 +4955,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The kind of dose or rate specified.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fd07c6c7-ad4d-4311-8702-0d27ed48e46e-44"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2e0add43-43b1-4159-b4c9-0ba42291ac9a-44"
       },
       "mapping" : [{
         "identity" : "rim",
